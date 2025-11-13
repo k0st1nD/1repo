@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T14:24:50Z",
+  "stage": "finalize",
+  "source": "actionable_agile_metrics_for_predictability_an_introduction_-_daniel_s_vacanti.dataset.jsonl",
+  "metrics": {
+    "total_cards": 230,
+    "validation_errors": 0,
+    "validation_warnings": 12,
+    "avg_completeness": 0.61,
+    "cards_with_structure": 226,
+    "structure_coverage": 0.9826086956521739,
+    "cards_with_summaries": 226,
+    "summary_coverage": 0.9826086956521739
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

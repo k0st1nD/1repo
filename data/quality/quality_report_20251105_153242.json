@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-11-05T12:32:42Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1533.2555555555555,
+          "max": 1533.2555555555555,
+          "avg": 1533.2555555555555,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 9,
+          "max": 9,
+          "avg": 9.0,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Hooked-How-to-Build-Habit-Forming-Products.pdf",
+          "timestamp": "2025-11-05T12:24:39Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Hooked-How-to-Build-Habit-Forming-Products.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_pages": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "pages_with_structure": {
+          "min": 88,
+          "max": 88,
+          "avg": 88.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.4888888888888889,
+          "max": 0.4888888888888889,
+          "avg": 0.4888888888888889,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 1,
+          "max": 1,
+          "avg": 1.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+          "timestamp": "2025-11-05T12:24:39Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_compression_ratio": {
+          "min": 7.68,
+          "max": 7.68,
+          "avg": 7.68,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 9,
+          "max": 9,
+          "avg": 9.0,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 171,
+          "max": 171,
+          "avg": 171.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.95,
+          "max": 0.95,
+          "avg": 0.95,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 226.7953216374269,
+          "max": 226.7953216374269,
+          "avg": 226.7953216374269,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 528.46783625731,
+          "max": 528.46783625731,
+          "avg": 528.46783625731,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+          "timestamp": "2025-11-05T12:24:39Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.9444444444444444,
+          "max": 0.9444444444444444,
+          "avg": 0.9444444444444444,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 170,
+          "max": 170,
+          "avg": 170.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 95,
+          "max": 95,
+          "avg": 95.0,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 170,
+          "max": 170,
+          "avg": 170.0,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.5307262569832403,
+          "max": 0.5307262569832403,
+          "avg": 0.5307262569832403,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.088,
+          "max": 0.088,
+          "avg": 0.088,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+          "timestamp": "2025-11-05T12:32:36Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "cards_with_summaries": {
+          "min": 171,
+          "max": 171,
+          "avg": 171.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 180,
+          "max": 180,
+          "avg": 180.0,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.487,
+          "max": 0.487,
+          "avg": 0.487,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.95,
+          "max": 0.95,
+          "avg": 0.95,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.4888888888888889,
+          "max": 0.4888888888888889,
+          "avg": 0.4888888888888889,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 88,
+          "max": 88,
+          "avg": 88.0,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 36,
+          "max": 36,
+          "avg": 36.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+          "timestamp": "2025-11-05T12:32:36Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_chunk_tokens": {
+          "min": 351.71270718232046,
+          "max": 351.71270718232046,
+          "avg": 351.71270718232046,
+          "count": 1
+        },
+        "min_chunk_tokens": {
+          "min": 110,
+          "max": 110,
+          "avg": 110.0,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 1.0055555555555555,
+          "max": 1.0055555555555555,
+          "avg": 1.0055555555555555,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 181,
+          "max": 181,
+          "avg": 181.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 524,
+          "max": 524,
+          "avg": 524.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+          "timestamp": "2025-11-05T12:32:36Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "min_norm": {
+          "min": 0.9999998807907104,
+          "max": 0.9999998807907104,
+          "avg": 0.9999998807907104,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 181,
+          "max": 181,
+          "avg": 181.0,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "hooked-how-to-build-habit-forming-products.dataset.chunks.jsonl",
+          "timestamp": "2025-11-05T12:32:42Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "hooked-how-to-build-habit-forming-products.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.008740901947021484,
+      "avg": 0.0012487002781459264,
+      "min": 0.0009751319885253906,
+      "max": 0.0017251968383789062
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 513.8955504894257,
+      "avg": 513.8955504894257,
+      "min": 513.8955504894257,
+      "max": 513.8955504894257
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

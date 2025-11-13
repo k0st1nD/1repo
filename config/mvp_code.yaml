@@ -1,0 +1,370 @@
+# Archivist Magika MVP v2.0 - CODE Configuration
+# ================================================
+# Optimized for technical/programming books with code
+
+version: "2.0.0"
+product: "archivist magika"
+profile: "code"
+
+# Paths
+paths:
+  base_dir: "."
+  data_dir: "data"
+  config_dir: "config"
+  cache_dir: "data/cache"
+
+# Pipeline
+pipeline:
+  
+  # Stage 1: Structural
+  structural:
+    ocr:
+      enabled: true
+      languages: ['eng']
+      dpi: 300
+      confidence_threshold: 60
+    
+    tables:
+      enabled: true
+      min_rows: 2
+      min_cols: 2
+    
+    extractors:
+      - pdfminer
+      - pdfplumber
+      - pypdf2
+      - ocr
+    
+    retry:
+      max_attempts: 3
+      initial_delay: 1.0
+      backoff_factor: 2.0
+      max_delay: 10.0
+    
+    blank_detection:
+      min_chars_ocr: 50
+      min_chars_valid: 10
+      skip_front_matter: true
+  
+  # Stage 2: Structure detection
+  structure_detect:
+    chapter:
+      enabled: true
+      patterns:
+        - "^Chapter\\s+\\d+"
+        - "^\\d+\\.\\s+[A-Z]"
+        - "^CHAPTER\\s+[IVXLCDM]+"
+        # 💻 Code book patterns
+        - "^Part\\s+\\d+"
+        - "^Section\\s+\\d+"
+      min_confidence: 0.7
+    
+    section:
+      enabled: true
+      detect_numbered: true
+      detect_title_case: true
+      min_title_words: 3
+      max_title_words: 15
+    
+    toc:
+      enabled: true
+      include_page_numbers: true
+  
+  # Stage 3: Summarization
+  summarize:
+    enabled: true
+    engine: "extractive"
+    
+    l1_summary:
+      enabled: true
+      target_length: 300
+    
+    l2_summary:
+      enabled: false  # Less important for code books
+      target_length: 900
+    
+    extractive:
+      method: "textrank"
+      ratio: 0.3
+  
+  # Stage 4: Extended fields
+  extended:
+    dedup:
+      enabled: true
+      exact_match: true
+      fuzzy_match: true
+      fuzzy_threshold: 0.85
+    
+    continuity:
+      enabled: true
+      check_page_sequence: true
+      check_chapter_sequence: true
+    
+    lm_extraction:
+      enabled: true  # 💻 Use coder model
+      
+      ollama:
+        base_url: "http://localhost:11434"
+        model: "qwen2.5-coder:7b"  # 💻 Specialized for code (4.7GB)
+        timeout: 90
+        max_retries: 3
+      
+      fields:
+        # Focus on technical content
+        content_type: true  # tutorial, reference, guide
+        domain: true  # programming, devops, data_engineering
+        complexity: true  # beginner, intermediate, advanced
+        
+        entities:
+          companies: true
+          people: true
+          products: true
+          technologies: true
+          frameworks: true  # 💻 Important for code books
+          methodologies: true  # 💻 TDD, OOP, etc.
+        
+        technical:
+          has_code: true  # 💻 Critical
+          has_formulas: false  # Less relevant
+          has_diagram: true  # Architecture diagrams
+          programming_languages: true  # 💻 Critical
+        
+        actionable:
+          has_best_practices: true  # 💻 Important
+          has_antipatterns: true  # 💻 Important
+          has_instructions: true  # 💻 Step-by-step guides
+        
+        business:
+          has_metrics: false  # Less relevant
+          metrics: false
+          has_case_study: true
+          case_study_company: true
+        
+        content_analysis:
+          topics: true  # 💻 e.g., "async programming", "design patterns"
+          key_concepts: true  # 💻 e.g., "dependency injection"
+          problem_statement: true
+          solution_approach: true
+        
+        tools_mentioned: true  # 💻 VS Code, Git, Docker, etc.
+      
+      use_heuristics_fallback: true
+      heuristics_only: false
+  
+  # Stage 5: Finalization
+  finalize:
+    validation:
+      strict_mode: false  # More lenient for code
+      check_required_fields: true
+      check_extended_fields: true
+      check_manifest: true
+    
+    policies:
+      min_page_content_length: 30  # 💻 Code pages can be shorter
+      max_empty_pages_ratio: 0.15  # 💻 More lenient
+      require_title: true
+      require_total_cards: true
+  
+  # Stage 6: Chunking
+  chunk:
+    strategy: "sliding_window"
+    chunk_size: 512
+    overlap: 50
+    
+    add_structure_context: true
+    preserve_tables: true  # 💻 Code tables
+    preserve_code_blocks: true  # 💻 Keep code together
+    respect_sentence_boundaries: true
+    respect_paragraph_boundaries: false
+    
+    include_metadata: true
+    include_extended_fields: true
+  
+  # Stage 7: Embedding
+  embed:
+    model: "BAAI/bge-m3"  # 💻 Works well with code
+    embedding_dim: 1024
+    normalize: true
+    
+    batch_size: 32
+    device: "cpu"
+    show_progress: true
+    
+    faiss:
+      index_type: "Flat"
+      metric: "cosine"
+    
+    cache:
+      enabled: true
+      cache_dir: "data/cache/embeddings"
+      use_hash: true
+
+# Search
+search:
+  semantic:
+    enabled: true
+    model: "BAAI/bge-m3"
+    top_k: 10
+  
+  keyword:
+    enabled: true  # 💻 Good for exact code/function names
+    k1: 1.5
+    b: 0.75
+  
+  hybrid:
+    enabled: true  # 💻 Best for code search
+    semantic_weight: 0.6  # 💻 More keyword weight for exact matches
+    keyword_weight: 0.4
+  
+  query_expansion:
+    enabled: false  # 💻 Disabled (code needs exact terms)
+    max_expansions: 3
+  
+  filters:
+    default_min_score: 0.5
+    enable_chapter_filter: true
+    enable_section_filter: true
+    enable_page_range_filter: true
+    enable_content_type_filter: true
+    enable_topic_filter: true
+    # 💻 Code-specific filters
+    enable_language_filter: true  # Filter by programming language
+    enable_has_code_filter: true  # Only pages with code
+  
+  context_expansion:
+    enabled: false
+    default_context_size: 2
+  
+  reranking:
+    enabled: false  # Optional, enable if needed
+    model: "qllama/bge-reranker-v2-m3"
+    rerank_top_k: 50
+    return_top_k: 10
+    device: "cpu"
+    batch_size: 8
+
+# Quality
+quality:
+  enabled: true
+  output_dir: "data/quality"
+  
+  thresholds:
+    structural:
+      min_success_ratio: 0.90  # 💻 More lenient (code formatting issues)
+      max_empty_ratio: 0.15
+      min_avg_page_length: 400  # 💻 Shorter (code is compact)
+    
+    extended:
+      max_duplicates_ratio: 0.05
+      min_extended_fields_ratio: 0.70
+    
+    chunk:
+      min_chunk_length: 100
+      max_chunk_length: 2000
+    
+    embed:
+      min_embedding_success: 0.99
+  
+  reports:
+    auto_generate: true
+    include_trends: true
+    include_comparisons: true
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  file:
+    enabled: true
+    path: "logs/mvp_code.log"
+    max_bytes: 10485760
+    backup_count: 5
+  
+  console:
+    enabled: true
+    colorize: true
+
+# Performance
+performance:
+  workers: 4
+  max_memory_mb: 8192
+  cleanup_temp_files: true
+  enable_cache: true
+  cache_ttl: 86400
+
+# Development
+development:
+  debug_mode: false
+  save_intermediate_results: false
+  dry_run: false
+  verbose: false
+
+# Production
+production:
+  strict_validation: false  # 💻 More lenient for code
+  enable_monitoring: true
+  enable_alerts: false
+  alert_on_quality_issues: false
+
+# Feature flags
+features:
+  ocr: true
+  tables: true
+  structure_detection: true
+  summarization: true
+  extended_fields: true
+  deduplication: true
+  quality_tracking: true
+  hybrid_search: true  # 💻 Important for code
+  query_expansion: false  # 💻 Disabled
+
+# Models
+models:
+  embedding: "BAAI/bge-m3"
+  lm: "qwen2.5-coder:7b"  # 💻 Specialized for code (4.7GB)
+  reranker: null  # Optional
+
+# Code-specific settings
+code_settings:
+  # Programming languages to focus on
+  languages:
+    - Python
+    - JavaScript
+    - TypeScript
+    - Go
+    - Rust
+    - Java
+    - C++
+    - SQL
+  
+  # Frameworks to detect
+  frameworks:
+    - React
+    - Django
+    - FastAPI
+    - Node.js
+    - Spring Boot
+    - TensorFlow
+    - PyTorch
+  
+  # Tools to track
+  tools:
+    - Git
+    - Docker
+    - Kubernetes
+    - VS Code
+    - pytest
+    - Jest
+    - npm
+    - pip
+
+# Experimental
+experimental:
+  semantic_chunking: false
+  hierarchical_chunking: false
+  reranking: false
+  query_reformulation: false
+  image_extraction: false
+  diagram_ocr: false
+  code_syntax_highlighting: false  # 💻 Future feature

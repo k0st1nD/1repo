@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:34:59Z",
+  "stage": "finalize",
+  "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+  "metrics": {
+    "total_cards": 354,
+    "validation_errors": 0,
+    "validation_warnings": 92,
+    "avg_completeness": 0.377,
+    "cards_with_structure": 0,
+    "structure_coverage": 0.0,
+    "cards_with_summaries": 314,
+    "summary_coverage": 0.8870056497175142
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:23:18Z",
+  "stage": "structure_detect",
+  "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+  "metrics": {
+    "total_pages": 293,
+    "chapters_detected": 1,
+    "sections_detected": 2,
+    "pages_with_structure": 285,
+    "structure_coverage": 0.9726962457337884,
+    "avg_chapter_length": 293.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

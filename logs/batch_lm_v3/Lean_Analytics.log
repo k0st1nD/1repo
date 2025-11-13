@@ -1,0 +1,459 @@
+[WARN] OCR not available
+2025-11-05 15:32:47,119 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-05 15:32:47,119 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-05 15:32:47,119 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-05 15:32:47,130 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-05 15:32:47,135 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:32:47,150 - am_common - INFO - Config loaded successfully
+2025-11-05 15:32:47,150 - quality_tracker - INFO - Quality tracker initialized: c:\scripts\1repo\data\quality
+2025-11-05 15:32:47,150 - __main__ - INFO - ============================================================
+2025-11-05 15:32:47,151 - __main__ - INFO -   🚀 archivist magika 2.0.0
+2025-11-05 15:32:47,151 - __main__ - INFO - ============================================================
+2025-11-05 15:32:47,151 - __main__ - INFO - Quality check: enabled
+2025-11-05 15:32:47,151 - __main__ - INFO - Validation: enabled
+2025-11-05 15:32:47,151 - __main__ - INFO - Dry run: no
+2025-11-05 15:32:47,151 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-05 15:32:47,151 - __main__ - INFO - Processing: Lean_Analytics.pdf
+2025-11-05 15:32:47,151 - __main__ - INFO - Pipeline: structural → embed
+2025-11-05 15:32:47,151 - __main__ - INFO - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-11-05 15:32:47,151 - __main__ - INFO - ============================================================
+2025-11-05 15:32:47,151 - __main__ - INFO -   📄 Starting: STRUCTURAL
+2025-11-05 15:32:47,151 - __main__ - INFO - ============================================================
+2025-11-05 15:32:47,151 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:32:47,165 - am_common - INFO - Config loaded successfully
+2025-11-05 15:32:47,165 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-05 15:32:47,165 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-05 15:32:47,165 - am_structural_robust - INFO - Processing: Lean_Analytics.pdf
+2025-11-05 15:32:47,298 - am_structural_robust - INFO - PDF: Lean_Analytics
+2025-11-05 15:32:47,415 - am_structural_robust - INFO - Total pages: 439
+2025-11-05 15:32:47,692 - am_structural_robust - ERROR - [X] Page 0: All extractors failed
+2025-11-05 15:32:48,255 - am_structural_robust - ERROR - [X] Page 1: All extractors failed
+2025-11-05 15:32:51,161 - am_structural_robust - ERROR - [X] Page 9: All extractors failed
+2025-11-05 15:32:52,673 - am_structural_robust - ERROR - [X] Page 13: All extractors failed
+2025-11-05 15:32:54,096 - am_structural_robust - ERROR - [X] Page 17: All extractors failed
+2025-11-05 15:32:57,474 - am_structural_robust - ERROR - [X] Page 27: All extractors failed
+2025-11-05 15:33:05,413 - am_structural_robust - INFO -   Processed 50/439 pages
+2025-11-05 15:33:07,431 - am_structural_robust - ERROR - [X] Page 55: All extractors failed
+2025-11-05 15:33:11,304 - am_structural_robust - ERROR - [X] Page 67: All extractors failed
+2025-11-05 15:33:12,138 - am_structural_robust - ERROR - [X] Page 69: All extractors failed
+2025-11-05 15:33:21,732 - am_structural_robust - INFO -   Processed 100/439 pages
+2025-11-05 15:33:30,383 - am_structural_robust - ERROR - [X] Page 127: All extractors failed
+2025-11-05 15:33:33,771 - am_structural_robust - ERROR - [X] Page 137: All extractors failed
+2025-11-05 15:33:37,649 - am_structural_robust - ERROR - [X] Page 149: All extractors failed
+2025-11-05 15:33:37,768 - am_structural_robust - INFO -   Processed 150/439 pages
+2025-11-05 15:33:41,712 - am_structural_robust - ERROR - [X] Page 161: All extractors failed
+2025-11-05 15:33:48,931 - am_structural_robust - ERROR - [X] Page 183: All extractors failed
+2025-11-05 15:33:54,407 - am_structural_robust - INFO -   Processed 200/439 pages
+2025-11-05 15:34:10,466 - am_structural_robust - INFO -   Processed 250/439 pages
+2025-11-05 15:34:11,236 - am_structural_robust - ERROR - [X] Page 251: All extractors failed
+2025-11-05 15:34:24,647 - am_structural_robust - ERROR - [X] Page 289: All extractors failed
+2025-11-05 15:34:27,224 - am_structural_robust - ERROR - [X] Page 295: All extractors failed
+2025-11-05 15:34:28,055 - am_structural_robust - ERROR - [X] Page 297: All extractors failed
+2025-11-05 15:34:28,731 - am_structural_robust - INFO -   Processed 300/439 pages
+2025-11-05 15:34:34,585 - am_structural_robust - ERROR - [X] Page 317: All extractors failed
+2025-11-05 15:34:45,314 - am_structural_robust - INFO -   Processed 350/439 pages
+2025-11-05 15:34:50,804 - am_structural_robust - ERROR - [X] Page 365: All extractors failed
+2025-11-05 15:34:53,105 - am_structural_robust - ERROR - [X] Page 371: All extractors failed
+2025-11-05 15:34:54,619 - am_structural_robust - ERROR - [X] Page 375: All extractors failed
+2025-11-05 15:34:55,329 - am_structural_robust - ERROR - [X] Page 377: All extractors failed
+2025-11-05 15:35:03,045 - am_structural_robust - INFO -   Processed 400/439 pages
+2025-11-05 15:35:07,490 - am_structural_robust - ERROR - [X] Page 413: All extractors failed
+2025-11-05 15:35:09,454 - am_structural_robust - ERROR - [X] Page 419: All extractors failed
+2025-11-05 15:35:14,679 - am_structural_robust - ERROR - [X] Page 435: All extractors failed
+2025-11-05 15:35:15,770 - am_structural_robust - ERROR - [X] Page 438: All extractors failed
+2025-11-05 15:35:15,884 - am_structural_robust - INFO - Extraction complete: 439 success, 0 failed
+2025-11-05 15:35:15,884 - am_structural_robust - INFO -   Methods used: {'pdfminer': 412}
+2025-11-05 15:35:15,884 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-05 15:35:15,884 - am_structural_robust - INFO -   Tables found: 55
+2025-11-05 15:35:15,896 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structural\lean_analytics.dataset.jsonl (439 cards)
+2025-11-05 15:35:15,903 - am_common - INFO - Saved: 439 cards to lean_analytics.dataset.jsonl (922.28 KB)
+2025-11-05 15:35:15,903 - am_structural_robust - INFO - Dataset saved: 922.28 KB
+2025-11-05 15:35:15,903 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:35:15,904 - quality_tracker - INFO - structural metrics:
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   total_pages: 439
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   success_pages: 439
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   failed_pages: 0
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   empty_pages: 27
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   avg_page_length: 1756.6834
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 412}
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   ocr_used: 0
+2025-11-05 15:35:15,904 - quality_tracker - INFO -   tables_found: 55
+2025-11-05 15:35:15,904 - quality_tracker - INFO - ✓ Quality thresholds passed for structural
+2025-11-05 15:35:15,904 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:35:15,904 - am_structural_robust - INFO - [OK] Saved: lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,905 - validate - INFO - Validating structural: lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,905 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,922 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,924 - validate - INFO - [OK] VALID - lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,924 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,924 - __main__ - INFO -   📄 Completed: STRUCTURAL
+2025-11-05 15:35:15,924 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,924 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,924 - __main__ - INFO -   📖 Starting: STRUCTURE_DETECT
+2025-11-05 15:35:15,924 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,924 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:35:15,938 - am_common - INFO - Config loaded successfully
+2025-11-05 15:35:15,939 - am_structure_detect - INFO - Processing: lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,939 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,946 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,946 - am_structure_detect - INFO - TOC found: pages 15-16
+2025-11-05 15:35:15,948 - am_structure_detect - INFO - Detected 3 chapters
+2025-11-05 15:35:15,950 - am_structure_detect - INFO - Detected 0 sections
+2025-11-05 15:35:15,950 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structured\lean_analytics.dataset.jsonl (439 cards)
+2025-11-05 15:35:15,957 - am_common - INFO - Saved: 439 cards to lean_analytics.dataset.jsonl (969.08 KB)
+2025-11-05 15:35:15,957 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:35:15,958 - quality_tracker - INFO - structure_detect metrics:
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   total_pages: 439
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   chapters_detected: 3
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   sections_detected: 0
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   pages_with_structure: 326
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   structure_coverage: 0.7426
+2025-11-05 15:35:15,958 - quality_tracker - INFO -   avg_chapter_length: 146.3333
+2025-11-05 15:35:15,958 - quality_tracker - INFO - ✓ Quality thresholds passed for structure_detect
+2025-11-05 15:35:15,958 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:35:15,958 - am_structure_detect - INFO - Saved: lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,958 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-05 15:35:15,958 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 15:35:15,958 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,958 - __main__ - INFO -   📖 Completed: STRUCTURE_DETECT
+2025-11-05 15:35:15,958 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,958 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,958 - __main__ - INFO -   📝 Starting: SUMMARIZE
+2025-11-05 15:35:15,958 - __main__ - INFO - ============================================================
+2025-11-05 15:35:15,958 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:35:15,973 - am_common - INFO - Config loaded successfully
+2025-11-05 15:35:15,973 - am_summarize - INFO - Processing: lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,973 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structured\lean_analytics.dataset.jsonl
+2025-11-05 15:35:15,989 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:35:16,257 - am_summarize - INFO - Summarized 412 pages, skipped 27
+2025-11-05 15:35:16,257 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\summarized\lean_analytics.dataset.jsonl (439 cards)
+2025-11-05 15:35:16,267 - am_common - INFO - Saved: 439 cards to lean_analytics.dataset.jsonl (1.24 MB)
+2025-11-05 15:35:16,267 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:35:16,267 - quality_tracker - INFO - summarize metrics:
+2025-11-05 15:35:16,267 - quality_tracker - INFO -   total_pages: 439
+2025-11-05 15:35:16,267 - quality_tracker - INFO -   summarized_pages: 412
+2025-11-05 15:35:16,267 - quality_tracker - INFO -   skipped_pages: 27
+2025-11-05 15:35:16,267 - quality_tracker - INFO -   summary_coverage: 0.9385
+2025-11-05 15:35:16,268 - quality_tracker - INFO -   avg_l1_length: 202.0947
+2025-11-05 15:35:16,268 - quality_tracker - INFO -   avg_l2_length: 483.6092
+2025-11-05 15:35:16,268 - quality_tracker - INFO -   avg_compression_ratio: 10.4800
+2025-11-05 15:35:16,268 - quality_tracker - INFO - ✓ Quality thresholds passed for summarize
+2025-11-05 15:35:16,268 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:35:16,268 - am_summarize - INFO - Saved: lean_analytics.dataset.jsonl
+2025-11-05 15:35:16,268 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-05 15:35:16,268 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 15:35:16,268 - __main__ - INFO - ============================================================
+2025-11-05 15:35:16,268 - __main__ - INFO -   📝 Completed: SUMMARIZE
+2025-11-05 15:35:16,268 - __main__ - INFO - ============================================================
+2025-11-05 15:35:16,268 - __main__ - INFO - ============================================================
+2025-11-05 15:35:16,268 - __main__ - INFO -   🤖 Starting: EXTENDED
+2025-11-05 15:35:16,268 - __main__ - INFO - ============================================================
+2025-11-05 15:35:16,268 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:35:16,283 - am_common - INFO - Config loaded successfully
+2025-11-05 15:35:16,308 - am_extended - INFO - [LM EXTRACTION] Model 'qwen2.5:7b' confirmed available
+2025-11-05 15:35:16,308 - am_extended - INFO - [LM EXTRACTION] Ollama available, using model: qwen2.5:7b
+2025-11-05 15:35:16,309 - am_extended - INFO - Processing: lean_analytics.dataset.jsonl
+2025-11-05 15:35:16,309 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\summarized\lean_analytics.dataset.jsonl
+2025-11-05 15:35:16,326 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:35:16,337 - am_extended - INFO - Marked 0 duplicate pages
+2025-11-05 15:35:16,387 - am_extended - INFO - Found 116 continuity gaps
+2025-11-05 15:35:16,387 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-05 15:35:58,659 - am_extended - INFO -   Processed 20/439 pages
+2025-11-05 15:36:23,765 - am_extended - INFO -   Processed 30/439 pages
+2025-11-05 15:36:50,260 - am_extended - INFO -   Processed 40/439 pages
+2025-11-05 15:37:17,871 - am_extended - INFO -   Processed 50/439 pages
+2025-11-05 15:37:41,593 - am_extended - INFO -   Processed 60/439 pages
+2025-11-05 15:38:31,554 - am_extended - INFO -   Processed 80/439 pages
+2025-11-05 15:38:58,920 - am_extended - INFO -   Processed 90/439 pages
+2025-11-05 15:39:25,561 - am_extended - INFO -   Processed 100/439 pages
+2025-11-05 15:39:53,452 - am_extended - INFO -   Processed 110/439 pages
+2025-11-05 15:40:20,235 - am_extended - INFO -   Processed 120/439 pages
+2025-11-05 15:40:44,688 - am_extended - INFO -   Processed 130/439 pages
+2025-11-05 15:41:09,436 - am_extended - INFO -   Processed 140/439 pages
+2025-11-05 15:42:00,464 - am_extended - INFO -   Processed 160/439 pages
+2025-11-05 15:42:26,120 - am_extended - INFO -   Processed 170/439 pages
+2025-11-05 15:42:54,283 - am_extended - INFO -   Processed 180/439 pages
+2025-11-05 15:43:16,516 - am_extended - INFO -   Processed 190/439 pages
+2025-11-05 15:43:42,958 - am_extended - INFO -   Processed 200/439 pages
+2025-11-05 15:44:08,701 - am_extended - INFO -   Processed 210/439 pages
+2025-11-05 15:44:35,123 - am_extended - INFO -   Processed 220/439 pages
+2025-11-05 15:45:03,083 - am_extended - INFO -   Processed 230/439 pages
+2025-11-05 15:45:30,141 - am_extended - INFO -   Processed 240/439 pages
+2025-11-05 15:45:56,860 - am_extended - INFO -   Processed 250/439 pages
+2025-11-05 15:46:21,119 - am_extended - INFO -   Processed 260/439 pages
+2025-11-05 15:46:49,707 - am_extended - INFO -   Processed 270/439 pages
+2025-11-05 15:47:17,830 - am_extended - INFO -   Processed 280/439 pages
+2025-11-05 15:48:03,790 - am_extended - WARNING - Failed to parse LM response
+2025-11-05 15:48:11,457 - am_extended - INFO -   Processed 300/439 pages
+2025-11-05 15:48:39,560 - am_extended - INFO -   Processed 310/439 pages
+2025-11-05 15:49:04,757 - am_extended - INFO -   Processed 320/439 pages
+2025-11-05 15:49:33,444 - am_extended - INFO -   Processed 330/439 pages
+2025-11-05 15:50:00,736 - am_extended - INFO -   Processed 340/439 pages
+2025-11-05 15:50:28,477 - am_extended - INFO -   Processed 350/439 pages
+2025-11-05 15:50:56,174 - am_extended - INFO -   Processed 360/439 pages
+2025-11-05 15:51:21,822 - am_extended - INFO -   Processed 370/439 pages
+2025-11-05 15:51:40,680 - am_extended - INFO -   Processed 380/439 pages
+2025-11-05 15:52:08,516 - am_extended - INFO -   Processed 390/439 pages
+2025-11-05 15:52:37,335 - am_extended - INFO -   Processed 400/439 pages
+2025-11-05 15:53:05,091 - am_extended - INFO -   Processed 410/439 pages
+2025-11-05 15:54:06,326 - am_extended - INFO -   Processed 430/439 pages
+2025-11-05 15:54:29,142 - am_extended - INFO - Extracted extended fields for 412 pages
+2025-11-05 15:54:29,142 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\extended\lean_analytics.dataset.jsonl (439 cards)
+2025-11-05 15:54:29,160 - am_common - INFO - Saved: 439 cards to lean_analytics.dataset.jsonl (1.75 MB)
+2025-11-05 15:54:29,160 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:54:29,161 - quality_tracker - INFO - extended metrics:
+2025-11-05 15:54:29,161 - quality_tracker - INFO -   total_cards: 439
+2025-11-05 15:54:29,161 - quality_tracker - INFO -   duplicates_found: 0
+2025-11-05 15:54:29,161 - quality_tracker - INFO -   duplicate_ratio: 0.0000
+2025-11-05 15:54:29,161 - quality_tracker - INFO -   continuity_gaps: 116
+2025-11-05 15:54:29,161 - quality_tracker - INFO -   continuity_gap_ratio: 0.2648
+2025-11-05 15:54:29,162 - quality_tracker - INFO -   avg_overlap: 0.1200
+2025-11-05 15:54:29,162 - quality_tracker - INFO -   extended_fields_extracted: 412
+2025-11-05 15:54:29,162 - quality_tracker - INFO -   extraction_coverage: 0.9385
+2025-11-05 15:54:29,162 - quality_tracker - INFO -   lm_extraction_count: 411
+2025-11-05 15:54:29,162 - quality_tracker - INFO -   lm_extraction_ratio: 0.9976
+2025-11-05 15:54:29,162 - quality_tracker - INFO - ✓ Quality thresholds passed for extended
+2025-11-05 15:54:29,162 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:54:29,162 - am_extended - INFO - Saved: lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,163 - validate - INFO - Validating extended: lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,163 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,188 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,189 - validate - WARNING - [X] INVALID - lean_analytics.dataset.jsonl (2 errors)
+2025-11-05 15:54:29,189 - __main__ - WARNING - Validation issues: 2 errors, 1 warnings
+2025-11-05 15:54:29,189 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-05 15:54:29,189 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,189 - __main__ - INFO -   🤖 Completed: EXTENDED
+2025-11-05 15:54:29,189 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,189 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,189 - __main__ - INFO -   ✅ Starting: FINALIZE
+2025-11-05 15:54:29,190 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,190 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:54:29,205 - am_common - INFO - Config loaded successfully
+2025-11-05 15:54:29,206 - am_finalize - INFO - Processing: lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,206 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,221 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,223 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\final\lean_analytics.dataset.jsonl (439 cards)
+2025-11-05 15:54:29,237 - am_common - INFO - Saved: 439 cards to lean_analytics.dataset.jsonl (1.72 MB)
+2025-11-05 15:54:29,238 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:54:29,238 - quality_tracker - INFO - finalize metrics:
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   total_cards: 439
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   validation_errors: 0
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   validation_warnings: 110
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   avg_completeness: 0.5450
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   cards_with_structure: 326
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   structure_coverage: 0.7426
+2025-11-05 15:54:29,238 - quality_tracker - INFO -   cards_with_summaries: 412
+2025-11-05 15:54:29,239 - quality_tracker - INFO -   summary_coverage: 0.9385
+2025-11-05 15:54:29,239 - quality_tracker - INFO - ✓ Quality thresholds passed for finalize
+2025-11-05 15:54:29,239 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:54:29,239 - am_finalize - INFO - Saved: lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,240 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-05 15:54:29,240 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 15:54:29,240 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,240 - __main__ - INFO -   ✅ Completed: FINALIZE
+2025-11-05 15:54:29,240 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,240 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,240 - __main__ - INFO -   🧩 Starting: CHUNK
+2025-11-05 15:54:29,240 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,240 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:54:29,256 - am_common - INFO - Config loaded successfully
+2025-11-05 15:54:29,342 - am_chunk - INFO - Processing: lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,342 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\final\lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,367 - am_common - INFO - Loaded: 439 cards from lean_analytics.dataset.jsonl
+2025-11-05 15:54:29,604 - am_chunk - INFO - Created 550 chunks from 439 pages
+2025-11-05 15:54:29,621 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:54:29,622 - quality_tracker - INFO - chunk metrics:
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   total_chunks: 550
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   chunks_per_page: 1.2528
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   avg_chunk_tokens: 364.6873
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   min_chunk_tokens: 107
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   max_chunk_tokens: 833
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 191, '300-512': 344, '512+': 15}
+2025-11-05 15:54:29,622 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-05 15:54:29,622 - quality_tracker - INFO - ✓ Quality thresholds passed for chunk
+2025-11-05 15:54:29,623 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:54:29,623 - am_chunk - INFO - Saved: lean_analytics.dataset.chunks.jsonl
+2025-11-05 15:54:29,624 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-05 15:54:29,625 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 15:54:29,625 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,625 - __main__ - INFO -   🧩 Completed: CHUNK
+2025-11-05 15:54:29,625 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,625 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,625 - __main__ - INFO -   🔢 Starting: EMBED
+2025-11-05 15:54:29,625 - __main__ - INFO - ============================================================
+2025-11-05 15:54:29,625 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 15:54:29,643 - am_common - INFO - Config loaded successfully
+2025-11-05 15:54:29,643 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-05 15:54:29,644 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-05 15:54:29,644 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-05 15:54:44,693 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-05 15:54:44,693 - am_embed - INFO - Processing: lean_analytics.dataset.chunks.jsonl
+2025-11-05 15:54:44,714 - am_embed - INFO - Loaded 550 chunks
+2025-11-05 15:54:44,714 - am_embed - INFO - Encoding 550 chunks in 18 batches
+2025-11-05 15:54:47,943 - am_embed - INFO - Processed batch 10/18
+2025-11-05 15:54:50,259 - am_embed - INFO - Encoded 550 embeddings, 0 failures
+2025-11-05 15:54:50,259 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-05 15:54:50,259 - am_embed - INFO - Vectors: 550, Dimension: 384
+2025-11-05 15:54:50,260 - am_embed - INFO - FAISS index built: 550 vectors
+2025-11-05 15:54:50,261 - am_embed - INFO - Saved FAISS index: lean_analytics.dataset.faiss (825.04 KB)
+2025-11-05 15:54:50,265 - am_embed - INFO - Saved metadata: lean_analytics.dataset.pkl (965.22 KB)
+2025-11-05 15:54:50,266 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 15:54:50,266 - quality_tracker - INFO - embed metrics:
+2025-11-05 15:54:50,266 - quality_tracker - INFO -   total_vectors: 550
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-05 15:54:50,267 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-05 15:54:50,267 - quality_tracker - INFO - ✓ Quality thresholds passed for embed
+2025-11-05 15:54:50,267 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 15:54:50,267 - am_embed - INFO - Saved: lean_analytics.dataset.faiss, lean_analytics.dataset.pkl
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO -   🔢 Completed: EMBED
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO - Pipeline status: completed
+2025-11-05 15:54:50,268 - __main__ - INFO - Completed: run_single_pipeline (1323.12s)
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO -   📊 FINAL REPORTS
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO -   Performance Summary
+2025-11-05 15:54:50,268 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,268 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-05 15:54:50,268 - __main__ - INFO -   Count: 1
+2025-11-05 15:54:50,268 - __main__ - INFO -   Total: 1323.12s
+2025-11-05 15:54:50,268 - __main__ - INFO -   Avg: 1323.12s
+2025-11-05 15:54:50,268 - __main__ - INFO -   Min: 1323.12s
+2025-11-05 15:54:50,268 - __main__ - INFO -   Max: 1323.12s
+2025-11-05 15:54:50,268 - __main__ - INFO - 
+track_quality:
+2025-11-05 15:54:50,268 - __main__ - INFO -   Count: 7
+2025-11-05 15:54:50,268 - __main__ - INFO -   Total: 0.01s
+2025-11-05 15:54:50,269 - __main__ - INFO -   Avg: 0.00s
+2025-11-05 15:54:50,269 - __main__ - INFO -   Min: 0.00s
+2025-11-05 15:54:50,269 - __main__ - INFO -   Max: 0.00s
+2025-11-05 15:54:50,269 - __main__ - INFO - No errors or warnings recorded
+2025-11-05 15:54:50,269 - __main__ - INFO - 
+2025-11-05 15:54:50,269 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-05 15:54:50,270 - quality_tracker - INFO - Quality report saved: c:\scripts\1repo\data\quality\quality_report_20251105_155450.json
+2025-11-05 15:54:50,271 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-05 15:54:50,271 - quality_tracker - INFO - ============================================================
+2025-11-05 15:54:50,271 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-05 15:54:50,271 - quality_tracker - INFO - ============================================================
+2025-11-05 15:54:50,271 - quality_tracker - INFO - Generated: 2025-11-05T12:54:50Z
+2025-11-05 15:54:50,271 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-05 15:54:50,271 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,271 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-05 15:54:50,271 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,271 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,271 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,271 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,272 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,272 - quality_tracker - INFO - 
+2025-11-05 15:54:50,272 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-05 15:54:50,272 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,272 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,272 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,272 - quality_tracker - INFO - 
+2025-11-05 15:54:50,272 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-05 15:54:50,272 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,272 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,272 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,272 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,273 - quality_tracker - INFO - 
+2025-11-05 15:54:50,273 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-05 15:54:50,273 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,273 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,273 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,273 - quality_tracker - INFO - 
+2025-11-05 15:54:50,273 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-05 15:54:50,273 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,273 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,273 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,273 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,274 - quality_tracker - INFO - 
+2025-11-05 15:54:50,274 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-05 15:54:50,274 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,274 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,274 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,274 - quality_tracker - INFO - 
+2025-11-05 15:54:50,274 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   Stage: EMBED
+2025-11-05 15:54:50,274 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,274 - quality_tracker - INFO - Summary:
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 15:54:50,274 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 15:54:50,274 - quality_tracker - INFO - 
+2025-11-05 15:54:50,274 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,274 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-05 15:54:50,275 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 15:54:50,275 - quality_tracker - INFO - track_quality:
+2025-11-05 15:54:50,275 - quality_tracker - INFO -   Count: 7, Avg: 0.00s
+2025-11-05 15:54:50,275 - quality_tracker - INFO - run_single_pipeline:
+2025-11-05 15:54:50,275 - quality_tracker - INFO -   Count: 1, Avg: 1323.12s
+2025-11-05 15:54:50,275 - __main__ - INFO - 
+2025-11-05 15:54:50,275 - validate - INFO - ============================================================
+2025-11-05 15:54:50,275 - validate - INFO -   Validation Summary
+2025-11-05 15:54:50,275 - validate - INFO - ============================================================
+2025-11-05 15:54:50,275 - validate - INFO - Overall Results:
+2025-11-05 15:54:50,275 - validate - INFO -   total_datasets: 2
+2025-11-05 15:54:50,275 - validate - INFO -   valid_datasets: 1
+2025-11-05 15:54:50,275 - validate - INFO -   invalid_datasets: 1
+2025-11-05 15:54:50,275 - validate - INFO -   total_errors: 2
+2025-11-05 15:54:50,275 - validate - INFO -   total_warnings: 31
+2025-11-05 15:54:50,275 - validate - INFO -   success_rate: 0.5000
+2025-11-05 15:54:50,275 - validate - INFO -   timestamp: 2025-11-05T12:54:50.275302
+2025-11-05 15:54:50,275 - validate - INFO - 
+Per-dataset results:
+2025-11-05 15:54:50,275 - validate - INFO -   ✅ VALID - lean_analytics.dataset.jsonl (errors: 0, warnings: 30)
+2025-11-05 15:54:50,275 - validate - INFO -   ❌ INVALID - lean_analytics.dataset.jsonl (errors: 2, warnings: 1)
+2025-11-05 15:54:50,275 - __main__ - INFO - ============================================================
+2025-11-05 15:54:50,275 - __main__ - INFO -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-11-05 15:54:50,276 - __main__ - INFO - ============================================================

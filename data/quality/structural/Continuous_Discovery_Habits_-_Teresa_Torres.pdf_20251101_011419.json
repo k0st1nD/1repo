@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-31T22:14:19Z",
+  "stage": "structural",
+  "source": "Continuous_Discovery_Habits_-_Teresa_Torres.pdf",
+  "metrics": {
+    "total_pages": 201,
+    "success_pages": 201,
+    "failed_pages": 0,
+    "success_ratio": 1.0,
+    "empty_pages": 8,
+    "avg_page_length": 1858.7363184079602,
+    "extraction_methods": {
+      "pypdf2": 3,
+      "pdfminer": 194
+    },
+    "ocr_used": 0,
+    "tables_found": 0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_success_ratio",
+      "Missing metric: max_empty_ratio",
+      "Missing metric: min_avg_page_length",
+      "Missing metric: max_error_ratio",
+      "Missing metric: max_ocr_ratio"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T11:44:19Z",
+  "stage": "summarize",
+  "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+  "metrics": {
+    "total_pages": 199,
+    "summarized_pages": 185,
+    "skipped_pages": 14,
+    "summary_coverage": 0.9296482412060302,
+    "avg_l1_length": 206.66486486486485,
+    "avg_l2_length": 481.36756756756756,
+    "avg_compression_ratio": 10.08
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-10-31T22:22:17Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "empty_pages": {
+          "min": 13,
+          "max": 13,
+          "avg": 13.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1293.1877133105802,
+          "max": 1293.1877133105802,
+          "avg": 1293.1877133105802,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 6,
+          "max": 6,
+          "avg": 6.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf",
+          "timestamp": "2025-10-31T22:22:03Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "sections_detected": {
+          "min": 2,
+          "max": 2,
+          "avg": 2.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 1,
+          "max": 1,
+          "avg": 1.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9726962457337884,
+          "max": 0.9726962457337884,
+          "avg": 0.9726962457337884,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 293.0,
+          "max": 293.0,
+          "avg": 293.0,
+          "count": 1
+        },
+        "pages_with_structure": {
+          "min": 285,
+          "max": 285,
+          "avg": 285.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+          "timestamp": "2025-10-31T22:22:03Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_l1_length": {
+          "min": 152.0857142857143,
+          "max": 152.0857142857143,
+          "avg": 152.0857142857143,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 280,
+          "max": 280,
+          "avg": 280.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9556313993174061,
+          "max": 0.9556313993174061,
+          "avg": 0.9556313993174061,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 324.8357142857143,
+          "max": 324.8357142857143,
+          "avg": 324.8357142857143,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 9.46,
+          "max": 9.46,
+          "avg": 9.46,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 13,
+          "max": 13,
+          "avg": 13.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+          "timestamp": "2025-10-31T22:22:04Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_cards": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 278,
+          "max": 278,
+          "avg": 278.0,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.105,
+          "max": 0.105,
+          "avg": 0.105,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.9488054607508533,
+          "max": 0.9488054607508533,
+          "avg": 0.9488054607508533,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.4280821917808219,
+          "max": 0.4280821917808219,
+          "avg": 0.4280821917808219,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 125,
+          "max": 125,
+          "avg": 125.0,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+          "timestamp": "2025-10-31T22:22:11Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_cards": {
+          "min": 293,
+          "max": 293,
+          "avg": 293.0,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 285,
+          "max": 285,
+          "avg": 285.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9556313993174061,
+          "max": 0.9556313993174061,
+          "avg": 0.9556313993174061,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 280,
+          "max": 280,
+          "avg": 280.0,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 48,
+          "max": 48,
+          "avg": 48.0,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.78,
+          "max": 0.78,
+          "avg": 0.78,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9726962457337884,
+          "max": 0.9726962457337884,
+          "avg": 0.9726962457337884,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+          "timestamp": "2025-10-31T22:22:11Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "min_chunk_tokens": {
+          "min": 100,
+          "max": 100,
+          "avg": 100.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 511,
+          "max": 511,
+          "avg": 511.0,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 0.9249146757679181,
+          "max": 0.9249146757679181,
+          "avg": 0.9249146757679181,
+          "count": 1
+        },
+        "avg_chunk_tokens": {
+          "min": 310.479704797048,
+          "max": 310.479704797048,
+          "avg": 310.479704797048,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 271,
+          "max": 271,
+          "avg": 271.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+          "timestamp": "2025-10-31T22:22:11Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "min_norm": {
+          "min": 0.9999999403953552,
+          "max": 0.9999999403953552,
+          "avg": 0.9999999403953552,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 271,
+          "max": 271,
+          "avg": 271.0,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.chunks.jsonl",
+          "timestamp": "2025-10-31T22:22:17Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.013388395309448242,
+      "avg": 0.0019126279013497488,
+      "min": 0.0017266273498535156,
+      "max": 0.002130746841430664
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 79.13698601722717,
+      "avg": 79.13698601722717,
+      "min": 79.13698601722717,
+      "max": 79.13698601722717
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-05T12:23:56Z",
+  "stage": "chunk",
+  "source": "good-strategy-bad-strategy.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 352,
+    "chunks_per_page": 0.9971671388101983,
+    "avg_chunk_tokens": 399.88352272727275,
+    "min_chunk_tokens": 104,
+    "max_chunk_tokens": 512,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 65,
+      "300-512": 287,
+      "512+": 0
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

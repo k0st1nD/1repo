@@ -1,0 +1,411 @@
+[WARN] OCR not available
+2025-11-05 16:19:00,183 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-05 16:19:00,183 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-05 16:19:00,183 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-05 16:19:00,194 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-05 16:19:00,199 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:19:00,213 - am_common - INFO - Config loaded successfully
+2025-11-05 16:19:00,214 - quality_tracker - INFO - Quality tracker initialized: c:\scripts\1repo\data\quality
+2025-11-05 16:19:00,214 - __main__ - INFO - ============================================================
+2025-11-05 16:19:00,214 - __main__ - INFO -   🚀 archivist magika 2.0.0
+2025-11-05 16:19:00,214 - __main__ - INFO - ============================================================
+2025-11-05 16:19:00,214 - __main__ - INFO - Quality check: enabled
+2025-11-05 16:19:00,214 - __main__ - INFO - Validation: enabled
+2025-11-05 16:19:00,214 - __main__ - INFO - Dry run: no
+2025-11-05 16:19:00,214 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-05 16:19:00,214 - __main__ - INFO - Processing: norton_kaplan_balanced_scorecard.pdf
+2025-11-05 16:19:00,214 - __main__ - INFO - Pipeline: structural → embed
+2025-11-05 16:19:00,214 - __main__ - INFO - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-11-05 16:19:00,215 - __main__ - INFO - ============================================================
+2025-11-05 16:19:00,215 - __main__ - INFO -   📄 Starting: STRUCTURAL
+2025-11-05 16:19:00,215 - __main__ - INFO - ============================================================
+2025-11-05 16:19:00,215 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:19:00,228 - am_common - INFO - Config loaded successfully
+2025-11-05 16:19:00,229 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-05 16:19:00,229 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-05 16:19:00,229 - am_structural_robust - INFO - Processing: norton_kaplan_balanced_scorecard.pdf
+2025-11-05 16:19:00,285 - am_structural_robust - INFO - PDF: Нортон, Каплан - Система сбалансированных показателей.doc
+2025-11-05 16:19:00,325 - am_structural_robust - INFO - Total pages: 214
+2025-11-05 16:19:12,978 - am_structural_robust - INFO -   Processed 50/214 pages
+2025-11-05 16:19:24,895 - am_structural_robust - INFO -   Processed 100/214 pages
+2025-11-05 16:19:36,137 - am_structural_robust - INFO -   Processed 150/214 pages
+2025-11-05 16:19:46,350 - am_structural_robust - INFO -   Processed 200/214 pages
+2025-11-05 16:19:49,373 - am_structural_robust - INFO - Extraction complete: 214 success, 0 failed
+2025-11-05 16:19:49,373 - am_structural_robust - INFO -   Methods used: {'pdfminer': 214}
+2025-11-05 16:19:49,373 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-05 16:19:49,373 - am_structural_robust - INFO -   Tables found: 10
+2025-11-05 16:19:49,376 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structural\norton_kaplan_balanced_scorecard.dataset.jsonl (214 cards)
+2025-11-05 16:19:49,382 - am_common - INFO - Saved: 214 cards to norton_kaplan_balanced_scorecard.dataset.jsonl (1.13 MB)
+2025-11-05 16:19:49,383 - am_structural_robust - INFO - Dataset saved: 1.13 MB
+2025-11-05 16:19:49,383 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:19:49,383 - quality_tracker - INFO - structural metrics:
+2025-11-05 16:19:49,383 - quality_tracker - INFO -   total_pages: 214
+2025-11-05 16:19:49,383 - quality_tracker - INFO -   success_pages: 214
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   failed_pages: 0
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   empty_pages: 3
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   avg_page_length: 2878.3645
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 214}
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   ocr_used: 0
+2025-11-05 16:19:49,384 - quality_tracker - INFO -   tables_found: 10
+2025-11-05 16:19:49,384 - quality_tracker - INFO - ✓ Quality thresholds passed for structural
+2025-11-05 16:19:49,384 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:19:49,384 - am_structural_robust - INFO - [OK] Saved: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,384 - validate - INFO - Validating structural: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,384 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,398 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,399 - validate - INFO - [OK] VALID - norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,400 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,400 - __main__ - INFO -   📄 Completed: STRUCTURAL
+2025-11-05 16:19:49,400 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,400 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,400 - __main__ - INFO -   📖 Starting: STRUCTURE_DETECT
+2025-11-05 16:19:49,400 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,400 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:19:49,414 - am_common - INFO - Config loaded successfully
+2025-11-05 16:19:49,415 - am_structure_detect - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,415 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,421 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,422 - am_structure_detect - INFO - TOC found: pages 2-6
+2025-11-05 16:19:49,423 - am_structure_detect - INFO - Detected 12 chapters
+2025-11-05 16:19:49,424 - am_structure_detect - INFO - Detected 0 sections
+2025-11-05 16:19:49,425 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structured\norton_kaplan_balanced_scorecard.dataset.jsonl (214 cards)
+2025-11-05 16:19:49,431 - am_common - INFO - Saved: 214 cards to norton_kaplan_balanced_scorecard.dataset.jsonl (1.17 MB)
+2025-11-05 16:19:49,431 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:19:49,432 - quality_tracker - INFO - structure_detect metrics:
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   total_pages: 214
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   chapters_detected: 12
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   sections_detected: 0
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   pages_with_structure: 202
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   structure_coverage: 0.9439
+2025-11-05 16:19:49,432 - quality_tracker - INFO -   avg_chapter_length: 17.8333
+2025-11-05 16:19:49,432 - quality_tracker - INFO - ✓ Quality thresholds passed for structure_detect
+2025-11-05 16:19:49,432 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:19:49,432 - am_structure_detect - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,432 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-05 16:19:49,432 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 16:19:49,432 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,432 - __main__ - INFO -   📖 Completed: STRUCTURE_DETECT
+2025-11-05 16:19:49,432 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,432 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,433 - __main__ - INFO -   📝 Starting: SUMMARIZE
+2025-11-05 16:19:49,433 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,433 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:19:49,447 - am_common - INFO - Config loaded successfully
+2025-11-05 16:19:49,447 - am_summarize - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,447 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structured\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,461 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,573 - am_summarize - INFO - Summarized 211 pages, skipped 3
+2025-11-05 16:19:49,573 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\summarized\norton_kaplan_balanced_scorecard.dataset.jsonl (214 cards)
+2025-11-05 16:19:49,581 - am_common - INFO - Saved: 214 cards to norton_kaplan_balanced_scorecard.dataset.jsonl (1.41 MB)
+2025-11-05 16:19:49,581 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:19:49,582 - quality_tracker - INFO - summarize metrics:
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   total_pages: 214
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   summarized_pages: 211
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   skipped_pages: 3
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   summary_coverage: 0.9860
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   avg_l1_length: 224.3024
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   avg_l2_length: 461.4927
+2025-11-05 16:19:49,582 - quality_tracker - INFO -   avg_compression_ratio: 16.3500
+2025-11-05 16:19:49,582 - quality_tracker - INFO - ✓ Quality thresholds passed for summarize
+2025-11-05 16:19:49,582 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:19:49,582 - am_summarize - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,582 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-05 16:19:49,582 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 16:19:49,582 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,583 - __main__ - INFO -   📝 Completed: SUMMARIZE
+2025-11-05 16:19:49,583 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,583 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,583 - __main__ - INFO -   🤖 Starting: EXTENDED
+2025-11-05 16:19:49,583 - __main__ - INFO - ============================================================
+2025-11-05 16:19:49,583 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:19:49,597 - am_common - INFO - Config loaded successfully
+2025-11-05 16:19:49,624 - am_extended - INFO - [LM EXTRACTION] Model 'qwen2.5:7b' confirmed available
+2025-11-05 16:19:49,624 - am_extended - INFO - [LM EXTRACTION] Ollama available, using model: qwen2.5:7b
+2025-11-05 16:19:49,624 - am_extended - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,624 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\summarized\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,640 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:19:49,648 - am_extended - INFO - Marked 0 duplicate pages
+2025-11-05 16:19:49,663 - am_extended - INFO - Found 177 continuity gaps
+2025-11-05 16:19:49,663 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-05 16:20:17,271 - am_extended - INFO -   Processed 10/214 pages
+2025-11-05 16:20:49,134 - am_extended - INFO -   Processed 20/214 pages
+2025-11-05 16:21:21,348 - am_extended - INFO -   Processed 30/214 pages
+2025-11-05 16:21:52,624 - am_extended - INFO -   Processed 40/214 pages
+2025-11-05 16:22:25,081 - am_extended - INFO -   Processed 50/214 pages
+2025-11-05 16:22:56,353 - am_extended - INFO -   Processed 60/214 pages
+2025-11-05 16:23:27,218 - am_extended - INFO -   Processed 70/214 pages
+2025-11-05 16:23:57,207 - am_extended - INFO -   Processed 80/214 pages
+2025-11-05 16:24:27,272 - am_extended - INFO -   Processed 90/214 pages
+2025-11-05 16:24:56,515 - am_extended - INFO -   Processed 100/214 pages
+2025-11-05 16:25:25,616 - am_extended - INFO -   Processed 110/214 pages
+2025-11-05 16:26:01,516 - am_extended - INFO -   Processed 120/214 pages
+2025-11-05 16:26:30,797 - am_extended - INFO -   Processed 130/214 pages
+2025-11-05 16:26:52,276 - am_extended - INFO -   Processed 140/214 pages
+2025-11-05 16:27:19,847 - am_extended - INFO -   Processed 150/214 pages
+2025-11-05 16:27:45,765 - am_extended - INFO -   Processed 160/214 pages
+2025-11-05 16:28:31,330 - am_extended - INFO -   Processed 180/214 pages
+2025-11-05 16:29:27,693 - am_extended - INFO -   Processed 200/214 pages
+2025-11-05 16:29:55,609 - am_extended - INFO -   Processed 210/214 pages
+2025-11-05 16:30:06,943 - am_extended - INFO - Extracted extended fields for 202 pages
+2025-11-05 16:30:06,943 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\extended\norton_kaplan_balanced_scorecard.dataset.jsonl (214 cards)
+2025-11-05 16:30:06,956 - am_common - INFO - Saved: 214 cards to norton_kaplan_balanced_scorecard.dataset.jsonl (1.64 MB)
+2025-11-05 16:30:06,957 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:30:06,957 - quality_tracker - INFO - extended metrics:
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   total_cards: 214
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   duplicates_found: 0
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   duplicate_ratio: 0.0000
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   continuity_gaps: 177
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   continuity_gap_ratio: 0.8310
+2025-11-05 16:30:06,957 - quality_tracker - INFO -   avg_overlap: 0.0520
+2025-11-05 16:30:06,958 - quality_tracker - INFO -   extended_fields_extracted: 202
+2025-11-05 16:30:06,958 - quality_tracker - INFO -   extraction_coverage: 0.9439
+2025-11-05 16:30:06,958 - quality_tracker - INFO -   lm_extraction_count: 202
+2025-11-05 16:30:06,958 - quality_tracker - INFO -   lm_extraction_ratio: 1.0000
+2025-11-05 16:30:06,958 - quality_tracker - INFO - ✓ Quality thresholds passed for extended
+2025-11-05 16:30:06,958 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:30:06,958 - am_extended - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:06,958 - validate - INFO - Validating extended: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:06,958 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:06,976 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:06,977 - validate - WARNING - [X] INVALID - norton_kaplan_balanced_scorecard.dataset.jsonl (2 errors)
+2025-11-05 16:30:06,977 - __main__ - WARNING - Validation issues: 2 errors, 0 warnings
+2025-11-05 16:30:06,977 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-05 16:30:06,977 - __main__ - INFO - ============================================================
+2025-11-05 16:30:06,977 - __main__ - INFO -   🤖 Completed: EXTENDED
+2025-11-05 16:30:06,977 - __main__ - INFO - ============================================================
+2025-11-05 16:30:06,977 - __main__ - INFO - ============================================================
+2025-11-05 16:30:06,977 - __main__ - INFO -   ✅ Starting: FINALIZE
+2025-11-05 16:30:06,977 - __main__ - INFO - ============================================================
+2025-11-05 16:30:06,977 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:30:06,992 - am_common - INFO - Config loaded successfully
+2025-11-05 16:30:06,992 - am_finalize - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:06,992 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,002 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,003 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\final\norton_kaplan_balanced_scorecard.dataset.jsonl (214 cards)
+2025-11-05 16:30:07,015 - am_common - INFO - Saved: 214 cards to norton_kaplan_balanced_scorecard.dataset.jsonl (1.62 MB)
+2025-11-05 16:30:07,015 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:30:07,016 - quality_tracker - INFO - finalize metrics:
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   total_cards: 214
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   validation_errors: 0
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   validation_warnings: 8
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   avg_completeness: 0.5840
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   cards_with_structure: 202
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   structure_coverage: 0.9439
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   cards_with_summaries: 205
+2025-11-05 16:30:07,016 - quality_tracker - INFO -   summary_coverage: 0.9579
+2025-11-05 16:30:07,016 - quality_tracker - INFO - ✓ Quality thresholds passed for finalize
+2025-11-05 16:30:07,016 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:30:07,016 - am_finalize - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,017 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-05 16:30:07,017 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 16:30:07,017 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,017 - __main__ - INFO -   ✅ Completed: FINALIZE
+2025-11-05 16:30:07,017 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,017 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,017 - __main__ - INFO -   🧩 Starting: CHUNK
+2025-11-05 16:30:07,017 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,017 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:30:07,033 - am_common - INFO - Config loaded successfully
+2025-11-05 16:30:07,112 - am_chunk - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,112 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\final\norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,130 - am_common - INFO - Loaded: 214 cards from norton_kaplan_balanced_scorecard.dataset.jsonl
+2025-11-05 16:30:07,386 - am_chunk - INFO - Created 1439 chunks from 214 pages
+2025-11-05 16:30:07,412 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:30:07,412 - quality_tracker - INFO - chunk metrics:
+2025-11-05 16:30:07,412 - quality_tracker - INFO -   total_chunks: 1439
+2025-11-05 16:30:07,412 - quality_tracker - INFO -   chunks_per_page: 6.7243
+2025-11-05 16:30:07,413 - quality_tracker - INFO -   avg_chunk_tokens: 413.0737
+2025-11-05 16:30:07,413 - quality_tracker - INFO -   min_chunk_tokens: 100
+2025-11-05 16:30:07,413 - quality_tracker - INFO -   max_chunk_tokens: 1382
+2025-11-05 16:30:07,413 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 181, '300-512': 1210, '512+': 48}
+2025-11-05 16:30:07,413 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-05 16:30:07,413 - quality_tracker - INFO - ✓ Quality thresholds passed for chunk
+2025-11-05 16:30:07,413 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:30:07,413 - am_chunk - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.chunks.jsonl
+2025-11-05 16:30:07,414 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-05 16:30:07,414 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 16:30:07,414 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,414 - __main__ - INFO -   🧩 Completed: CHUNK
+2025-11-05 16:30:07,414 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,414 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,414 - __main__ - INFO -   🔢 Starting: EMBED
+2025-11-05 16:30:07,414 - __main__ - INFO - ============================================================
+2025-11-05 16:30:07,414 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 16:30:07,430 - am_common - INFO - Config loaded successfully
+2025-11-05 16:30:07,430 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-05 16:30:07,431 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-05 16:30:07,431 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-05 16:30:22,412 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-05 16:30:22,412 - am_embed - INFO - Processing: norton_kaplan_balanced_scorecard.dataset.chunks.jsonl
+2025-11-05 16:30:22,446 - am_embed - INFO - Loaded 1439 chunks
+2025-11-05 16:30:22,446 - am_embed - INFO - Encoding 1439 chunks in 45 batches
+2025-11-05 16:30:25,561 - am_embed - INFO - Processed batch 10/45
+2025-11-05 16:30:28,627 - am_embed - INFO - Processed batch 20/45
+2025-11-05 16:30:31,680 - am_embed - INFO - Processed batch 30/45
+2025-11-05 16:30:34,766 - am_embed - INFO - Processed batch 40/45
+2025-11-05 16:30:36,270 - am_embed - INFO - Encoded 1439 embeddings, 0 failures
+2025-11-05 16:30:36,270 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-05 16:30:36,270 - am_embed - INFO - Vectors: 1439, Dimension: 384
+2025-11-05 16:30:36,271 - am_embed - INFO - FAISS index built: 1439 vectors
+2025-11-05 16:30:36,272 - am_embed - INFO - Saved FAISS index: norton_kaplan_balanced_scorecard.dataset.faiss (2.11 MB)
+2025-11-05 16:30:36,280 - am_embed - INFO - Saved metadata: norton_kaplan_balanced_scorecard.dataset.pkl (1.71 MB)
+2025-11-05 16:30:36,281 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 16:30:36,282 - quality_tracker - INFO - embed metrics:
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   total_vectors: 1439
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-05 16:30:36,282 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-05 16:30:36,282 - quality_tracker - INFO - ✓ Quality thresholds passed for embed
+2025-11-05 16:30:36,282 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 16:30:36,282 - am_embed - INFO - Saved: norton_kaplan_balanced_scorecard.dataset.faiss, norton_kaplan_balanced_scorecard.dataset.pkl
+2025-11-05 16:30:36,283 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,283 - __main__ - INFO -   🔢 Completed: EMBED
+2025-11-05 16:30:36,283 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,283 - __main__ - INFO - Pipeline status: completed
+2025-11-05 16:30:36,283 - __main__ - INFO - Completed: run_single_pipeline (696.07s)
+2025-11-05 16:30:36,284 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,284 - __main__ - INFO -   📊 FINAL REPORTS
+2025-11-05 16:30:36,284 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,284 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,284 - __main__ - INFO -   Performance Summary
+2025-11-05 16:30:36,284 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,284 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-05 16:30:36,284 - __main__ - INFO -   Count: 1
+2025-11-05 16:30:36,284 - __main__ - INFO -   Total: 696.07s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Avg: 696.07s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Min: 696.07s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Max: 696.07s
+2025-11-05 16:30:36,284 - __main__ - INFO - 
+track_quality:
+2025-11-05 16:30:36,284 - __main__ - INFO -   Count: 7
+2025-11-05 16:30:36,284 - __main__ - INFO -   Total: 0.01s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Avg: 0.00s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Min: 0.00s
+2025-11-05 16:30:36,284 - __main__ - INFO -   Max: 0.00s
+2025-11-05 16:30:36,284 - __main__ - INFO - No errors or warnings recorded
+2025-11-05 16:30:36,284 - __main__ - INFO - 
+2025-11-05 16:30:36,284 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-05 16:30:36,286 - quality_tracker - INFO - Quality report saved: c:\scripts\1repo\data\quality\quality_report_20251105_163036.json
+2025-11-05 16:30:36,287 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-05 16:30:36,287 - quality_tracker - INFO - ============================================================
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-05 16:30:36,287 - quality_tracker - INFO - ============================================================
+2025-11-05 16:30:36,287 - quality_tracker - INFO - Generated: 2025-11-05T13:30:36Z
+2025-11-05 16:30:36,287 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-05 16:30:36,287 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-05 16:30:36,287 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,287 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,287 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,287 - quality_tracker - INFO - 
+2025-11-05 16:30:36,287 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,287 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-05 16:30:36,288 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,288 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,288 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,288 - quality_tracker - INFO - 
+2025-11-05 16:30:36,288 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-05 16:30:36,288 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,288 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,288 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,288 - quality_tracker - INFO - 
+2025-11-05 16:30:36,288 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,288 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-05 16:30:36,288 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,289 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,289 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,289 - quality_tracker - INFO - 
+2025-11-05 16:30:36,289 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-05 16:30:36,289 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,289 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,289 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,289 - quality_tracker - INFO - 
+2025-11-05 16:30:36,289 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-05 16:30:36,289 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,289 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,289 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,290 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,290 - quality_tracker - INFO - 
+2025-11-05 16:30:36,290 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   Stage: EMBED
+2025-11-05 16:30:36,290 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,290 - quality_tracker - INFO - Summary:
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 16:30:36,290 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 16:30:36,290 - quality_tracker - INFO - 
+2025-11-05 16:30:36,290 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-05 16:30:36,290 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 16:30:36,290 - quality_tracker - INFO - track_quality:
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   Count: 7, Avg: 0.00s
+2025-11-05 16:30:36,290 - quality_tracker - INFO - run_single_pipeline:
+2025-11-05 16:30:36,290 - quality_tracker - INFO -   Count: 1, Avg: 696.07s
+2025-11-05 16:30:36,290 - __main__ - INFO - 
+2025-11-05 16:30:36,291 - validate - INFO - ============================================================
+2025-11-05 16:30:36,291 - validate - INFO -   Validation Summary
+2025-11-05 16:30:36,291 - validate - INFO - ============================================================
+2025-11-05 16:30:36,291 - validate - INFO - Overall Results:
+2025-11-05 16:30:36,291 - validate - INFO -   total_datasets: 2
+2025-11-05 16:30:36,291 - validate - INFO -   valid_datasets: 1
+2025-11-05 16:30:36,291 - validate - INFO -   invalid_datasets: 1
+2025-11-05 16:30:36,291 - validate - INFO -   total_errors: 2
+2025-11-05 16:30:36,291 - validate - INFO -   total_warnings: 0
+2025-11-05 16:30:36,291 - validate - INFO -   success_rate: 0.5000
+2025-11-05 16:30:36,291 - validate - INFO -   timestamp: 2025-11-05T13:30:36.291057
+2025-11-05 16:30:36,291 - validate - INFO - 
+Per-dataset results:
+2025-11-05 16:30:36,291 - validate - INFO -   ✅ VALID - norton_kaplan_balanced_scorecard.dataset.jsonl (errors: 0, warnings: 0)
+2025-11-05 16:30:36,291 - validate - INFO -   ❌ INVALID - norton_kaplan_balanced_scorecard.dataset.jsonl (errors: 2, warnings: 0)
+2025-11-05 16:30:36,291 - __main__ - INFO - ============================================================
+2025-11-05 16:30:36,291 - __main__ - INFO -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-11-05 16:30:36,291 - __main__ - INFO - ============================================================

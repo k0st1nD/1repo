@@ -1,0 +1,1082 @@
+2025-10-31 11:41:42,763 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,770 - __main__ - [32mINFO[0m - [am_logging.py:588] -   🚀 archivist magika 2.0.0
+2025-10-31 11:41:42,770 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,770 - __main__ - [32mINFO[0m - [run_mvp.py:137] - Quality check: enabled
+2025-10-31 11:41:42,771 - __main__ - [32mINFO[0m - [run_mvp.py:138] - Validation: enabled
+2025-10-31 11:41:42,771 - __main__ - [32mINFO[0m - [run_mvp.py:139] - Dry run: no
+2025-10-31 11:41:42,771 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_batch_pipeline
+2025-10-31 11:41:42,771 - __main__ - [32mINFO[0m - [run_mvp.py:309] - Batch processing: data\sources
+2025-10-31 11:41:42,771 - __main__ - [32mINFO[0m - [run_mvp.py:310] - Pattern: *.pdf
+2025-10-31 11:41:42,772 - __main__ - [32mINFO[0m - [run_mvp.py:314] - Found 21 files
+2025-10-31 11:41:42,773 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,773 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: 2024_final_dora_report.pdf
+2025-10-31 11:41:42,773 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,773 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,774 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,774 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,775 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,775 - am_common - [32mINFO[0m - [am_common.py:600] - Loading config: config\mvp_quality.yaml
+2025-10-31 11:41:42,786 - am_common - [32mINFO[0m - [am_common.py:611] - Config loaded successfully
+2025-10-31 11:41:42,787 - [34mam_structural_robust[0m - [32mINFO[0m - [am_structural_robust.py:154] - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-10-31 11:41:42,788 - [34mam_structural_robust[0m - [32mINFO[0m - [am_structural_robust.py:322] - Table extractor chain: ['pdfplumber']
+2025-10-31 11:41:42,788 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,788 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,790 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,790 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,790 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.02s)
+2025-10-31 11:41:42,791 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,791 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+2025-10-31 11:41:42,791 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,792 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,792 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,793 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,793 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,794 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,794 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,795 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,795 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,796 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,796 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,796 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Agile-Metrics-in-Action.pdf
+2025-10-31 11:41:42,797 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,797 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,797 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,797 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,798 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,798 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,799 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,800 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,800 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,800 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,801 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,801 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+2025-10-31 11:41:42,801 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,801 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,802 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,802 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,802 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,803 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,803 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,804 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,805 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,805 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,805 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,805 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: baza-znanij-safe®-russia.pdf
+2025-10-31 11:41:42,806 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,806 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,806 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,807 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,807 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,807 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,808 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,809 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,809 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,810 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,810 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,810 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+2025-10-31 11:41:42,811 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,811 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,811 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,812 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,812 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,812 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,813 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,814 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,814 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,814 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,815 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,815 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-10-31 11:41:42,815 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,816 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,816 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,817 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,817 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,817 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,818 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,819 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,819 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,819 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,820 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,820 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Data-Science-for-Business.pdf
+2025-10-31 11:41:42,820 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,821 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,821 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,822 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,822 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,823 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,823 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,824 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,825 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,825 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,825 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,826 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Escaping_the_build_trap_-_Melissa_Perri.pdf
+2025-10-31 11:41:42,826 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,826 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,827 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,827 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,827 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,828 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,828 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,829 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,829 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,830 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,830 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,830 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+2025-10-31 11:41:42,831 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,831 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,831 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,831 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,832 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,832 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,833 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,834 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,834 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,834 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,835 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,835 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: GOOD-STRATEGY-BAD-STRATEGY.pdf
+2025-10-31 11:41:42,835 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,836 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,836 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,836 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,837 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,837 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,838 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,839 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,840 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,840 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,840 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,841 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Hooked-How-to-Build-Habit-Forming-Products.pdf
+2025-10-31 11:41:42,841 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,841 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,842 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,842 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,843 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,843 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,843 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,844 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,845 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,845 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,845 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,846 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Lean_Analytics.pdf
+2025-10-31 11:41:42,846 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,846 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,847 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,847 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,847 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,847 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,848 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,849 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,849 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,850 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,850 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,850 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: measure-what-matters-by-john-doerr.pdf
+2025-10-31 11:41:42,851 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,851 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,851 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,851 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,852 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,852 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,852 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,853 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,854 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,854 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,854 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,855 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: naked-statistics-pdf.pdf
+2025-10-31 11:41:42,855 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,855 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,856 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,856 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,857 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,857 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,857 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,858 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,859 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,859 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,859 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,860 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: norton_kaplan_balanced_scorecard.pdf
+2025-10-31 11:41:42,860 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,860 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,861 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,861 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,861 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,862 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,862 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,863 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,864 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,864 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,865 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,865 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+2025-10-31 11:41:42,866 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,866 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,867 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,867 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,868 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,868 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,868 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,870 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,870 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,871 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,871 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,872 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+2025-10-31 11:41:42,872 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,873 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,873 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,874 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,875 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,875 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,875 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,877 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,877 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,877 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,878 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,879 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+2025-10-31 11:41:42,879 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,880 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,880 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,880 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,881 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,881 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,881 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,882 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,883 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,883 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 11:41:42,884 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,884 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Каган Марти - Вдохновленные - 2020.pdf
+2025-10-31 11:41:42,884 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,885 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,885 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,886 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,886 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,887 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,887 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,889 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,889 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,889 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,890 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 11:41:42,890 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Ядро 2025-08-29.pdf
+2025-10-31 11:41:42,891 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 11:41:42,891 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 11:41:42,892 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,892 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 11:41:42,892 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,893 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,893 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 11:41:42,894 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 11:41:42,895 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 11:41:42,895 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.01s)
+2025-10-31 11:41:42,895 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:588] -   BATCH PROCESSING SUMMARY
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:638] - Batch Results:
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:643] -   total_files: 21
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:643] -   fully_processed: 0
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:643] -   partially_processed: 21
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:643] -   failed: 0
+2025-10-31 11:41:42,896 - __main__ - [32mINFO[0m - [am_logging.py:643] -   success_rate: 0.0%
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:390] - 
+Partially processed files:
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - 2024_final_dora_report.pdf
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Agile-Metrics-in-Action.pdf
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - baza-znanij-safe®-russia.pdf
+2025-10-31 11:41:42,897 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Data-Science-for-Business.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Escaping_the_build_trap_-_Melissa_Perri.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - GOOD-STRATEGY-BAD-STRATEGY.pdf
+2025-10-31 11:41:42,898 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Hooked-How-to-Build-Habit-Forming-Products.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Lean_Analytics.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - measure-what-matters-by-john-doerr.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - naked-statistics-pdf.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - norton_kaplan_balanced_scorecard.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Каган Марти - Вдохновленные - 2020.pdf
+2025-10-31 11:41:42,899 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Ядро 2025-08-29.pdf
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_batch_pipeline (0.13s)
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📊 FINAL REPORTS
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:588] -   Performance Summary
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,900 - __main__ - [32mINFO[0m - [am_logging.py:658] - 
+run_batch_pipeline:
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:659] -   Count: 1
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:660] -   Total: 0.13s
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:661] -   Avg: 0.13s
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:662] -   Min: 0.13s
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:663] -   Max: 0.13s
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:658] - 
+run_single_pipeline:
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:659] -   Count: 21
+2025-10-31 11:41:42,901 - __main__ - [32mINFO[0m - [am_logging.py:660] -   Total: 0.11s
+2025-10-31 11:41:42,902 - __main__ - [32mINFO[0m - [am_logging.py:661] -   Avg: 0.01s
+2025-10-31 11:41:42,902 - __main__ - [32mINFO[0m - [am_logging.py:662] -   Min: 0.00s
+2025-10-31 11:41:42,902 - __main__ - [32mINFO[0m - [am_logging.py:663] -   Max: 0.02s
+2025-10-31 11:41:42,902 - __main__ - [32mINFO[0m - [am_logging.py:672] - No errors or warnings recorded
+2025-10-31 11:41:42,902 - __main__ - [32mINFO[0m - [run_mvp.py:513] - 
+2025-10-31 11:41:42,902 - quality_tracker - [32mINFO[0m - [am_logging.py:288] - Starting: generate_quality_report
+2025-10-31 11:41:42,903 - quality_tracker - [32mINFO[0m - [quality_tracker.py:296] - Quality report saved: C:\scripts\1repo\data\quality\quality_report_20251031_114142.json
+2025-10-31 11:41:42,903 - quality_tracker - [32mINFO[0m - [am_logging.py:296] - Completed: generate_quality_report (0.00s)
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [am_logging.py:588] -   QUALITY REPORT
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [quality_tracker.py:378] - Generated: 2025-10-31T08:41:42Z
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [quality_tracker.py:379] - Version: 2.0.0
+
+2025-10-31 11:41:42,904 - quality_tracker - [32mINFO[0m - [am_logging.py:587] - ------------------------------------------------------------
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [am_logging.py:588] -   PERFORMANCE SUMMARY
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [am_logging.py:589] - ------------------------------------------------------------
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [quality_tracker.py:428] - run_single_pipeline:
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [quality_tracker.py:429] -   Count: 21, Avg: 0.01s
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [quality_tracker.py:428] - run_batch_pipeline:
+2025-10-31 11:41:42,905 - quality_tracker - [32mINFO[0m - [quality_tracker.py:429] -   Count: 1, Avg: 0.13s
+2025-10-31 11:41:42,906 - __main__ - [32mINFO[0m - [run_mvp.py:521] - 
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:588] -   Validation Summary
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:638] - Overall Results:
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:643] -   total_datasets: 0
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:643] -   valid_datasets: 0
+2025-10-31 11:41:42,906 - validate - [32mINFO[0m - [am_logging.py:643] -   invalid_datasets: 0
+2025-10-31 11:41:42,907 - validate - [32mINFO[0m - [am_logging.py:643] -   total_errors: 0
+2025-10-31 11:41:42,907 - validate - [32mINFO[0m - [am_logging.py:643] -   total_warnings: 0
+2025-10-31 11:41:42,907 - validate - [32mINFO[0m - [am_logging.py:641] -   success_rate: 0.0000
+2025-10-31 11:41:42,907 - validate - [32mINFO[0m - [am_logging.py:643] -   timestamp: 2025-10-31T08:41:42.906189
+2025-10-31 11:41:42,907 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 11:41:42,907 - __main__ - [32mINFO[0m - [am_logging.py:588] -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-10-31 11:41:42,907 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,144 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,144 - __main__ - [32mINFO[0m - [am_logging.py:588] -   🚀 archivist magika 2.0.0
+2025-10-31 12:06:36,144 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,144 - __main__ - [32mINFO[0m - [run_mvp.py:137] - Quality check: enabled
+2025-10-31 12:06:36,144 - __main__ - [32mINFO[0m - [run_mvp.py:138] - Validation: enabled
+2025-10-31 12:06:36,145 - __main__ - [32mINFO[0m - [run_mvp.py:139] - Dry run: no
+2025-10-31 12:06:36,145 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_batch_pipeline
+2025-10-31 12:06:36,145 - __main__ - [32mINFO[0m - [run_mvp.py:309] - Batch processing: data\sources
+2025-10-31 12:06:36,145 - __main__ - [32mINFO[0m - [run_mvp.py:310] - Pattern: *.pdf
+2025-10-31 12:06:36,145 - __main__ - [32mINFO[0m - [run_mvp.py:314] - Found 21 files
+2025-10-31 12:06:36,146 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,146 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: 2024_final_dora_report.pdf
+2025-10-31 12:06:36,147 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,147 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,147 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,148 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,148 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,148 - am_common - [32mINFO[0m - [am_common.py:600] - Loading config: config\mvp_quality.yaml
+2025-10-31 12:06:36,160 - am_common - [32mINFO[0m - [am_common.py:611] - Config loaded successfully
+2025-10-31 12:06:36,160 - [34mam_structural_robust[0m - [32mINFO[0m - [am_structural_robust.py:154] - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-10-31 12:06:36,161 - [34mam_structural_robust[0m - [32mINFO[0m - [am_structural_robust.py:322] - Table extractor chain: ['pdfplumber']
+2025-10-31 12:06:36,161 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,161 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,163 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,163 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,163 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.02s)
+2025-10-31 12:06:36,164 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,164 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+2025-10-31 12:06:36,164 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,165 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,165 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,165 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,166 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,166 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,166 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,167 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,167 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,168 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,168 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,168 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Agile-Metrics-in-Action.pdf
+2025-10-31 12:06:36,169 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,169 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,170 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,170 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,170 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,171 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,171 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,172 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,172 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,173 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,173 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,174 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+2025-10-31 12:06:36,174 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,174 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,175 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,175 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,175 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,175 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,176 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,177 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,177 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,177 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,178 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,178 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: baza-znanij-safe®-russia.pdf
+2025-10-31 12:06:36,178 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,179 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,179 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,179 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,179 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,180 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,180 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,181 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,181 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,182 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,182 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,182 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+2025-10-31 12:06:36,183 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,183 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,183 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,184 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,184 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,184 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,184 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,186 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,186 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,186 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,187 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,187 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-10-31 12:06:36,188 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,188 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,188 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,189 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,189 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,189 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,190 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,191 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,191 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,191 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,191 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,192 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Data-Science-for-Business.pdf
+2025-10-31 12:06:36,192 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,192 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,193 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,193 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,193 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,194 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,194 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,195 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,195 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,195 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,196 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,196 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Escaping_the_build_trap_-_Melissa_Perri.pdf
+2025-10-31 12:06:36,196 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,197 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,197 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,197 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,198 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,198 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,198 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,199 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,199 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,200 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,200 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,200 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+2025-10-31 12:06:36,201 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,201 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,201 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,202 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,202 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,202 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,203 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,204 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,204 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,204 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,205 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,205 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: GOOD-STRATEGY-BAD-STRATEGY.pdf
+2025-10-31 12:06:36,205 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,206 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,206 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,206 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,207 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,207 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,207 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,208 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,209 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,209 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,209 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,210 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Hooked-How-to-Build-Habit-Forming-Products.pdf
+2025-10-31 12:06:36,210 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,210 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,211 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,211 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,211 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,212 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,212 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,213 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,213 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,214 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,214 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,214 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Lean_Analytics.pdf
+2025-10-31 12:06:36,214 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,215 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,215 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,215 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,216 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,216 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,216 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,217 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,217 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,218 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,218 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,219 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: measure-what-matters-by-john-doerr.pdf
+2025-10-31 12:06:36,219 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,219 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,220 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,220 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,220 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,221 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,221 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,222 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,223 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,223 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,223 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,224 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: naked-statistics-pdf.pdf
+2025-10-31 12:06:36,224 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,224 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,224 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,225 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,225 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,225 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,226 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,227 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,227 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,227 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,228 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,228 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: norton_kaplan_balanced_scorecard.pdf
+2025-10-31 12:06:36,228 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,228 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,229 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,229 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,229 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,230 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,230 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,231 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,231 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,232 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,232 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,232 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+2025-10-31 12:06:36,232 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,233 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,233 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,233 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,234 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,234 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,234 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,236 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,236 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,236 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,237 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,237 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+2025-10-31 12:06:36,237 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,238 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,238 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,238 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,239 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,239 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,239 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,240 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,241 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,241 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,241 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,241 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+2025-10-31 12:06:36,242 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,242 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,242 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,243 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,243 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,243 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,244 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,245 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,245 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,245 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,246 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,246 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Каган Марти - Вдохновленные - 2020.pdf
+2025-10-31 12:06:36,246 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,246 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,247 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,247 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,247 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,248 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,248 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,249 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,249 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,250 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,250 - __main__ - [32mINFO[0m - [am_logging.py:288] - Starting: run_single_pipeline
+2025-10-31 12:06:36,251 - __main__ - [32mINFO[0m - [run_mvp.py:195] - Processing: Ядро 2025-08-29.pdf
+2025-10-31 12:06:36,251 - __main__ - [32mINFO[0m - [run_mvp.py:196] - Pipeline: structural → embed
+2025-10-31 12:06:36,251 - __main__ - [32mINFO[0m - [run_mvp.py:209] - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-10-31 12:06:36,252 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,252 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📄 Starting: STRUCTURAL
+2025-10-31 12:06:36,252 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,253 - __main__ - [31mERROR[0m - [run_mvp.py:256] - Stage failed: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,253 - __main__ - [31mERROR[0m - [run_mvp.py:257] - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 403, in _run_stage
+    output_dir = self._get_stage_output_dir(stage)
+  File "C:\scripts\1repo\run_mvp.py", line 475, in _get_stage_output_dir
+    output_dir = stage_dirs.get(stage, self.path_manager.base_dir / 'data' / stage)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PathManager' object has no attribute 'base_dir'
+2025-10-31 12:06:36,254 - __main__ - [31mERROR[0m - [run_mvp.py:270] - Critical stage failed, stopping pipeline
+2025-10-31 12:06:36,255 - __main__ - [32mINFO[0m - [run_mvp.py:283] - Pipeline status: partial
+2025-10-31 12:06:36,255 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_single_pipeline (0.00s)
+2025-10-31 12:06:36,255 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,255 - __main__ - [32mINFO[0m - [am_logging.py:588] -   BATCH PROCESSING SUMMARY
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:638] - Batch Results:
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:643] -   total_files: 21
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:643] -   fully_processed: 0
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:643] -   partially_processed: 21
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:643] -   failed: 0
+2025-10-31 12:06:36,256 - __main__ - [32mINFO[0m - [am_logging.py:643] -   success_rate: 0.0%
+2025-10-31 12:06:36,256 - __main__ - [33mWARNING[0m - [run_mvp.py:390] - 
+Partially processed files:
+2025-10-31 12:06:36,256 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - 2024_final_dora_report.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Agile-Metrics-in-Action.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - baza-znanij-safe®-russia.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Data-Science-for-Business.pdf
+2025-10-31 12:06:36,257 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Escaping_the_build_trap_-_Melissa_Perri.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - GOOD-STRATEGY-BAD-STRATEGY.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Hooked-How-to-Build-Habit-Forming-Products.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Lean_Analytics.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - measure-what-matters-by-john-doerr.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - naked-statistics-pdf.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - norton_kaplan_balanced_scorecard.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+2025-10-31 12:06:36,258 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+2025-10-31 12:06:36,259 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+2025-10-31 12:06:36,259 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Каган Марти - Вдохновленные - 2020.pdf
+2025-10-31 12:06:36,259 - __main__ - [33mWARNING[0m - [run_mvp.py:392] -   - Ядро 2025-08-29.pdf
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:296] - Completed: run_batch_pipeline (0.11s)
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:588] -   📊 FINAL REPORTS
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,259 - __main__ - [32mINFO[0m - [am_logging.py:588] -   Performance Summary
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:658] - 
+run_batch_pipeline:
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:659] -   Count: 1
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:660] -   Total: 0.11s
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:661] -   Avg: 0.11s
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:662] -   Min: 0.11s
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:663] -   Max: 0.11s
+2025-10-31 12:06:36,260 - __main__ - [32mINFO[0m - [am_logging.py:658] - 
+run_single_pipeline:
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:659] -   Count: 21
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:660] -   Total: 0.10s
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:661] -   Avg: 0.00s
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:662] -   Min: 0.00s
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:663] -   Max: 0.02s
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [am_logging.py:672] - No errors or warnings recorded
+2025-10-31 12:06:36,261 - __main__ - [32mINFO[0m - [run_mvp.py:513] - 
+2025-10-31 12:06:36,261 - quality_tracker - [32mINFO[0m - [am_logging.py:288] - Starting: generate_quality_report
+2025-10-31 12:06:36,262 - quality_tracker - [32mINFO[0m - [quality_tracker.py:296] - Quality report saved: C:\scripts\1repo\data\quality\quality_report_20251031_120636.json
+2025-10-31 12:06:36,262 - quality_tracker - [32mINFO[0m - [am_logging.py:296] - Completed: generate_quality_report (0.00s)
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:588] -   QUALITY REPORT
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [quality_tracker.py:378] - Generated: 2025-10-31T09:06:36Z
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [quality_tracker.py:379] - Version: 2.0.0
+
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:587] - ------------------------------------------------------------
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:588] -   PERFORMANCE SUMMARY
+2025-10-31 12:06:36,263 - quality_tracker - [32mINFO[0m - [am_logging.py:589] - ------------------------------------------------------------
+2025-10-31 12:06:36,264 - quality_tracker - [32mINFO[0m - [quality_tracker.py:428] - run_single_pipeline:
+2025-10-31 12:06:36,264 - quality_tracker - [32mINFO[0m - [quality_tracker.py:429] -   Count: 21, Avg: 0.00s
+2025-10-31 12:06:36,264 - quality_tracker - [32mINFO[0m - [quality_tracker.py:428] - run_batch_pipeline:
+2025-10-31 12:06:36,264 - quality_tracker - [32mINFO[0m - [quality_tracker.py:429] -   Count: 1, Avg: 0.11s
+2025-10-31 12:06:36,264 - __main__ - [32mINFO[0m - [run_mvp.py:521] - 
+2025-10-31 12:06:36,264 - validate - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,264 - validate - [32mINFO[0m - [am_logging.py:588] -   Validation Summary
+2025-10-31 12:06:36,264 - validate - [32mINFO[0m - [am_logging.py:589] - ============================================================
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:638] - Overall Results:
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   total_datasets: 0
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   valid_datasets: 0
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   invalid_datasets: 0
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   total_errors: 0
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   total_warnings: 0
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:641] -   success_rate: 0.0000
+2025-10-31 12:06:36,265 - validate - [32mINFO[0m - [am_logging.py:643] -   timestamp: 2025-10-31T09:06:36.264612
+2025-10-31 12:06:36,266 - __main__ - [32mINFO[0m - [am_logging.py:587] - ============================================================
+2025-10-31 12:06:36,266 - __main__ - [32mINFO[0m - [am_logging.py:588] -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-10-31 12:06:36,266 - __main__ - [32mINFO[0m - [am_logging.py:589] - ============================================================

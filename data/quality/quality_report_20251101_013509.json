@@ -1,0 +1,466 @@
+{
+  "generated_at": "2025-10-31T22:35:09Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_pages": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 40,
+          "max": 40,
+          "avg": 40.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1519.7824858757062,
+          "max": 1519.7824858757062,
+          "avg": 1519.7824858757062,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Каган Марти - Вдохновленные - 2020.pdf",
+          "timestamp": "2025-10-31T22:34:52Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Каган Марти - Вдохновленные - 2020.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_pages": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "pages_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:52Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "каган_марти_-_вдохновленные_-_2020.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_pages": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.8870056497175142,
+          "max": 0.8870056497175142,
+          "avg": 0.8870056497175142,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 283.4808917197452,
+          "max": 283.4808917197452,
+          "avg": 283.4808917197452,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 782.0987261146497,
+          "max": 782.0987261146497,
+          "avg": 782.0987261146497,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 6.2,
+          "max": 6.2,
+          "avg": 6.2,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 40,
+          "max": 40,
+          "avg": 40.0,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 314,
+          "max": 314,
+          "avg": 314.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:52Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "каган_марти_-_вдохновленные_-_2020.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "extraction_coverage": {
+          "min": 0.884180790960452,
+          "max": 0.884180790960452,
+          "avg": 0.884180790960452,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.9121813031161473,
+          "max": 0.9121813031161473,
+          "avg": 0.9121813031161473,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.051,
+          "max": 0.051,
+          "avg": 0.051,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 313,
+          "max": 313,
+          "avg": 313.0,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 322,
+          "max": 322,
+          "avg": 322.0,
+          "count": 1
+        },
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:59Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "каган_марти_-_вдохновленные_-_2020.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_cards": {
+          "min": 354,
+          "max": 354,
+          "avg": 354.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.8870056497175142,
+          "max": 0.8870056497175142,
+          "avg": 0.8870056497175142,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.377,
+          "max": 0.377,
+          "avg": 0.377,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 92,
+          "max": 92,
+          "avg": 92.0,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 314,
+          "max": 314,
+          "avg": 314.0,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:59Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "каган_марти_-_вдохновленные_-_2020.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_chunk_tokens": {
+          "min": 392.2243401759531,
+          "max": 392.2243401759531,
+          "avg": 392.2243401759531,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 1.926553672316384,
+          "max": 1.926553672316384,
+          "avg": 1.926553672316384,
+          "count": 1
+        },
+        "min_chunk_tokens": {
+          "min": 101,
+          "max": 101,
+          "avg": 101.0,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 682,
+          "max": 682,
+          "avg": 682.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 926,
+          "max": 926,
+          "avg": 926.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "каган_марти_-_вдохновленные_-_2020.dataset.jsonl",
+          "timestamp": "2025-10-31T22:35:00Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "каган_марти_-_вдохновленные_-_2020.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 6,
+      "total": 0.011022567749023438,
+      "avg": 0.0018370946248372395,
+      "min": 0.0017113685607910156,
+      "max": 0.0020546913146972656
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 87.29577827453613,
+      "avg": 87.29577827453613,
+      "min": 87.29577827453613,
+      "max": 87.29577827453613
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

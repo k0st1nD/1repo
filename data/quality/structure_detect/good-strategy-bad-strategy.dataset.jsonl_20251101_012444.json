@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:24:44Z",
+  "stage": "structure_detect",
+  "source": "good-strategy-bad-strategy.dataset.jsonl",
+  "metrics": {
+    "total_pages": 353,
+    "chapters_detected": 9,
+    "sections_detected": 1,
+    "pages_with_structure": 345,
+    "structure_coverage": 0.9773371104815864,
+    "avg_chapter_length": 39.22222222222222
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:01:01Z",
+  "stage": "structure_detect",
+  "source": "actionable_agile_metrics_for_predictability_an_introduction_-_daniel_s_vacanti.dataset.jsonl",
+  "metrics": {
+    "total_pages": 230,
+    "chapters_detected": 21,
+    "sections_detected": 1,
+    "pages_with_structure": 226,
+    "structure_coverage": 0.9826086956521739,
+    "avg_chapter_length": 10.952380952380953
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:33:23Z",
+  "stage": "summarize",
+  "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+  "metrics": {
+    "total_pages": 310,
+    "summarized_pages": 302,
+    "skipped_pages": 8,
+    "summary_coverage": 0.9741935483870968,
+    "avg_l1_length": 259.00331125827813,
+    "avg_l2_length": 692.384105960265,
+    "avg_compression_ratio": 6.19
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+[WARN] OCR not available
+2025-11-05 17:49:47,505 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-05 17:49:47,505 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-05 17:49:47,506 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-05 17:49:47,516 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-05 17:49:47,521 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 17:49:47,536 - am_common - INFO - Config loaded successfully
+2025-11-05 17:49:47,536 - quality_tracker - INFO - Quality tracker initialized: c:\scripts\1repo\data\quality
+2025-11-05 17:49:47,537 - __main__ - INFO - ============================================================
+2025-11-05 17:49:47,544 - __main__ - INFO -   🚀 archivist magika 2.0.0
+2025-11-05 17:49:47,544 - __main__ - INFO - ============================================================
+2025-11-05 17:49:47,544 - __main__ - INFO - Quality check: enabled
+2025-11-05 17:49:47,544 - __main__ - INFO - Validation: enabled
+2025-11-05 17:49:47,544 - __main__ - INFO - Dry run: no
+2025-11-05 17:49:47,544 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-05 17:49:47,544 - __main__ - INFO - Processing: baza_znanij_safe_russia.dataset.chunks.jsonl
+2025-11-05 17:49:47,544 - __main__ - INFO - Pipeline: embed → embed
+2025-11-05 17:49:47,544 - __main__ - INFO - Stages: embed
+2025-11-05 17:49:47,544 - __main__ - INFO - ============================================================
+2025-11-05 17:49:47,544 - __main__ - INFO -   🔢 Starting: EMBED
+2025-11-05 17:49:47,544 - __main__ - INFO - ============================================================
+2025-11-05 17:49:47,544 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 17:49:47,559 - am_common - INFO - Config loaded successfully
+2025-11-05 17:49:47,559 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-05 17:49:47,560 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-05 17:49:47,560 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-05 17:50:02,613 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-05 17:50:02,613 - am_embed - INFO - Processing: baza_znanij_safe_russia.dataset.chunks.jsonl
+2025-11-05 17:50:02,615 - am_embed - INFO - Loaded 97 chunks
+2025-11-05 17:50:02,615 - am_embed - INFO - Encoding 97 chunks in 4 batches
+2025-11-05 17:50:03,527 - am_embed - INFO - Encoded 97 embeddings, 0 failures
+2025-11-05 17:50:03,527 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-05 17:50:03,527 - am_embed - INFO - Vectors: 97, Dimension: 384
+2025-11-05 17:50:03,527 - am_embed - INFO - FAISS index built: 97 vectors
+2025-11-05 17:50:03,528 - am_embed - INFO - Saved FAISS index: baza_znanij_safe_russia.dataset.faiss (145.54 KB)
+2025-11-05 17:50:03,529 - am_embed - INFO - Saved metadata: baza_znanij_safe_russia.dataset.pkl (171.85 KB)
+2025-11-05 17:50:03,537 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 17:50:03,538 - quality_tracker - INFO - embed metrics:
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   total_vectors: 97
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-05 17:50:03,538 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-05 17:50:03,538 - quality_tracker - INFO - ✓ Quality thresholds passed for embed
+2025-11-05 17:50:03,538 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 17:50:03,538 - am_embed - INFO - Saved: baza_znanij_safe_russia.dataset.faiss, baza_znanij_safe_russia.dataset.pkl
+2025-11-05 17:50:03,538 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,538 - __main__ - INFO -   🔢 Completed: EMBED
+2025-11-05 17:50:03,538 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,538 - __main__ - INFO - Pipeline status: completed
+2025-11-05 17:50:03,538 - __main__ - INFO - Completed: run_single_pipeline (15.99s)
+2025-11-05 17:50:03,539 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,539 - __main__ - INFO -   📊 FINAL REPORTS
+2025-11-05 17:50:03,539 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,539 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,539 - __main__ - INFO -   Performance Summary
+2025-11-05 17:50:03,539 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,539 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-05 17:50:03,539 - __main__ - INFO -   Count: 1
+2025-11-05 17:50:03,539 - __main__ - INFO -   Total: 15.99s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Avg: 15.99s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Min: 15.99s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Max: 15.99s
+2025-11-05 17:50:03,539 - __main__ - INFO - 
+track_quality:
+2025-11-05 17:50:03,539 - __main__ - INFO -   Count: 1
+2025-11-05 17:50:03,539 - __main__ - INFO -   Total: 0.00s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Avg: 0.00s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Min: 0.00s
+2025-11-05 17:50:03,539 - __main__ - INFO -   Max: 0.00s
+2025-11-05 17:50:03,539 - __main__ - INFO - No errors or warnings recorded
+2025-11-05 17:50:03,539 - __main__ - INFO - 
+2025-11-05 17:50:03,539 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-05 17:50:03,540 - quality_tracker - INFO - Quality report saved: c:\scripts\1repo\data\quality\quality_report_20251105_175003.json
+2025-11-05 17:50:03,541 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ============================================================
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ============================================================
+2025-11-05 17:50:03,541 - quality_tracker - INFO - Generated: 2025-11-05T14:50:03Z
+2025-11-05 17:50:03,541 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   Stage: EMBED
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 17:50:03,541 - quality_tracker - INFO - Summary:
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 17:50:03,541 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 17:50:03,541 - quality_tracker - INFO - 
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 17:50:03,541 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-05 17:50:03,541 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 17:50:03,541 - quality_tracker - INFO - track_quality:
+2025-11-05 17:50:03,542 - quality_tracker - INFO -   Count: 1, Avg: 0.00s
+2025-11-05 17:50:03,542 - quality_tracker - INFO - run_single_pipeline:
+2025-11-05 17:50:03,542 - quality_tracker - INFO -   Count: 1, Avg: 15.99s
+2025-11-05 17:50:03,542 - __main__ - INFO - 
+2025-11-05 17:50:03,542 - validate - INFO - ============================================================
+2025-11-05 17:50:03,542 - validate - INFO -   Validation Summary
+2025-11-05 17:50:03,542 - validate - INFO - ============================================================
+2025-11-05 17:50:03,542 - validate - INFO - Overall Results:
+2025-11-05 17:50:03,542 - validate - INFO -   total_datasets: 0
+2025-11-05 17:50:03,542 - validate - INFO -   valid_datasets: 0
+2025-11-05 17:50:03,542 - validate - INFO -   invalid_datasets: 0
+2025-11-05 17:50:03,542 - validate - INFO -   total_errors: 0
+2025-11-05 17:50:03,542 - validate - INFO -   total_warnings: 0
+2025-11-05 17:50:03,542 - validate - INFO -   success_rate: 0.0000
+2025-11-05 17:50:03,542 - validate - INFO -   timestamp: 2025-11-05T14:50:03.542230
+2025-11-05 17:50:03,542 - __main__ - INFO - ============================================================
+2025-11-05 17:50:03,542 - __main__ - INFO -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-11-05 17:50:03,542 - __main__ - INFO - ============================================================

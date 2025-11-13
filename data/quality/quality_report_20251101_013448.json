@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-10-31T22:34:48Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "success_pages": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 4,
+          "max": 4,
+          "avg": 4.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1470.5838709677419,
+          "max": 1470.5838709677419,
+          "avg": 1470.5838709677419,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 8,
+          "max": 8,
+          "avg": 8.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf",
+          "timestamp": "2025-10-31T22:34:33Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "chapters_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "pages_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:33Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_l2_length": {
+          "min": 692.384105960265,
+          "max": 692.384105960265,
+          "avg": 692.384105960265,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 259.00331125827813,
+          "max": 259.00331125827813,
+          "avg": 259.00331125827813,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9741935483870968,
+          "max": 0.9741935483870968,
+          "avg": 0.9741935483870968,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 8,
+          "max": 8,
+          "avg": 8.0,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 302,
+          "max": 302,
+          "avg": 302.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 6.19,
+          "max": 6.19,
+          "avg": 6.19,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:33Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.105,
+          "max": 0.105,
+          "avg": 0.105,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 300,
+          "max": 300,
+          "avg": 300.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 134,
+          "max": 134,
+          "avg": 134.0,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.4336569579288026,
+          "max": 0.4336569579288026,
+          "avg": 0.4336569579288026,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.967741935483871,
+          "max": 0.967741935483871,
+          "avg": 0.967741935483871,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:41Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 310,
+          "max": 310,
+          "avg": 310.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9741935483870968,
+          "max": 0.9741935483870968,
+          "avg": 0.9741935483870968,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 302,
+          "max": 302,
+          "avg": 302.0,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.395,
+          "max": 0.395,
+          "avg": 0.395,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 20,
+          "max": 20,
+          "avg": 20.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:41Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_chunk_tokens": {
+          "min": 333.57475083056477,
+          "max": 333.57475083056477,
+          "avg": 333.57475083056477,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 507,
+          "max": 507,
+          "avg": 507.0,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 0.9709677419354839,
+          "max": 0.9709677419354839,
+          "avg": 0.9709677419354839,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 301,
+          "max": 301,
+          "avg": 301.0,
+          "count": 1
+        },
+        "min_chunk_tokens": {
+          "min": 101,
+          "max": 101,
+          "avg": 101.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+          "timestamp": "2025-10-31T22:34:41Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 301,
+          "max": 301,
+          "avg": 301.0,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "min_norm": {
+          "min": 0.9999998807907104,
+          "max": 0.9999998807907104,
+          "avg": 0.9999998807907104,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.chunks.jsonl",
+          "timestamp": "2025-10-31T22:34:48Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.013827085494995117,
+      "avg": 0.0019752979278564453,
+      "min": 0.0017213821411132812,
+      "max": 0.0021910667419433594
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 76.03123092651367,
+      "avg": 76.03123092651367,
+      "min": 76.03123092651367,
+      "max": 76.03123092651367
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

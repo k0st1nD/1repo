@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-31T22:30:52Z",
+  "stage": "extended",
+  "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+  "metrics": {
+    "total_cards": 214,
+    "duplicates_found": 0,
+    "duplicate_ratio": 0.0,
+    "continuity_gaps": 177,
+    "continuity_gap_ratio": 0.8309859154929577,
+    "avg_overlap": 0.052,
+    "extended_fields_extracted": 202,
+    "extraction_coverage": 0.9439252336448598,
+    "lm_extraction_count": 0,
+    "lm_extraction_ratio": 0.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: max_duplicates_ratio",
+      "Missing metric: min_extended_fields_ratio",
+      "Missing metric: min_topics_per_page",
+      "Missing metric: min_lm_extraction_ratio",
+      "Missing metric: max_continuity_gaps"
+    ]
+  }
+}

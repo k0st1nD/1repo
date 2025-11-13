@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-05T10:18:39Z",
+  "stage": "structure_detect",
+  "source": "agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset.jsonl",
+  "metrics": {
+    "total_pages": 266,
+    "chapters_detected": 1,
+    "sections_detected": 0,
+    "pages_with_structure": 253,
+    "structure_coverage": 0.9511278195488722,
+    "avg_chapter_length": 266.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

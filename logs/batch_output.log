@@ -1,0 +1,560 @@
+[WARN] OCR not available
+2025-11-01 00:43:52,726 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-01 00:43:52,726 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-01 00:43:52,726 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-01 00:43:52,738 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+
+    ================================================================
+         ARCHIVIST MAGIKA - BATCH PROCESSING PIPELINE
+                    Maximum Quality Mode
+    ================================================================
+    
+2025-11-01 00:43:52,742 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 00:43:52,756 - am_common - INFO - Config loaded successfully
+⏭️  Excluding: Ядро 2025-08-29.pdf
+
+🔥 BATCH PROCESSING: 20 books
+Config: config\batch_full.yaml
+Continue on error: True
+Save partial results: True
+Exclusions: Ядро 2025-08-29.pdf
+
+
+📊 Progress: 1/20
+
+================================================================================
+📚 PROCESSING: 2024_final_dora_report.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: 2024_final_dora_report.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for 2024_final_dora_report.pdf
+
+================================================================================
+📚 PROCESSING: 2024_final_dora_report.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: 2024_final_dora_report.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 1 ❌
+
+📊 Progress: 2/20
+
+================================================================================
+📚 PROCESSING: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+
+================================================================================
+📚 PROCESSING: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 2 ❌
+
+📊 Progress: 3/20
+
+================================================================================
+📚 PROCESSING: Agile-Metrics-in-Action.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Agile-Metrics-in-Action.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Agile-Metrics-in-Action.pdf
+
+================================================================================
+📚 PROCESSING: Agile-Metrics-in-Action.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Agile-Metrics-in-Action.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 3 ❌
+
+📊 Progress: 4/20
+
+================================================================================
+📚 PROCESSING: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+
+================================================================================
+📚 PROCESSING: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 4 ❌
+
+📊 Progress: 5/20
+
+================================================================================
+📚 PROCESSING: baza-znanij-safe®-russia.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: baza-znanij-safe®-russia.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for baza-znanij-safe®-russia.pdf
+
+================================================================================
+📚 PROCESSING: baza-znanij-safe®-russia.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: baza-znanij-safe®-russia.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 5 ❌
+
+📊 Progress: 6/20
+
+================================================================================
+📚 PROCESSING: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+
+================================================================================
+📚 PROCESSING: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 6 ❌
+
+📊 Progress: 7/20
+
+================================================================================
+📚 PROCESSING: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+
+================================================================================
+📚 PROCESSING: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 7 ❌
+
+📊 Progress: 8/20
+
+================================================================================
+📚 PROCESSING: Data-Science-for-Business.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Data-Science-for-Business.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Data-Science-for-Business.pdf
+
+================================================================================
+📚 PROCESSING: Data-Science-for-Business.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Data-Science-for-Business.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 8 ❌
+
+📊 Progress: 9/20
+
+================================================================================
+📚 PROCESSING: Escaping_the_build_trap_-_Melissa_Perri.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Escaping_the_build_trap_-_Melissa_Perri.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Escaping_the_build_trap_-_Melissa_Perri.pdf
+
+================================================================================
+📚 PROCESSING: Escaping_the_build_trap_-_Melissa_Perri.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Escaping_the_build_trap_-_Melissa_Perri.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 9 ❌
+
+📊 Progress: 10/20
+
+================================================================================
+📚 PROCESSING: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+
+================================================================================
+📚 PROCESSING: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 10 ❌
+
+📊 Progress: 11/20
+
+================================================================================
+📚 PROCESSING: GOOD-STRATEGY-BAD-STRATEGY.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: GOOD-STRATEGY-BAD-STRATEGY.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for GOOD-STRATEGY-BAD-STRATEGY.pdf
+
+================================================================================
+📚 PROCESSING: GOOD-STRATEGY-BAD-STRATEGY.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: GOOD-STRATEGY-BAD-STRATEGY.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 11 ❌
+
+📊 Progress: 12/20
+
+================================================================================
+📚 PROCESSING: Hooked-How-to-Build-Habit-Forming-Products.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Hooked-How-to-Build-Habit-Forming-Products.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Hooked-How-to-Build-Habit-Forming-Products.pdf
+
+================================================================================
+📚 PROCESSING: Hooked-How-to-Build-Habit-Forming-Products.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Hooked-How-to-Build-Habit-Forming-Products.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 12 ❌
+
+📊 Progress: 13/20
+
+================================================================================
+📚 PROCESSING: Lean_Analytics.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Lean_Analytics.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Lean_Analytics.pdf
+
+================================================================================
+📚 PROCESSING: Lean_Analytics.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Lean_Analytics.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 13 ❌
+
+📊 Progress: 14/20
+
+================================================================================
+📚 PROCESSING: measure-what-matters-by-john-doerr.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: measure-what-matters-by-john-doerr.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for measure-what-matters-by-john-doerr.pdf
+
+================================================================================
+📚 PROCESSING: measure-what-matters-by-john-doerr.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: measure-what-matters-by-john-doerr.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 14 ❌
+
+📊 Progress: 15/20
+
+================================================================================
+📚 PROCESSING: naked-statistics-pdf.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: naked-statistics-pdf.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for naked-statistics-pdf.pdf
+
+================================================================================
+📚 PROCESSING: naked-statistics-pdf.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: naked-statistics-pdf.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 15 ❌
+
+📊 Progress: 16/20
+
+================================================================================
+📚 PROCESSING: norton_kaplan_balanced_scorecard.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: norton_kaplan_balanced_scorecard.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for norton_kaplan_balanced_scorecard.pdf
+
+================================================================================
+📚 PROCESSING: norton_kaplan_balanced_scorecard.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: norton_kaplan_balanced_scorecard.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 16 ❌
+
+📊 Progress: 17/20
+
+================================================================================
+📚 PROCESSING: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+
+================================================================================
+📚 PROCESSING: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 17 ❌
+
+📊 Progress: 18/20
+
+================================================================================
+📚 PROCESSING: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+
+================================================================================
+📚 PROCESSING: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 18 ❌
+
+📊 Progress: 19/20
+
+================================================================================
+📚 PROCESSING: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+
+================================================================================
+📚 PROCESSING: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 19 ❌
+
+📊 Progress: 20/20
+
+================================================================================
+📚 PROCESSING: Каган Марти - Вдохновленные - 2020.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Каган Марти - Вдохновленные - 2020.pdf
+Error: 'WindowsPath' object is not subscriptable
+🔄 Retry 2/2 for Каган Марти - Вдохновленные - 2020.pdf
+
+================================================================================
+📚 PROCESSING: Каган Марти - Вдохновленные - 2020.pdf
+================================================================================
+
+🚀 Running pipeline with config: config\batch_full.yaml
+
+❌ FAILED: Каган Марти - Вдохновленные - 2020.pdf
+Error: 'WindowsPath' object is not subscriptable
+❌ Gave up after 2 attempts
+
+📈 Current stats: 0 ✅ / 20 ❌
+
+================================================================================
+📊 BATCH PROCESSING COMPLETE
+================================================================================
+Total books: 20
+✅ Success: 0
+❌ Failed: 20
+⏱️  Total time: 0.0 minutes
+⏱️  Avg time per book: 0.0 seconds
+================================================================================
+
+❌ FAILED BOOKS:
+  - 2024_final_dora_report.pdf: 'WindowsPath' object is not subscriptable
+  - Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf: 'WindowsPath' object is not subscriptable
+  - Agile-Metrics-in-Action.pdf: 'WindowsPath' object is not subscriptable
+  - Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf: 'WindowsPath' object is not subscriptable
+  - baza-znanij-safe®-russia.pdf: 'WindowsPath' object is not subscriptable
+  - Continuous_Discovery_Habits_-_Teresa_Torres.pdf: 'WindowsPath' object is not subscriptable
+  - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf: 'WindowsPath' object is not subscriptable
+  - Data-Science-for-Business.pdf: 'WindowsPath' object is not subscriptable
+  - Escaping_the_build_trap_-_Melissa_Perri.pdf: 'WindowsPath' object is not subscriptable
+  - Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf: 'WindowsPath' object is not subscriptable
+  - GOOD-STRATEGY-BAD-STRATEGY.pdf: 'WindowsPath' object is not subscriptable
+  - Hooked-How-to-Build-Habit-Forming-Products.pdf: 'WindowsPath' object is not subscriptable
+  - Lean_Analytics.pdf: 'WindowsPath' object is not subscriptable
+  - measure-what-matters-by-john-doerr.pdf: 'WindowsPath' object is not subscriptable
+  - naked-statistics-pdf.pdf: 'WindowsPath' object is not subscriptable
+  - norton_kaplan_balanced_scorecard.pdf: 'WindowsPath' object is not subscriptable
+  - Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf: 'WindowsPath' object is not subscriptable
+  - Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf: 'WindowsPath' object is not subscriptable
+  - Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf: 'WindowsPath' object is not subscriptable
+  - Каган Марти - Вдохновленные - 2020.pdf: 'WindowsPath' object is not subscriptable
+
+
+❌ FATAL ERROR: Object of type WindowsPath is not JSON serializable
+Traceback (most recent call last):
+  File "C:\scripts\1repo\batch_process_library.py", line 291, in main
+    processor.process_batch()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\scripts\1repo\batch_process_library.py", line 229, in process_batch
+    self._save_final_report()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\scripts\1repo\batch_process_library.py", line 272, in _save_final_report
+    json.dump(report, indent=2, fp=f)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 433, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 440, in _iterencode
+    o = _default(o)
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type WindowsPath is not JSON serializable

@@ -1,0 +1,93 @@
+# ============================================
+# Archivist Magika MVP v2.0 - Dependencies
+# ============================================
+
+# Core PDF Processing
+pdfminer.six>=20221105          # PDF text extraction
+PyPDF2>=3.0.0                   # Alternative PDF reader
+pdfplumber>=0.9.0               # ✨ Table extraction
+
+# ✨ OCR Support
+pytesseract>=0.3.10             # Tesseract OCR wrapper
+Pillow>=10.0.0                  # Image processing
+pdf2image>=1.16.3               # PDF to Image conversion
+# Note: Requires tesseract binary installed:
+# - Ubuntu: sudo apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-rus
+# - macOS: brew install tesseract tesseract-lang
+# - Windows: download from https://github.com/UB-Mannheim/tesseract/wiki
+
+# Embeddings & Vector Search
+sentence-transformers>=2.2.2    # Embedding models (bge-m3)
+faiss-cpu>=1.7.4               # Vector similarity search
+torch>=2.0.0                   # PyTorch for transformers
+
+# Data Processing
+numpy>=1.24.0                  # Numerical operations
+pandas>=2.0.0                  # Data manipulation
+
+# ✨ Deduplication & Text Processing
+python-Levenshtein>=0.21.0     # Fuzzy string matching
+rapidfuzz>=3.0.0               # Fast fuzzy matching (alternative)
+
+# Configuration & Logging
+pyyaml>=6.0                    # YAML config files
+python-dotenv>=1.0.0           # Environment variables
+
+# Progress & UI
+tqdm>=4.65.0                   # Progress bars
+colorama>=0.4.6                # Colored terminal output
+
+# Utilities
+python-dateutil>=2.8.2         # Date/time utilities
+
+# Testing
+pytest>=7.4.0                  # Testing framework
+pytest-cov>=4.1.0              # Coverage reports
+
+# Development (optional)
+black>=23.0.0                  # Code formatting
+flake8>=6.0.0                  # Linting
+mypy>=1.0.0                    # Type checking
+
+# ============================================
+# Optional (for future enhancements)
+# ============================================
+# spacy>=3.5.0                 # NER for entity extraction
+# en_core_web_sm               # spaCy English model
+# camelot-py[cv]>=0.11.0       # Alternative table extraction
+# easyocr>=1.7.0               # Alternative OCR engine
+# opencv-python>=4.8.0         # Advanced image preprocessing
+
+# ============================================
+# Installation Instructions
+# ============================================
+# 1. Install Python dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Install Tesseract OCR (required for OCR support):
+#    - Ubuntu/Debian:
+#      sudo apt-get update
+#      sudo apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-rus
+#      sudo apt-get install poppler-utils  # For pdf2image
+#    
+#    - macOS:
+#      brew install tesseract tesseract-lang
+#      brew install poppler  # For pdf2image
+#    
+#    - Windows:
+#      Download and install from: https://github.com/UB-Mannheim/tesseract/wiki
+#      Download poppler from: https://github.com/oschwartz10612/poppler-windows/releases
+#
+# 3. Verify Tesseract installation:
+#    tesseract --version
+#
+# 4. For GPU support (optional, faster embeddings):
+#    pip uninstall faiss-cpu
+#    pip install faiss-gpu torch --index-url https://download.pytorch.org/whl/cu118
+#
+# ============================================
+# Estimated disk space:
+# - Base dependencies: ~2-3 GB
+# - With GPU torch: ~4-5 GB
+# - Tesseract + language data: ~100-200 MB
+# ============================================

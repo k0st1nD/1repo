@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:23:25Z",
+  "stage": "chunk",
+  "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 271,
+    "chunks_per_page": 0.9249146757679181,
+    "avg_chunk_tokens": 310.479704797048,
+    "min_chunk_tokens": 100,
+    "max_chunk_tokens": 511,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 108,
+      "300-512": 163,
+      "512+": 0
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

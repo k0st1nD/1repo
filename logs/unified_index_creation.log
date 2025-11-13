@@ -1,0 +1,76 @@
+Starting unified index creation...
+
+
+======================================================================
+  CREATING UNIFIED MULTI-BOOK INDEX
+======================================================================
+
+Excluding: library_unified.faiss (pattern: library_unified)
+Found 22 FAISS indexes
+Index dimension: 384
+Creating Flat index with cosine similarity...
+
+[1/22] Merging: 2024_final_dora_report.dataset
+  Added 126 vectors (126 chunks)
+[2/22] Merging: actionable_agile_metrics_for_predictability_an_introduction_-_daniel_s_vacanti.dataset
+  Added 265 vectors (265 chunks)
+[3/22] Merging: agile-metrics-in-action.dataset
+  Added 341 vectors (341 chunks)
+[4/22] Merging: agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset
+  Added 253 vectors (253 chunks)
+[5/22] Merging: baza-znanij-safe-russia.dataset
+  Added 97 vectors (99 chunks)
+[6/22] Merging: baza_znanij_safe_russia.dataset
+  Added 97 vectors (97 chunks)
+[7/22] Merging: continuous_discovery_habits_-_teresa_torres.dataset
+  Added 229 vectors (229 chunks)
+[8/22] Merging: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset
+  Added 532 vectors (532 chunks)
+[9/22] Merging: data-science-for-business.dataset
+  Added 607 vectors (607 chunks)
+[10/22] Merging: escaping_the_build_trap_-_melissa_perri.dataset
+  Added 237 vectors (237 chunks)
+[11/22] Merging: forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset
+  Added 271 vectors (271 chunks)
+[12/22] Merging: good-strategy-bad-strategy.dataset
+  Added 352 vectors (352 chunks)
+[13/22] Merging: hooked-how-to-build-habit-forming-products.dataset
+  Added 181 vectors (181 chunks)
+[14/22] Merging: kagan_marti_vdohnovlennye_2020.dataset
+  Added 682 vectors (682 chunks)
+[15/22] Merging: lean_analytics.dataset
+  Added 550 vectors (550 chunks)
+[16/22] Merging: measure-what-matters-by-john-doerr.dataset
+  Added 302 vectors (302 chunks)
+[17/22] Merging: naked-statistics-pdf.dataset
+  Added 372 vectors (372 chunks)
+[18/22] Merging: norton_kaplan_balanced_scorecard.dataset
+  Added 1439 vectors (1439 chunks)
+[19/22] Merging: playing_to_win__how_strategy_really_works_-_ag_lafley.dataset
+  Added 356 vectors (356 chunks)
+[20/22] Merging: pmbok_7ed_2021.dataset
+  Added 767 vectors (767 chunks)
+[21/22] Merging: team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset
+  Added 301 vectors (301 chunks)
+[22/22] Merging: yadro_2025.dataset
+  Added 2329 vectors (2331 chunks)
+
+Saving unified index...
+Saving metadata...
+
+======================================================================
+  UNIFIED INDEX CREATED SUCCESSFULLY
+======================================================================
+Name: library_unified
+Books: 22
+Total chunks: 10690
+Dimension: 384
+
+Files created:
+  - data\indexes\faiss\library_unified.faiss
+  - data\indexes\metadata\library_unified.dataset.pkl
+  - data\indexes\metadata\library_unified.info.json
+======================================================================
+
+
+Done! Unified index ready for search.

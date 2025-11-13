@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:26:59Z",
+  "stage": "structure_detect",
+  "source": "lean_analytics.dataset.jsonl",
+  "metrics": {
+    "total_pages": 439,
+    "chapters_detected": 3,
+    "sections_detected": 0,
+    "pages_with_structure": 326,
+    "structure_coverage": 0.7425968109339408,
+    "avg_chapter_length": 146.33333333333334
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

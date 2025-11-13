@@ -1,0 +1,444 @@
+[WARN] OCR not available
+2025-11-05 14:23:35,477 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-05 14:23:35,477 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-05 14:23:35,477 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-05 14:23:35,488 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-05 14:23:35,494 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:23:35,508 - am_common - INFO - Config loaded successfully
+2025-11-05 14:23:35,515 - quality_tracker - INFO - Quality tracker initialized: c:\scripts\1repo\data\quality
+2025-11-05 14:23:35,516 - __main__ - INFO - ============================================================
+2025-11-05 14:23:35,516 - __main__ - INFO -   🚀 archivist magika 2.0.0
+2025-11-05 14:23:35,516 - __main__ - INFO - ============================================================
+2025-11-05 14:23:35,516 - __main__ - INFO - Quality check: enabled
+2025-11-05 14:23:35,516 - __main__ - INFO - Validation: enabled
+2025-11-05 14:23:35,516 - __main__ - INFO - Dry run: no
+2025-11-05 14:23:35,516 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-05 14:23:35,516 - __main__ - INFO - Processing: Data-Science-for-Business.pdf
+2025-11-05 14:23:35,516 - __main__ - INFO - Pipeline: structural → embed
+2025-11-05 14:23:35,516 - __main__ - INFO - Stages: structural → structure_detect → summarize → extended → finalize → chunk → embed
+2025-11-05 14:23:35,516 - __main__ - INFO - ============================================================
+2025-11-05 14:23:35,516 - __main__ - INFO -   📄 Starting: STRUCTURAL
+2025-11-05 14:23:35,516 - __main__ - INFO - ============================================================
+2025-11-05 14:23:35,516 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:23:35,530 - am_common - INFO - Config loaded successfully
+2025-11-05 14:23:35,530 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-05 14:23:35,531 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-05 14:23:35,531 - am_structural_robust - INFO - Processing: Data-Science-for-Business.pdf
+2025-11-05 14:23:35,639 - am_structural_robust - INFO - PDF: Data Science for Business
+2025-11-05 14:23:35,742 - am_structural_robust - INFO - Total pages: 409
+2025-11-05 14:23:35,971 - am_structural_robust - ERROR - [X] Page 0: All extractors failed
+2025-11-05 14:23:36,427 - am_structural_robust - ERROR - [X] Page 1: All extractors failed
+2025-11-05 14:23:37,625 - am_structural_robust - ERROR - [X] Page 5: All extractors failed
+2025-11-05 14:23:40,725 - am_structural_robust - ERROR - [X] Page 15: All extractors failed
+2025-11-05 14:23:48,228 - am_structural_robust - ERROR - [X] Page 41: All extractors failed
+2025-11-05 14:23:50,834 - am_structural_robust - INFO -   Processed 50/409 pages
+2025-11-05 14:24:05,107 - am_structural_robust - INFO -   Processed 100/409 pages
+2025-11-05 14:24:06,211 - am_structural_robust - ERROR - [X] Page 103: All extractors failed
+2025-11-05 14:24:15,118 - am_structural_robust - ERROR - [X] Page 133: All extractors failed
+2025-11-05 14:24:19,826 - am_structural_robust - INFO -   Processed 150/409 pages
+2025-11-05 14:24:34,238 - am_structural_robust - INFO -   Processed 200/409 pages
+2025-11-05 14:24:37,191 - am_structural_robust - ERROR - [X] Page 209: All extractors failed
+2025-11-05 14:24:49,485 - am_structural_robust - INFO -   Processed 250/409 pages
+2025-11-05 14:25:03,870 - am_structural_robust - ERROR - [X] Page 299: All extractors failed
+2025-11-05 14:25:03,975 - am_structural_robust - INFO -   Processed 300/409 pages
+2025-11-05 14:25:14,964 - am_structural_robust - ERROR - [X] Page 335: All extractors failed
+2025-11-05 14:25:19,366 - am_structural_robust - INFO -   Processed 350/409 pages
+2025-11-05 14:25:20,511 - am_structural_robust - ERROR - [X] Page 353: All extractors failed
+2025-11-05 14:25:25,291 - am_structural_robust - ERROR - [X] Page 369: All extractors failed
+2025-11-05 14:25:26,506 - am_structural_robust - ERROR - [X] Page 373: All extractors failed
+2025-11-05 14:25:27,773 - am_structural_robust - ERROR - [X] Page 377: All extractors failed
+2025-11-05 14:25:34,738 - am_structural_robust - INFO -   Processed 400/409 pages
+2025-11-05 14:25:37,445 - am_structural_robust - INFO - Extraction complete: 409 success, 0 failed
+2025-11-05 14:25:37,445 - am_structural_robust - INFO -   Methods used: {'pdfminer': 395}
+2025-11-05 14:25:37,445 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-05 14:25:37,445 - am_structural_robust - INFO -   Tables found: 0
+2025-11-05 14:25:37,451 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structural\data-science-for-business.dataset.jsonl (409 cards)
+2025-11-05 14:25:37,458 - am_common - INFO - Saved: 409 cards to data-science-for-business.dataset.jsonl (962.31 KB)
+2025-11-05 14:25:37,459 - am_structural_robust - INFO - Dataset saved: 962.31 KB
+2025-11-05 14:25:37,459 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:25:37,459 - quality_tracker - INFO - structural metrics:
+2025-11-05 14:25:37,459 - quality_tracker - INFO -   total_pages: 409
+2025-11-05 14:25:37,459 - quality_tracker - INFO -   success_pages: 409
+2025-11-05 14:25:37,459 - quality_tracker - INFO -   failed_pages: 0
+2025-11-05 14:25:37,459 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-05 14:25:37,459 - quality_tracker - INFO -   empty_pages: 14
+2025-11-05 14:25:37,460 - quality_tracker - INFO -   avg_page_length: 2167.1858
+2025-11-05 14:25:37,460 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 395}
+2025-11-05 14:25:37,460 - quality_tracker - INFO -   ocr_used: 0
+2025-11-05 14:25:37,460 - quality_tracker - INFO -   tables_found: 0
+2025-11-05 14:25:37,460 - quality_tracker - INFO - ✓ Quality thresholds passed for structural
+2025-11-05 14:25:37,460 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:25:37,460 - am_structural_robust - INFO - [OK] Saved: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,460 - validate - INFO - Validating structural: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,460 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,476 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,478 - validate - INFO - [OK] VALID - data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,478 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,478 - __main__ - INFO -   📄 Completed: STRUCTURAL
+2025-11-05 14:25:37,478 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,478 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,478 - __main__ - INFO -   📖 Starting: STRUCTURE_DETECT
+2025-11-05 14:25:37,478 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,478 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:25:37,493 - am_common - INFO - Config loaded successfully
+2025-11-05 14:25:37,494 - am_structure_detect - INFO - Processing: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,494 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structural\data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,500 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,501 - am_structure_detect - INFO - TOC found: pages 9-15
+2025-11-05 14:25:37,503 - am_structure_detect - INFO - Detected 1 chapters
+2025-11-05 14:25:37,505 - am_structure_detect - INFO - Detected 1 sections
+2025-11-05 14:25:37,505 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\structured\data-science-for-business.dataset.jsonl (409 cards)
+2025-11-05 14:25:37,513 - am_common - INFO - Saved: 409 cards to data-science-for-business.dataset.jsonl (1011.98 KB)
+2025-11-05 14:25:37,513 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:25:37,514 - quality_tracker - INFO - structure_detect metrics:
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   total_pages: 409
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   chapters_detected: 1
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   sections_detected: 1
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   pages_with_structure: 332
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   structure_coverage: 0.8117
+2025-11-05 14:25:37,514 - quality_tracker - INFO -   avg_chapter_length: 409.0000
+2025-11-05 14:25:37,514 - quality_tracker - INFO - ✓ Quality thresholds passed for structure_detect
+2025-11-05 14:25:37,514 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:25:37,514 - am_structure_detect - INFO - Saved: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,514 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-05 14:25:37,515 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 14:25:37,515 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,515 - __main__ - INFO -   📖 Completed: STRUCTURE_DETECT
+2025-11-05 14:25:37,515 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,515 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,515 - __main__ - INFO -   📝 Starting: SUMMARIZE
+2025-11-05 14:25:37,515 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,515 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:25:37,529 - am_common - INFO - Config loaded successfully
+2025-11-05 14:25:37,529 - am_summarize - INFO - Processing: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,529 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\structured\data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,544 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,830 - am_summarize - INFO - Summarized 395 pages, skipped 14
+2025-11-05 14:25:37,830 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\summarized\data-science-for-business.dataset.jsonl (409 cards)
+2025-11-05 14:25:37,841 - am_common - INFO - Saved: 409 cards to data-science-for-business.dataset.jsonl (1.31 MB)
+2025-11-05 14:25:37,841 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:25:37,842 - quality_tracker - INFO - summarize metrics:
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   total_pages: 409
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   summarized_pages: 395
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   skipped_pages: 14
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   summary_coverage: 0.9658
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   avg_l1_length: 231.1570
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   avg_l2_length: 577.2025
+2025-11-05 14:25:37,842 - quality_tracker - INFO -   avg_compression_ratio: 10.8300
+2025-11-05 14:25:37,842 - quality_tracker - INFO - ✓ Quality thresholds passed for summarize
+2025-11-05 14:25:37,842 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:25:37,843 - am_summarize - INFO - Saved: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,843 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-05 14:25:37,843 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 14:25:37,843 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,843 - __main__ - INFO -   📝 Completed: SUMMARIZE
+2025-11-05 14:25:37,843 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,843 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,843 - __main__ - INFO -   🤖 Starting: EXTENDED
+2025-11-05 14:25:37,843 - __main__ - INFO - ============================================================
+2025-11-05 14:25:37,843 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:25:37,858 - am_common - INFO - Config loaded successfully
+2025-11-05 14:25:37,889 - am_extended - INFO - [LM EXTRACTION] Model 'qwen2.5:7b' confirmed available
+2025-11-05 14:25:37,889 - am_extended - INFO - [LM EXTRACTION] Ollama available, using model: qwen2.5:7b
+2025-11-05 14:25:37,890 - am_extended - INFO - Processing: data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,890 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\summarized\data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,908 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:25:37,920 - am_extended - INFO - Marked 0 duplicate pages
+2025-11-05 14:25:37,974 - am_extended - INFO - Found 69 continuity gaps
+2025-11-05 14:25:37,974 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-05 14:25:53,978 - am_extended - INFO -   Processed 10/409 pages
+2025-11-05 14:26:17,474 - am_extended - INFO -   Processed 20/409 pages
+2025-11-05 14:26:44,273 - am_extended - INFO -   Processed 30/409 pages
+2025-11-05 14:27:11,869 - am_extended - INFO -   Processed 40/409 pages
+2025-11-05 14:27:34,952 - am_extended - INFO -   Processed 50/409 pages
+2025-11-05 14:28:01,916 - am_extended - INFO -   Processed 60/409 pages
+2025-11-05 14:28:27,499 - am_extended - INFO -   Processed 70/409 pages
+2025-11-05 14:28:52,479 - am_extended - INFO -   Processed 80/409 pages
+2025-11-05 14:29:17,701 - am_extended - INFO -   Processed 90/409 pages
+2025-11-05 14:29:42,571 - am_extended - INFO -   Processed 100/409 pages
+2025-11-05 14:30:04,725 - am_extended - INFO -   Processed 110/409 pages
+2025-11-05 14:30:30,203 - am_extended - INFO -   Processed 120/409 pages
+2025-11-05 14:30:56,359 - am_extended - INFO -   Processed 130/409 pages
+2025-11-05 14:31:16,883 - am_extended - INFO -   Processed 140/409 pages
+2025-11-05 14:31:41,730 - am_extended - INFO -   Processed 150/409 pages
+2025-11-05 14:32:08,508 - am_extended - INFO -   Processed 160/409 pages
+2025-11-05 14:32:34,969 - am_extended - INFO -   Processed 170/409 pages
+2025-11-05 14:33:01,146 - am_extended - INFO -   Processed 180/409 pages
+2025-11-05 14:33:26,731 - am_extended - INFO -   Processed 190/409 pages
+2025-11-05 14:33:53,276 - am_extended - INFO -   Processed 200/409 pages
+2025-11-05 14:34:44,629 - am_extended - INFO -   Processed 220/409 pages
+2025-11-05 14:35:11,211 - am_extended - INFO -   Processed 230/409 pages
+2025-11-05 14:35:38,199 - am_extended - INFO -   Processed 240/409 pages
+2025-11-05 14:36:04,443 - am_extended - INFO -   Processed 250/409 pages
+2025-11-05 14:36:31,226 - am_extended - INFO -   Processed 260/409 pages
+2025-11-05 14:36:57,056 - am_extended - INFO -   Processed 270/409 pages
+2025-11-05 14:37:22,283 - am_extended - INFO -   Processed 280/409 pages
+2025-11-05 14:37:48,488 - am_extended - INFO -   Processed 290/409 pages
+2025-11-05 14:38:40,303 - am_extended - INFO -   Processed 310/409 pages
+2025-11-05 14:39:08,969 - am_extended - INFO -   Processed 320/409 pages
+2025-11-05 14:39:35,036 - am_extended - INFO -   Processed 330/409 pages
+2025-11-05 14:40:00,179 - am_extended - INFO -   Processed 340/409 pages
+2025-11-05 14:40:27,893 - am_extended - INFO -   Processed 350/409 pages
+2025-11-05 14:40:51,914 - am_extended - INFO -   Processed 360/409 pages
+2025-11-05 14:41:38,163 - am_extended - INFO -   Processed 380/409 pages
+2025-11-05 14:42:18,880 - am_extended - INFO -   Processed 390/409 pages
+2025-11-05 14:42:48,755 - am_extended - INFO -   Processed 400/409 pages
+2025-11-05 14:43:11,840 - am_extended - INFO - Extracted extended fields for 392 pages
+2025-11-05 14:43:11,841 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\extended\data-science-for-business.dataset.jsonl (409 cards)
+2025-11-05 14:43:11,856 - am_common - INFO - Saved: 409 cards to data-science-for-business.dataset.jsonl (1.78 MB)
+2025-11-05 14:43:11,856 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:43:11,856 - quality_tracker - INFO - extended metrics:
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   total_cards: 409
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   duplicates_found: 0
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   duplicate_ratio: 0.0000
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   continuity_gaps: 69
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   continuity_gap_ratio: 0.1691
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   avg_overlap: 0.1370
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   extended_fields_extracted: 392
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   extraction_coverage: 0.9584
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   lm_extraction_count: 392
+2025-11-05 14:43:11,857 - quality_tracker - INFO -   lm_extraction_ratio: 1.0000
+2025-11-05 14:43:11,857 - quality_tracker - INFO - ✓ Quality thresholds passed for extended
+2025-11-05 14:43:11,857 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:43:11,857 - am_extended - INFO - Saved: data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,858 - validate - INFO - Validating extended: data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,858 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,885 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,888 - validate - WARNING - [X] INVALID - data-science-for-business.dataset.jsonl (2 errors)
+2025-11-05 14:43:11,888 - __main__ - WARNING - Validation issues: 2 errors, 0 warnings
+2025-11-05 14:43:11,888 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-05 14:43:11,888 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,888 - __main__ - INFO -   🤖 Completed: EXTENDED
+2025-11-05 14:43:11,888 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,888 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,888 - __main__ - INFO -   ✅ Starting: FINALIZE
+2025-11-05 14:43:11,888 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,888 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:43:11,904 - am_common - INFO - Config loaded successfully
+2025-11-05 14:43:11,904 - am_finalize - INFO - Processing: data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,904 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\extended\data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,920 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,922 - am_common - INFO - Saving dataset: c:\scripts\1repo\data\datasets\final\data-science-for-business.dataset.jsonl (409 cards)
+2025-11-05 14:43:11,936 - am_common - INFO - Saved: 409 cards to data-science-for-business.dataset.jsonl (1.76 MB)
+2025-11-05 14:43:11,936 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:43:11,937 - quality_tracker - INFO - finalize metrics:
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   total_cards: 409
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   validation_errors: 0
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   validation_warnings: 58
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   avg_completeness: 0.6000
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   cards_with_structure: 332
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   structure_coverage: 0.8117
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   cards_with_summaries: 395
+2025-11-05 14:43:11,937 - quality_tracker - INFO -   summary_coverage: 0.9658
+2025-11-05 14:43:11,937 - quality_tracker - INFO - ✓ Quality thresholds passed for finalize
+2025-11-05 14:43:11,937 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:43:11,937 - am_finalize - INFO - Saved: data-science-for-business.dataset.jsonl
+2025-11-05 14:43:11,939 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-05 14:43:11,939 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 14:43:11,939 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,939 - __main__ - INFO -   ✅ Completed: FINALIZE
+2025-11-05 14:43:11,939 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,939 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,939 - __main__ - INFO -   🧩 Starting: CHUNK
+2025-11-05 14:43:11,939 - __main__ - INFO - ============================================================
+2025-11-05 14:43:11,939 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:43:11,954 - am_common - INFO - Config loaded successfully
+2025-11-05 14:43:12,041 - am_chunk - INFO - Processing: data-science-for-business.dataset.jsonl
+2025-11-05 14:43:12,041 - am_common - INFO - Loading dataset: c:\scripts\1repo\data\datasets\final\data-science-for-business.dataset.jsonl
+2025-11-05 14:43:12,063 - am_common - INFO - Loaded: 409 cards from data-science-for-business.dataset.jsonl
+2025-11-05 14:43:12,282 - am_chunk - INFO - Created 607 chunks from 409 pages
+2025-11-05 14:43:12,295 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:43:12,296 - quality_tracker - INFO - chunk metrics:
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   total_chunks: 607
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   chunks_per_page: 1.4841
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   avg_chunk_tokens: 358.7891
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   min_chunk_tokens: 104
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   max_chunk_tokens: 816
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 255, '300-512': 335, '512+': 17}
+2025-11-05 14:43:12,296 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-05 14:43:12,296 - quality_tracker - INFO - ✓ Quality thresholds passed for chunk
+2025-11-05 14:43:12,297 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:43:12,297 - am_chunk - INFO - Saved: data-science-for-business.dataset.chunks.jsonl
+2025-11-05 14:43:12,298 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-05 14:43:12,298 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-05 14:43:12,298 - __main__ - INFO - ============================================================
+2025-11-05 14:43:12,298 - __main__ - INFO -   🧩 Completed: CHUNK
+2025-11-05 14:43:12,298 - __main__ - INFO - ============================================================
+2025-11-05 14:43:12,298 - __main__ - INFO - ============================================================
+2025-11-05 14:43:12,298 - __main__ - INFO -   🔢 Starting: EMBED
+2025-11-05 14:43:12,299 - __main__ - INFO - ============================================================
+2025-11-05 14:43:12,299 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-05 14:43:12,313 - am_common - INFO - Config loaded successfully
+2025-11-05 14:43:12,313 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-05 14:43:12,314 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-05 14:43:12,314 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-05 14:43:27,308 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-05 14:43:27,309 - am_embed - INFO - Processing: data-science-for-business.dataset.chunks.jsonl
+2025-11-05 14:43:27,329 - am_embed - INFO - Loaded 607 chunks
+2025-11-05 14:43:27,330 - am_embed - INFO - Encoding 607 chunks in 19 batches
+2025-11-05 14:43:30,398 - am_embed - INFO - Processed batch 10/19
+2025-11-05 14:43:33,182 - am_embed - INFO - Encoded 607 embeddings, 0 failures
+2025-11-05 14:43:33,182 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-05 14:43:33,182 - am_embed - INFO - Vectors: 607, Dimension: 384
+2025-11-05 14:43:33,182 - am_embed - INFO - FAISS index built: 607 vectors
+2025-11-05 14:43:33,183 - am_embed - INFO - Saved FAISS index: data-science-for-business.dataset.faiss (910.54 KB)
+2025-11-05 14:43:33,186 - am_embed - INFO - Saved metadata: data-science-for-business.dataset.pkl (1.15 MB)
+2025-11-05 14:43:33,187 - quality_tracker - INFO - Starting: track_quality
+2025-11-05 14:43:33,188 - quality_tracker - INFO - embed metrics:
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   total_vectors: 607
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-05 14:43:33,188 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-05 14:43:33,188 - quality_tracker - INFO - ✓ Quality thresholds passed for embed
+2025-11-05 14:43:33,188 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-05 14:43:33,188 - am_embed - INFO - Saved: data-science-for-business.dataset.faiss, data-science-for-business.dataset.pkl
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO -   🔢 Completed: EMBED
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO - Pipeline status: completed
+2025-11-05 14:43:33,189 - __main__ - INFO - Completed: run_single_pipeline (1197.67s)
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO -   📊 FINAL REPORTS
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO -   Performance Summary
+2025-11-05 14:43:33,189 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,189 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-05 14:43:33,189 - __main__ - INFO -   Count: 1
+2025-11-05 14:43:33,189 - __main__ - INFO -   Total: 1197.67s
+2025-11-05 14:43:33,189 - __main__ - INFO -   Avg: 1197.67s
+2025-11-05 14:43:33,189 - __main__ - INFO -   Min: 1197.67s
+2025-11-05 14:43:33,189 - __main__ - INFO -   Max: 1197.67s
+2025-11-05 14:43:33,190 - __main__ - INFO - 
+track_quality:
+2025-11-05 14:43:33,190 - __main__ - INFO -   Count: 7
+2025-11-05 14:43:33,190 - __main__ - INFO -   Total: 0.01s
+2025-11-05 14:43:33,190 - __main__ - INFO -   Avg: 0.00s
+2025-11-05 14:43:33,190 - __main__ - INFO -   Min: 0.00s
+2025-11-05 14:43:33,190 - __main__ - INFO -   Max: 0.00s
+2025-11-05 14:43:33,190 - __main__ - INFO - No errors or warnings recorded
+2025-11-05 14:43:33,190 - __main__ - INFO - 
+2025-11-05 14:43:33,190 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-05 14:43:33,191 - quality_tracker - INFO - Quality report saved: c:\scripts\1repo\data\quality\quality_report_20251105_144333.json
+2025-11-05 14:43:33,192 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-05 14:43:33,192 - quality_tracker - INFO - ============================================================
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-05 14:43:33,192 - quality_tracker - INFO - ============================================================
+2025-11-05 14:43:33,192 - quality_tracker - INFO - Generated: 2025-11-05T11:43:33Z
+2025-11-05 14:43:33,192 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-05 14:43:33,192 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-05 14:43:33,192 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,192 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,192 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,192 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,192 - quality_tracker - INFO - 
+2025-11-05 14:43:33,192 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-05 14:43:33,193 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,193 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,193 - quality_tracker - INFO - 
+2025-11-05 14:43:33,193 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-05 14:43:33,193 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,193 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,193 - quality_tracker - INFO - 
+2025-11-05 14:43:33,193 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-05 14:43:33,193 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,193 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,193 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,193 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Stage: EMBED
+2025-11-05 14:43:33,194 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,194 - quality_tracker - INFO - Summary:
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   total_runs: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-05 14:43:33,194 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-05 14:43:33,194 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-05 14:43:33,195 - quality_tracker - INFO - 
+2025-11-05 14:43:33,195 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,195 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-05 14:43:33,195 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-05 14:43:33,195 - quality_tracker - INFO - track_quality:
+2025-11-05 14:43:33,195 - quality_tracker - INFO -   Count: 7, Avg: 0.00s
+2025-11-05 14:43:33,195 - quality_tracker - INFO - run_single_pipeline:
+2025-11-05 14:43:33,195 - quality_tracker - INFO -   Count: 1, Avg: 1197.67s
+2025-11-05 14:43:33,195 - __main__ - INFO - 
+2025-11-05 14:43:33,195 - validate - INFO - ============================================================
+2025-11-05 14:43:33,195 - validate - INFO -   Validation Summary
+2025-11-05 14:43:33,195 - validate - INFO - ============================================================
+2025-11-05 14:43:33,195 - validate - INFO - Overall Results:
+2025-11-05 14:43:33,195 - validate - INFO -   total_datasets: 2
+2025-11-05 14:43:33,195 - validate - INFO -   valid_datasets: 1
+2025-11-05 14:43:33,195 - validate - INFO -   invalid_datasets: 1
+2025-11-05 14:43:33,195 - validate - INFO -   total_errors: 2
+2025-11-05 14:43:33,195 - validate - INFO -   total_warnings: 14
+2025-11-05 14:43:33,195 - validate - INFO -   success_rate: 0.5000
+2025-11-05 14:43:33,195 - validate - INFO -   timestamp: 2025-11-05T11:43:33.195306
+2025-11-05 14:43:33,195 - validate - INFO - 
+Per-dataset results:
+2025-11-05 14:43:33,195 - validate - INFO -   ✅ VALID - data-science-for-business.dataset.jsonl (errors: 0, warnings: 14)
+2025-11-05 14:43:33,195 - validate - INFO -   ❌ INVALID - data-science-for-business.dataset.jsonl (errors: 2, warnings: 0)
+2025-11-05 14:43:33,195 - __main__ - INFO - ============================================================
+2025-11-05 14:43:33,195 - __main__ - INFO -   ✅ PIPELINE COMPLETED SUCCESSFULLY
+2025-11-05 14:43:33,195 - __main__ - INFO - ============================================================

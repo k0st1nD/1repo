@@ -1,0 +1,107 @@
+{
+  "processed_books": [],
+  "failed_books": [
+    {
+      "book": "2024_final_dora_report.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Agile-Metrics-in-Action.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "baza-znanij-safe\u00ae-russia.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Continuous_Discovery_Habits_-_Teresa_Torres.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Data-Science-for-Business.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Escaping_the_build_trap_-_Melissa_Perri.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "GOOD-STRATEGY-BAD-STRATEGY.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Hooked-How-to-Build-Habit-Forming-Products.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Lean_Analytics.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "measure-what-matters-by-john-doerr.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "naked-statistics-pdf.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "norton_kaplan_balanced_scorecard.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Project Management Institute - \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043a \u0441\u0432\u043e\u0434\u0443 \u0437\u043d\u0430\u043d\u0438\u0439 \u043f\u043e \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044e \u043f\u0440\u043e\u0435\u043a\u0442\u0430\u043c\u0438 (\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e PMBOK) \u0438 \u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u043c. \u0421\u0435\u0434\u044c\u043c\u043e\u0435 \u0438\u0437\u0434\u0430\u043d\u0438\u0435 - 2021.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    },
+    {
+      "book": "\u041a\u0430\u0433\u0430\u043d \u041c\u0430\u0440\u0442\u0438 - \u0412\u0434\u043e\u0445\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044b\u0435 - 2020.pdf",
+      "error": "'WindowsPath' object is not subscriptable",
+      "attempts": 2
+    }
+  ],
+  "last_book": null,
+  "timestamp": "2025-11-01T00:43:52.825722"
+}

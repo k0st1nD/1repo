@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:13:40Z",
+  "stage": "summarize",
+  "source": "baza-znanij-safe®-russia.dataset.jsonl",
+  "metrics": {
+    "total_pages": 86,
+    "summarized_pages": 86,
+    "skipped_pages": 0,
+    "summary_coverage": 1.0,
+    "avg_l1_length": 256.8488372093023,
+    "avg_l2_length": 658.6046511627907,
+    "avg_compression_ratio": 4.65
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

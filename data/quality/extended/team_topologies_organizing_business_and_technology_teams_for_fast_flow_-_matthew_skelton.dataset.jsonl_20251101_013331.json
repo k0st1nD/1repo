@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-31T22:33:31Z",
+  "stage": "extended",
+  "source": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset.jsonl",
+  "metrics": {
+    "total_cards": 310,
+    "duplicates_found": 0,
+    "duplicate_ratio": 0.0,
+    "continuity_gaps": 134,
+    "continuity_gap_ratio": 0.4336569579288026,
+    "avg_overlap": 0.105,
+    "extended_fields_extracted": 300,
+    "extraction_coverage": 0.967741935483871,
+    "lm_extraction_count": 0,
+    "lm_extraction_ratio": 0.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: max_duplicates_ratio",
+      "Missing metric: min_extended_fields_ratio",
+      "Missing metric: min_topics_per_page",
+      "Missing metric: min_lm_extraction_ratio",
+      "Missing metric: max_continuity_gaps"
+    ]
+  }
+}

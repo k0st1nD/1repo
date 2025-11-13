@@ -1,0 +1,551 @@
+# Archivist Magika MVP v2.0 - QUALITY Configuration
+# ==================================================
+# Optimized for quality: all features, best models
+# Use case: Production, important documents, maximum metadata
+
+version: "2.0.0"
+product: "archivist magika"
+profile: "quality"
+
+# ============================================
+# PROJECT METADATA
+# ============================================
+
+project:
+  name: "archivist magika"
+  description: "RAG system - QUALITY mode"
+
+# ============================================
+# PATHS
+# ============================================
+
+paths:
+  base_dir: "."
+  data_dir: "data"
+  config_dir: "config"
+  sources: "data/sources"
+  datasets: "data/datasets"
+  indexes: "data/indexes"
+  tables: "data/tables"
+  cache: "data/cache"
+  quality: "data/quality"
+  logs: "logs"
+
+# ============================================
+# LOGGING (comprehensive)
+# ============================================
+
+logging:
+  level: INFO  # 🎯 Full logging
+  detailed: true  # 🎯 Include filename:lineno
+  
+  console:
+    enabled: true
+    colored: true
+  
+  file:
+    enabled: true
+    path: logs/pipeline_quality.log
+    max_bytes: 20971520  # 🎯 20MB (more logs)
+    backup_count: 10
+  
+  structured:
+    enabled: true  # 🎯 JSON for analysis
+    path: logs/pipeline_quality.json
+    max_bytes: 20971520
+    backup_count: 10
+  
+  use_tqdm_handler: true
+
+# ============================================
+# PIPELINE CONFIGURATION
+# ============================================
+
+pipeline:
+  
+  # ==========================================
+  # Stage 1: Structural (HIGH QUALITY)
+  # ==========================================
+  structural:
+    ocr:
+      enabled: true  # 🎯 Full OCR
+      languages: ['eng']  # Add more: ['eng', 'rus', 'fra']
+      dpi: 600  # 🎯 High quality
+      confidence_threshold: 75  # 🎯 High threshold
+      min_chars_threshold: 30
+    
+    tables:
+      enabled: true
+      extract_method: "pdfplumber"  # Best quality
+      min_rows: 2
+      min_cols: 2
+      save_to_separate_files: true
+    
+    extractors:
+      - pdfminer
+      - pdfplumber
+      - pypdf2
+      - ocr  # 🎯 Full chain
+    
+    retry:
+      max_attempts: 3  # 🎯 Multiple retries
+      initial_delay: 2.0
+      backoff_factor: 2.0
+      max_delay: 15.0
+    
+    blank_detection:
+      min_chars_ocr: 50
+      min_chars_valid: 10
+      skip_front_matter: true
+    
+    track_performance: true  # 🎯 Track everything
+  
+  # ==========================================
+  # Stage 2: Structure Detection (DEEP)
+  # ==========================================
+  structure_detect:
+    chapter:
+      enabled: true
+      patterns:
+        - "^Chapter\\s+\\d+"
+        - "^\\d+\\.\\s+[A-Z]"
+        - "^CHAPTER\\s+[IVXLCDM]+"
+        - "^Part\\s+\\d+"
+        - "^Section\\s+\\d+"  # 🎯 More patterns
+      min_confidence: 0.8  # 🎯 High confidence
+      max_distance_from_start: 0.3
+    
+    section:
+      enabled: true
+      detect_numbered: true
+      detect_title_case: true  # 🎯 All methods
+      min_title_words: 2
+      max_title_words: 20  # 🎯 Longer titles
+    
+    toc:
+      enabled: true
+      include_page_numbers: true
+      max_depth: 4  # 🎯 Deep TOC
+  
+  # ==========================================
+  # Stage 3: Summarization (FULL)
+  # ==========================================
+  summarize:
+    enabled: true  # 🎯 Enabled
+    engine: "extractive"
+    
+    l1_summary:
+      enabled: true
+      target_length: 300
+      method: "extractive"
+    
+    l2_summary:
+      enabled: true  # 🎯 L2 enabled
+      target_length: 900
+      method: "extractive"
+    
+    extractive:
+      method: "textrank"
+      ratio: 0.4  # 🎯 More content
+      min_sentence_length: 10
+      max_sentence_length: 250
+  
+  # ==========================================
+  # Stage 4: Extended Fields (MAXIMUM)
+  # ==========================================
+  extended:
+    dedup:
+      enabled: true
+      exact_match: true
+      fuzzy_match: true  # 🎯 Full fuzzy
+      fuzzy_threshold: 0.85
+      min_tokens: 5  # 🎯 Catch more
+    
+    continuity:
+      enabled: true  # 🎯 Full continuity
+      check_page_sequence: true
+      check_chapter_sequence: true
+      overlap_threshold: 0.08
+    
+    lm_extraction:
+      enabled: true  # 🎯 Full LM
+      
+      ollama:
+        base_url: "http://localhost:11434"
+        model: "qwen2.5:14b"  # 🎯 Best model (9GB)
+        timeout: 120  # 🎯 More time
+        max_retries: 3
+        retry_delay: 3.0
+      
+      max_text_length: 6000  # 🎯 More context
+      truncate_strategy: "smart"
+      
+      # ALL FIELDS ENABLED 🎯
+      fields:
+        content_type: true
+        domain: true
+        complexity: true
+        
+        entities:
+          companies: true
+          people: true
+          products: true
+          technologies: true
+          frameworks: true
+          methodologies: true
+        
+        technical:
+          has_code: true
+          has_formulas: true
+          has_diagram: true
+          programming_languages: true
+        
+        actionable:
+          has_best_practices: true
+          has_antipatterns: true
+          has_instructions: true
+          has_warnings: true
+        
+        business:
+          has_metrics: true
+          metrics: true
+          has_case_study: true
+          case_study_company: true
+        
+        content_analysis:
+          topics: true
+          key_concepts: true
+          problem_statement: true
+          solution_approach: true
+        
+        tools_mentioned: true
+      
+      use_heuristics_fallback: true
+      heuristics_only: false  # 🎯 Use LM
+    
+    aggregate_errors: true
+  
+  # ==========================================
+  # Stage 5: Finalization (STRICT)
+  # ==========================================
+  finalize:
+    validation:
+      strict_mode: true  # 🎯 Strict
+      check_required_fields: true
+      check_extended_fields: true
+      check_manifest: true
+    
+    policies:
+      min_page_content_length: 50
+      max_page_content_length: 150000  # 🎯 More content
+      max_empty_pages_ratio: 0.08  # 🎯 Stricter
+      require_title: true
+      require_total_cards: true
+    
+    cleanup:
+      remove_duplicates: true
+      remove_blank_pages: true
+      normalize_whitespace: true
+  
+  # ==========================================
+  # Stage 6: Chunking (SMART)
+  # ==========================================
+  chunk:
+    strategy: "sliding_window"
+    
+    chunk_size: 512
+    chunk_overlap: 128  # 🎯 Good overlap
+    min_chunk_size: 100
+    max_chunk_size: 2000
+    
+    token_model: "cl100k_base"
+    
+    add_structure_context: true
+    preserve_tables: true
+    respect_sentence_boundaries: true  # 🎯 Smart boundaries
+    respect_paragraph_boundaries: true  # 🎯 Preserve structure
+    
+    include_metadata: true
+    include_extended_fields: true  # 🎯 Full metadata
+    context_max_tokens: 300  # 🎯 Rich context
+  
+  # ==========================================
+  # Stage 7: Embedding (OPTIMAL)
+  # ==========================================
+  embed:
+    model: "BAAI/bge-m3"
+    embedding_dim: 1024
+    normalize: true
+    
+    batch_size: 32  # Balanced
+    device: "cpu"
+    num_workers: 4
+    show_progress: true
+    
+    faiss:
+      index_type: "Flat"  # 🎯 Exact search
+      metric: "cosine"
+    
+    cache:
+      enabled: true
+      cache_dir: "data/cache/embeddings"
+      use_hash: true
+      ttl: 86400
+
+# ============================================
+# SEARCH (ADVANCED)
+# ============================================
+
+search:
+  semantic:
+    enabled: true
+    model: "BAAI/bge-m3"
+    top_k: 20  # 🎯 More results
+    min_score: 0.6  # 🎯 Higher quality
+  
+  keyword:
+    enabled: true  # 🎯 Enabled
+    k1: 1.5
+    b: 0.75
+  
+  hybrid:
+    enabled: true  # 🎯 Hybrid search
+    semantic_weight: 0.7
+    keyword_weight: 0.3
+    fusion_method: "rrf"
+  
+  query_expansion:
+    enabled: true  # 🎯 Expand queries
+    max_expansions: 5  # 🎯 More expansions
+    method: "embeddings"
+  
+  filters:
+    default_min_score: 0.6
+    enable_chapter_filter: true
+    enable_section_filter: true
+    enable_page_range_filter: true
+    enable_content_type_filter: true
+    enable_topic_filter: true
+  
+  context_expansion:
+    enabled: true  # 🎯 Enabled by default
+    default_context_size: 2  # 🎯 More context
+    max_context_size: 5
+  
+  reranking:
+    enabled: true  # 🎯 Rerank results
+    model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    rerank_top_k: 50
+    return_top_k: 10
+    device: "cpu"
+    batch_size: 8
+
+# ============================================
+# QUALITY (FULL TRACKING)
+# ============================================
+
+quality:
+  enabled: true  # 🎯 Full tracking
+  output_dir: "data/quality"
+  
+  track_stages:
+    - structural
+    - structure_detect
+    - summarize
+    - extended
+    - finalize
+    - chunk
+    - embed
+  
+  metrics:
+    - total_items
+    - success_rate
+    - avg_processing_time
+    - error_count
+    - warning_count
+    - quality_score  # 🎯 Custom score
+  
+  # 🎯 Strict thresholds
+  thresholds:
+    structural:
+      min_success_ratio: 0.98
+      max_empty_ratio: 0.08
+      min_avg_page_length: 600
+      max_error_ratio: 0.03
+      max_ocr_ratio: 0.15
+    
+    structure_detect:
+      min_chapters_detected: 1
+      min_toc_coverage: 0.85
+      max_orphan_pages: 0.10
+    
+    summarize:
+      min_summary_ratio: 0.95
+      min_summary_length: 150
+      max_summary_length: 350
+    
+    extended:
+      max_duplicates_ratio: 0.03
+      min_extended_fields_ratio: 0.85
+      min_topics_per_page: 2
+      min_lm_extraction_ratio: 0.90
+      max_continuity_gaps: 0.05
+    
+    finalize:
+      min_validation_pass_rate: 0.99
+      max_policy_violations: 0.005
+    
+    chunk:
+      min_chunks_per_page: 1
+      max_chunks_per_page: 15
+      min_chunk_length: 150
+      max_chunk_length: 1800
+      min_avg_tokens: 100
+      max_avg_tokens: 550
+    
+    embed:
+      min_embedding_success: 0.995
+      max_embedding_time_per_chunk: 0.3
+  
+  reports:
+    auto_generate: true
+    include_trends: true
+    include_comparisons: true
+    save_timestamped: true
+
+# ============================================
+# VALIDATION (STRICT)
+# ============================================
+
+validation:
+  enabled: true  # 🎯 Full validation
+  auto_validate: true
+  strict_mode: true  # 🎯 Strict
+  save_reports: true
+  report_dir: "data/quality/validation"
+
+# ============================================
+# PERFORMANCE
+# ============================================
+
+performance:
+  max_workers: 4  # Balanced
+  max_memory_mb: 16384  # 🎯 16GB
+  batch_size: 8  # Smaller for quality
+  show_progress: true
+  progress_bar_style: "tqdm"
+  enable_cache: true
+  cache_ttl: 86400
+  cleanup_temp_files: true
+
+# ============================================
+# DEVELOPMENT
+# ============================================
+
+development:
+  debug_mode: false
+  verbose: true  # 🎯 Verbose
+  save_intermediate: true  # 🎯 Save for analysis
+  intermediate_dir: "data/debug"
+  enable_profiling: false
+  dry_run: false
+
+# ============================================
+# PRODUCTION
+# ============================================
+
+production:
+  strict_validation: true
+  enable_monitoring: true
+  enable_alerts: true  # 🎯 Alerts enabled
+  alert_on_quality_issues: true
+  alert_on_errors: true
+  continue_on_error: false  # 🎯 Stop on error
+  max_consecutive_errors: 1
+
+# ============================================
+# FEATURE FLAGS (ALL ENABLED)
+# ============================================
+
+features:
+  ocr: true
+  tables: true
+  structure_detection: true
+  summarization: true
+  extended_fields: true
+  deduplication: true
+  quality_tracking: true
+  validation: true
+  performance_tracking: true
+  error_aggregation: true
+  semantic_search: true
+  keyword_search: true
+  hybrid_search: true
+  query_expansion: true
+  reranking: true
+
+# ============================================
+# MODELS (BEST QUALITY)
+# ============================================
+
+models:
+  embedding:
+    name: "BAAI/bge-m3"
+    size: "1024"
+    download_url: "https://huggingface.co/BAAI/bge-m3"
+    cache_dir: "data/cache/models"
+  
+  lm:
+    name: "qwen2.5:14b"  # 🎯 Best model
+    provider: "ollama"
+    ram_required: "9GB"
+    alternative: "qwen2.5:32b"  # Even better, 20GB
+  
+  reranker:
+    name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    provider: "sentence-transformers"
+
+# ============================================
+# EXPERIMENTAL (SOME ENABLED)
+# ============================================
+
+experimental:
+  semantic_chunking: true
+  hierarchical_chunking: true
+  query_reformulation: true  # 🎯 Enabled
+  multi_query: false
+  image_extraction: true
+  diagram_ocr: true
+  table_understanding: true
+  incremental_indexing: true
+  distributed_processing: true
+
+# ============================================
+# NOTES
+# ============================================
+
+# Quality mode for MVP v2.0
+# 
+# Use when:
+# - Maximum quality needed
+# - Processing important documents
+# - Scanned PDFs
+# - High RAM available (12-16 GB)
+# - Advanced search needed
+# - Rich metadata required
+# 
+# Features enabled:
+# ✅ High-quality OCR (600 DPI)
+# ✅ LM extraction (14b model)
+# ✅ L1 + L2 summaries
+# ✅ Full quality tracking
+# ✅ Strict validation
+# ✅ Hybrid search
+# ✅ Reranking
+# ✅ Query expansion
+# ✅ All extended fields
+# 
+# Expected performance:
+# ⏱️  ~10-20 minutes per 100 pages
+# 💾 ~12-16 GB RAM
+# ⭐ Quality: ★★★★★

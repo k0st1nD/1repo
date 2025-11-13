@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-05T10:51:40Z",
+  "stage": "structure_detect",
+  "source": "baza-znanij-safe®-russia.dataset.jsonl",
+  "metrics": {
+    "total_pages": 86,
+    "chapters_detected": 0,
+    "sections_detected": 0,
+    "pages_with_structure": 0,
+    "structure_coverage": 0.0,
+    "avg_chapter_length": 0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

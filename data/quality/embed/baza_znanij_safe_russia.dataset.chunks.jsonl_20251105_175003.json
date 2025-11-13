@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-05T14:50:03Z",
+  "stage": "embed",
+  "source": "baza_znanij_safe_russia.dataset.chunks.jsonl",
+  "metrics": {
+    "total_vectors": 97,
+    "embedding_dim": 384,
+    "embedding_failures": 0,
+    "failure_rate": 0.0,
+    "avg_norm": 1.0,
+    "min_norm": 0.9999998807907104,
+    "max_norm": 1.0000001192092896
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_embedding_success",
+      "Missing metric: max_embedding_time_per_chunk"
+    ]
+  }
+}

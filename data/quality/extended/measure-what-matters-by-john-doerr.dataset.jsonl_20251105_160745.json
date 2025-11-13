@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-11-05T13:07:45Z",
+  "stage": "extended",
+  "source": "measure-what-matters-by-john-doerr.dataset.jsonl",
+  "metrics": {
+    "total_cards": 273,
+    "duplicates_found": 0,
+    "duplicate_ratio": 0.0,
+    "continuity_gaps": 161,
+    "continuity_gap_ratio": 0.5919117647058824,
+    "avg_overlap": 0.087,
+    "extended_fields_extracted": 255,
+    "extraction_coverage": 0.9340659340659341,
+    "lm_extraction_count": 255,
+    "lm_extraction_ratio": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: max_duplicates_ratio",
+      "Missing metric: min_extended_fields_ratio",
+      "Missing metric: min_topics_per_page",
+      "Missing metric: min_lm_extraction_ratio",
+      "Missing metric: max_continuity_gaps"
+    ]
+  }
+}

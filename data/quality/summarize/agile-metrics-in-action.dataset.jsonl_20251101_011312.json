@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:13:12Z",
+  "stage": "summarize",
+  "source": "agile-metrics-in-action.dataset.jsonl",
+  "metrics": {
+    "total_pages": 270,
+    "summarized_pages": 269,
+    "skipped_pages": 1,
+    "summary_coverage": 0.9962962962962963,
+    "avg_l1_length": 184.8996282527881,
+    "avg_l2_length": 443.58364312267656,
+    "avg_compression_ratio": 11.28
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

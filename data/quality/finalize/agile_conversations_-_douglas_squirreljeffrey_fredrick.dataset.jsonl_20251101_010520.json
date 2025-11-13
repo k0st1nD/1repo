@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:05:20Z",
+  "stage": "finalize",
+  "source": "agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset.jsonl",
+  "metrics": {
+    "total_cards": 266,
+    "validation_errors": 0,
+    "validation_warnings": 38,
+    "avg_completeness": 0.586,
+    "cards_with_structure": 253,
+    "structure_coverage": 0.9511278195488722,
+    "cards_with_summaries": 257,
+    "summary_coverage": 0.9661654135338346
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

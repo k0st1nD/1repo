@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-11-05T11:43:33Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "tables_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 14,
+          "max": 14,
+          "avg": 14.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 2167.1858190709045,
+          "max": 2167.1858190709045,
+          "avg": 2167.1858190709045,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Data-Science-for-Business.pdf",
+          "timestamp": "2025-11-05T11:25:37Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Data-Science-for-Business.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "pages_with_structure": {
+          "min": 332,
+          "max": 332,
+          "avg": 332.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.8117359413202934,
+          "max": 0.8117359413202934,
+          "avg": 0.8117359413202934,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 409.0,
+          "max": 409.0,
+          "avg": 409.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 1,
+          "max": 1,
+          "avg": 1.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 1,
+          "max": 1,
+          "avg": 1.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.jsonl",
+          "timestamp": "2025-11-05T11:25:37Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "summary_coverage": {
+          "min": 0.9657701711491442,
+          "max": 0.9657701711491442,
+          "avg": 0.9657701711491442,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 577.2025316455696,
+          "max": 577.2025316455696,
+          "avg": 577.2025316455696,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 10.83,
+          "max": 10.83,
+          "avg": 10.83,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 395,
+          "max": 395,
+          "avg": 395.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 231.15696202531646,
+          "max": 231.15696202531646,
+          "avg": 231.15696202531646,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 14,
+          "max": 14,
+          "avg": 14.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.jsonl",
+          "timestamp": "2025-11-05T11:25:37Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "extraction_coverage": {
+          "min": 0.9584352078239609,
+          "max": 0.9584352078239609,
+          "avg": 0.9584352078239609,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 392,
+          "max": 392,
+          "avg": 392.0,
+          "count": 1
+        },
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 392,
+          "max": 392,
+          "avg": 392.0,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.137,
+          "max": 0.137,
+          "avg": 0.137,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.16911764705882354,
+          "max": 0.16911764705882354,
+          "avg": 0.16911764705882354,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 69,
+          "max": 69,
+          "avg": 69.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.jsonl",
+          "timestamp": "2025-11-05T11:43:11Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_completeness": {
+          "min": 0.6,
+          "max": 0.6,
+          "avg": 0.6,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9657701711491442,
+          "max": 0.9657701711491442,
+          "avg": 0.9657701711491442,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.8117359413202934,
+          "max": 0.8117359413202934,
+          "avg": 0.8117359413202934,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 395,
+          "max": 395,
+          "avg": 395.0,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 332,
+          "max": 332,
+          "avg": 332.0,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 58,
+          "max": 58,
+          "avg": 58.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 409,
+          "max": 409,
+          "avg": 409.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.jsonl",
+          "timestamp": "2025-11-05T11:43:11Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "min_chunk_tokens": {
+          "min": 104,
+          "max": 104,
+          "avg": 104.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 816,
+          "max": 816,
+          "avg": 816.0,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 1.4841075794621026,
+          "max": 1.4841075794621026,
+          "avg": 1.4841075794621026,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 607,
+          "max": 607,
+          "avg": 607.0,
+          "count": 1
+        },
+        "avg_chunk_tokens": {
+          "min": 358.78912685337724,
+          "max": 358.78912685337724,
+          "avg": 358.78912685337724,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.jsonl",
+          "timestamp": "2025-11-05T11:43:12Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "min_norm": {
+          "min": 0.9999998807907104,
+          "max": 0.9999998807907104,
+          "avg": 0.9999998807907104,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 607,
+          "max": 607,
+          "avg": 607.0,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "data-science-for-business.dataset.chunks.jsonl",
+          "timestamp": "2025-11-05T11:43:33Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "data-science-for-business.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.007341146469116211,
+      "avg": 0.0010487352098737443,
+      "min": 0.0009562969207763672,
+      "max": 0.0011324882507324219
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 1197.6730246543884,
+      "avg": 1197.6730246543884,
+      "min": 1197.6730246543884,
+      "max": 1197.6730246543884
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

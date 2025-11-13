@@ -1,0 +1,56 @@
+# ============================================
+# Archivist Magika MVP - Dependencies
+# ============================================
+
+# Core PDF Processing
+pdfminer.six>=20221105
+pdfplumber>=0.10.0
+PyPDF2>=3.0.0
+
+# OCR (optional but recommended)
+pytesseract>=0.3.10
+
+# Document structure
+python-docx>=1.1.0
+openpyxl>=3.1.0
+
+# Embeddings & Vector Search
+sentence-transformers>=2.2.2     # Embedding models (bge-m3)
+faiss-cpu>=1.7.4                # Vector similarity search
+torch>=2.0.0                    # PyTorch for transformers
+
+# LLM integration
+requests>=2.31.0
+
+# Data Processing
+numpy>=1.24.0                   # Numerical operations
+pandas>=2.0.0                   # Data manipulation (optional)
+
+# Configuration & Logging
+pyyaml>=6.0                     # YAML config files
+python-dotenv>=1.0.0            # Environment variables
+
+# Progress & UI
+tqdm>=4.65.0                    # Progress bars
+colorama>=0.4.6                 # Colored terminal output
+
+# Utilities
+python-dateutil>=2.8.2          # Date/time utilities
+pathlib>=1.0.1                  # Path operations (stdlib, but explicit)
+
+# Testing (optional for MVP)
+pytest>=7.4.0                   # Testing framework
+pytest-cov>=4.1.0               # Coverage reports
+
+# Development (optional)
+black>=23.0.0                   # Code formatting
+flake8>=6.0.0                   # Linting
+mypy>=1.0.0                     # Type checking
+
+# ============================================
+# Installation:
+# pip install -r requirements.txt
+#
+# For GPU support (optional):
+# pip install faiss-gpu torch --index-url https://download.pytorch.org/whl/cu118
+# ============================================

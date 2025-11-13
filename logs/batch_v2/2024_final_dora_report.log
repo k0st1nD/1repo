@@ -1,0 +1,1434 @@
+[WARN] OCR not available
+2025-11-01 01:01:05,346 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-01 01:01:05,346 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-01 01:01:05,346 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-01 01:01:05,357 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-01 01:01:05,362 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:01:05,377 - am_common - INFO - Config loaded successfully
+2025-11-01 01:01:05,377 - quality_tracker - INFO - Quality tracker initialized: C:\scripts\1repo\data\quality
+2025-11-01 01:01:05,377 - __main__ - INFO - ============================================================
+2025-11-01 01:01:05,378 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 605, in main
+    orchestrator = PipelineOrchestrator(
+  File "C:\scripts\1repo\run_mvp.py", line 136, in __init__
+    log_section(logger, f"\U0001f680 {PRODUCT_NAME} {VERSION}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f680 archivist magika 2.0.0'
+Arguments: ()
+2025-11-01 01:01:05,379 - __main__ - INFO - ============================================================
+2025-11-01 01:01:05,379 - __main__ - INFO - Quality check: enabled
+2025-11-01 01:01:05,379 - __main__ - INFO - Validation: enabled
+2025-11-01 01:01:05,379 - __main__ - INFO - Dry run: no
+2025-11-01 01:01:05,379 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-01 01:01:05,379 - __main__ - INFO - Processing: 2024_final_dora_report.pdf
+2025-11-01 01:01:05,379 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 24: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 196, in run_single
+    logger.info(f"Pipeline: {start_stage} \u2192 {end_stage}")
+Message: 'Pipeline: structural \u2192 embed'
+Arguments: ()
+2025-11-01 01:01:05,380 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 22: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 209, in run_single
+    logger.info(f"Stages: {' \u2192 '.join(stages)}")
+Message: 'Stages: structural \u2192 structure_detect \u2192 summarize \u2192 extended \u2192 finalize \u2192 chunk \u2192 embed'
+Arguments: ()
+2025-11-01 01:01:05,381 - __main__ - INFO - ============================================================
+2025-11-01 01:01:05,381 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Starting: STRUCTURAL'
+Arguments: ()
+2025-11-01 01:01:05,381 - __main__ - INFO - ============================================================
+2025-11-01 01:01:05,381 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:01:05,396 - am_common - INFO - Config loaded successfully
+2025-11-01 01:01:05,396 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-01 01:01:05,396 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-01 01:01:05,396 - am_structural_robust - INFO - Processing: 2024_final_dora_report.pdf
+2025-11-01 01:01:06,323 - am_structural_robust - INFO - PDF: 2024_final_dora_report
+2025-11-01 01:01:07,002 - am_structural_robust - INFO - Total pages: 120
+2025-11-01 01:02:35,065 - am_structural_robust - INFO -   Processed 50/120 pages
+2025-11-01 01:04:20,529 - am_structural_robust - INFO -   Processed 100/120 pages
+2025-11-01 01:04:48,585 - am_structural_robust - ERROR - [X] Page 119: All extractors failed
+2025-11-01 01:04:49,255 - am_structural_robust - INFO - Extraction complete: 120 success, 0 failed
+2025-11-01 01:04:49,255 - am_structural_robust - INFO -   Methods used: {'pdfminer': 119}
+2025-11-01 01:04:49,255 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-01 01:04:49,255 - am_structural_robust - INFO -   Tables found: 41
+2025-11-01 01:04:49,290 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structural\2024_final_dora_report.dataset.jsonl (120 cards)
+2025-11-01 01:04:49,292 - am_common - INFO - Saved: 120 cards to 2024_final_dora_report.dataset.jsonl (249.14 KB)
+2025-11-01 01:04:49,292 - am_structural_robust - INFO - Dataset saved: 249.14 KB
+2025-11-01 01:04:49,292 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:49,293 - quality_tracker - INFO - structural metrics:
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   total_pages: 120
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   success_pages: 120
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   failed_pages: 0
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   empty_pages: 2
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   avg_page_length: 1398.3167
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 119}
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   ocr_used: 0
+2025-11-01 01:04:49,293 - quality_tracker - INFO -   tables_found: 41
+2025-11-01 01:04:49,293 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 409, in _run_stage
+    return processor.process_pdf(input_path, output_dir)
+  File "C:\scripts\1repo\am_structural_robust.py", line 569, in process_pdf
+    self.quality_tracker.track('structural', pdf_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structural'
+Arguments: ()
+2025-11-01 01:04:49,295 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:49,295 - am_structural_robust - INFO - [OK] Saved: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,296 - validate - INFO - Validating structural: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,296 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,307 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,308 - validate - INFO - [OK] VALID - 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,308 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,308 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Completed: STRUCTURAL'
+Arguments: ()
+2025-11-01 01:04:49,309 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,309 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,309 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Starting: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 01:04:49,309 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,309 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:49,324 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:49,325 - am_structure_detect - INFO - Processing: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,325 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,327 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,327 - am_structure_detect - INFO - TOC found: pages 2-2
+2025-11-01 01:04:49,328 - am_structure_detect - INFO - Detected 0 chapters
+2025-11-01 01:04:49,328 - am_structure_detect - INFO - Detected 0 sections
+2025-11-01 01:04:49,328 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structured\2024_final_dora_report.dataset.jsonl (120 cards)
+2025-11-01 01:04:49,331 - am_common - INFO - Saved: 120 cards to 2024_final_dora_report.dataset.jsonl (259.54 KB)
+2025-11-01 01:04:49,331 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:49,331 - quality_tracker - INFO - structure_detect metrics:
+2025-11-01 01:04:49,331 - quality_tracker - INFO -   total_pages: 120
+2025-11-01 01:04:49,332 - quality_tracker - INFO -   chapters_detected: 0
+2025-11-01 01:04:49,332 - quality_tracker - INFO -   sections_detected: 0
+2025-11-01 01:04:49,332 - quality_tracker - INFO -   pages_with_structure: 0
+2025-11-01 01:04:49,332 - quality_tracker - INFO -   structure_coverage: 0.0000
+2025-11-01 01:04:49,332 - quality_tracker - INFO -   avg_chapter_length: 0
+2025-11-01 01:04:49,332 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_structure_detect.py", line 309, in process_dataset
+    self.quality_tracker.track('structure_detect', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structure_detect'
+Arguments: ()
+2025-11-01 01:04:49,333 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:49,333 - am_structure_detect - INFO - Saved: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,333 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-01 01:04:49,333 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:04:49,333 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,333 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Completed: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 01:04:49,334 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,334 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,334 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Starting: SUMMARIZE'
+Arguments: ()
+2025-11-01 01:04:49,335 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,335 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:49,349 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:49,350 - am_summarize - INFO - Processing: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,350 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structured\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,361 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,413 - am_summarize - INFO - Summarized 118 pages, skipped 2
+2025-11-01 01:04:49,413 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\summarized\2024_final_dora_report.dataset.jsonl (120 cards)
+2025-11-01 01:04:49,416 - am_common - INFO - Saved: 120 cards to 2024_final_dora_report.dataset.jsonl (352.58 KB)
+2025-11-01 01:04:49,417 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:49,417 - quality_tracker - INFO - summarize metrics:
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   total_pages: 120
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   summarized_pages: 118
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   skipped_pages: 2
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   summary_coverage: 0.9833
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   avg_l1_length: 217.3475
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   avg_l2_length: 534.8305
+2025-11-01 01:04:49,417 - quality_tracker - INFO -   avg_compression_ratio: 7.5700
+2025-11-01 01:04:49,417 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_summarize.py", line 281, in process_dataset
+    self.quality_tracker.track('summarize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for summarize'
+Arguments: ()
+2025-11-01 01:04:49,419 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:49,419 - am_summarize - INFO - Saved: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,419 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-01 01:04:49,419 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:04:49,419 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,419 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Completed: SUMMARIZE'
+Arguments: ()
+2025-11-01 01:04:49,420 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,420 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,420 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Starting: EXTENDED'
+Arguments: ()
+2025-11-01 01:04:49,420 - __main__ - INFO - ============================================================
+2025-11-01 01:04:49,420 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:49,435 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:49,459 - am_extended - INFO - Ollama available, using model: llama3.2:3b
+2025-11-01 01:04:49,459 - am_extended - INFO - Processing: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,459 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\summarized\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,472 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:49,474 - am_extended - INFO - Marked 0 duplicate pages
+2025-11-01 01:04:49,483 - am_extended - INFO - Found 64 continuity gaps
+2025-11-01 01:04:49,483 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-01 01:04:49,503 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,533 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,565 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,595 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,626 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,657 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,688 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,719 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,736 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,736 - am_extended - INFO -   Processed 10/120 pages
+2025-11-01 01:04:49,767 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,797 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,812 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,827 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,858 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,889 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,920 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,951 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:49,982 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,013 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,014 - am_extended - INFO -   Processed 20/120 pages
+2025-11-01 01:04:50,044 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,107 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,137 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,153 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,169 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,200 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,215 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,231 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,247 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,247 - am_extended - INFO -   Processed 30/120 pages
+2025-11-01 01:04:50,262 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,277 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,309 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,340 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,356 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,402 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,433 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,464 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,495 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,495 - am_extended - INFO -   Processed 40/120 pages
+2025-11-01 01:04:50,526 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,589 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,619 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,634 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,665 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,696 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,727 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,758 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,788 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,789 - am_extended - INFO -   Processed 50/120 pages
+2025-11-01 01:04:50,819 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,851 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,867 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,882 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,914 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,945 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:50,976 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,007 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,037 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,067 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,067 - am_extended - INFO -   Processed 60/120 pages
+2025-11-01 01:04:51,098 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,129 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,159 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,175 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,206 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,222 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,253 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,269 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,300 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,316 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,316 - am_extended - INFO -   Processed 70/120 pages
+2025-11-01 01:04:51,346 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,378 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,394 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,408 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,424 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,440 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,470 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,501 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,531 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,531 - am_extended - INFO -   Processed 80/120 pages
+2025-11-01 01:04:51,547 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,562 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,594 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,610 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,641 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,657 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,672 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,688 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,720 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,751 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,751 - am_extended - INFO -   Processed 90/120 pages
+2025-11-01 01:04:51,766 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,797 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,828 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,860 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,892 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,908 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,939 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:51,970 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,001 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,033 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,033 - am_extended - INFO -   Processed 100/120 pages
+2025-11-01 01:04:52,064 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,094 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,111 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,126 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,140 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,203 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,234 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,265 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,281 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,281 - am_extended - INFO -   Processed 110/120 pages
+2025-11-01 01:04:52,311 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,343 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,359 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,374 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,389 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,405 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,436 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:04:52,436 - am_extended - INFO - Extracted extended fields for 115 pages
+2025-11-01 01:04:52,436 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\extended\2024_final_dora_report.dataset.jsonl (120 cards)
+2025-11-01 01:04:52,440 - am_common - INFO - Saved: 120 cards to 2024_final_dora_report.dataset.jsonl (398.40 KB)
+2025-11-01 01:04:52,440 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:52,441 - quality_tracker - INFO - extended metrics:
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   total_cards: 120
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   duplicates_found: 0
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   duplicate_ratio: 0.0000
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   continuity_gaps: 64
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   continuity_gap_ratio: 0.5378
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   avg_overlap: 0.0960
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   extended_fields_extracted: 115
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   extraction_coverage: 0.9583
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   lm_extraction_count: 0
+2025-11-01 01:04:52,441 - quality_tracker - INFO -   lm_extraction_ratio: 0.0000
+2025-11-01 01:04:52,441 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_extended.py", line 612, in process_dataset
+    self.quality_tracker.track('extended', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for extended'
+Arguments: ()
+2025-11-01 01:04:52,443 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:52,443 - am_extended - INFO - Saved: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,443 - validate - INFO - Validating extended: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,443 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,455 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,456 - validate - WARNING - [X] INVALID - 2024_final_dora_report.dataset.jsonl (2 errors)
+2025-11-01 01:04:52,456 - __main__ - WARNING - Validation issues: 2 errors, 115 warnings
+2025-11-01 01:04:52,456 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-01 01:04:52,456 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,456 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Completed: EXTENDED'
+Arguments: ()
+2025-11-01 01:04:52,457 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,457 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,457 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Starting: FINALIZE'
+Arguments: ()
+2025-11-01 01:04:52,457 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,457 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:52,472 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:52,473 - am_finalize - INFO - Processing: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,473 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,476 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,476 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\final\2024_final_dora_report.dataset.jsonl (120 cards)
+2025-11-01 01:04:52,479 - am_common - INFO - Saved: 120 cards to 2024_final_dora_report.dataset.jsonl (385.28 KB)
+2025-11-01 01:04:52,480 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:52,480 - quality_tracker - INFO - finalize metrics:
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   total_cards: 120
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   validation_errors: 0
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   validation_warnings: 8
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   avg_completeness: 0.4220
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   cards_with_structure: 0
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   structure_coverage: 0.0000
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   cards_with_summaries: 118
+2025-11-01 01:04:52,480 - quality_tracker - INFO -   summary_coverage: 0.9833
+2025-11-01 01:04:52,481 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_finalize.py", line 278, in process_dataset
+    self.quality_tracker.track('finalize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for finalize'
+Arguments: ()
+2025-11-01 01:04:52,482 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:52,482 - am_finalize - INFO - Saved: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,483 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-01 01:04:52,483 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:04:52,483 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,483 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Completed: FINALIZE'
+Arguments: ()
+2025-11-01 01:04:52,483 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,483 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,483 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Starting: CHUNK'
+Arguments: ()
+2025-11-01 01:04:52,484 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,484 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:52,499 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:52,577 - am_chunk - INFO - Processing: 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,578 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\final\2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,591 - am_common - INFO - Loaded: 120 cards from 2024_final_dora_report.dataset.jsonl
+2025-11-01 01:04:52,631 - am_chunk - INFO - Created 126 chunks from 120 pages
+2025-11-01 01:04:52,634 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:52,635 - quality_tracker - INFO - chunk metrics:
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   total_chunks: 126
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   chunks_per_page: 1.0500
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   avg_chunk_tokens: 308.4206
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   min_chunk_tokens: 106
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   max_chunk_tokens: 520
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 65, '300-512': 60, '512+': 1}
+2025-11-01 01:04:52,635 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-01 01:04:52,635 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_chunk.py", line 309, in process_dataset
+    self.quality_tracker.track('chunk', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for chunk'
+Arguments: ()
+2025-11-01 01:04:52,636 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:52,636 - am_chunk - INFO - Saved: 2024_final_dora_report.dataset.chunks.jsonl
+2025-11-01 01:04:52,636 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-01 01:04:52,637 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:04:52,637 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,637 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Completed: CHUNK'
+Arguments: ()
+2025-11-01 01:04:52,637 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,637 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,637 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f522' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f522 Starting: EMBED'
+Arguments: ()
+2025-11-01 01:04:52,638 - __main__ - INFO - ============================================================
+2025-11-01 01:04:52,638 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:04:52,653 - am_common - INFO - Config loaded successfully
+2025-11-01 01:04:52,653 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-01 01:04:52,654 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-01 01:04:52,654 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-01 01:04:56,377 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-01 01:04:56,377 - am_embed - INFO - Processing: 2024_final_dora_report.dataset.chunks.jsonl
+2025-11-01 01:04:56,389 - am_embed - INFO - Loaded 126 chunks
+2025-11-01 01:04:56,389 - am_embed - INFO - Encoding 126 chunks in 4 batches
+2025-11-01 01:04:57,665 - am_embed - INFO - Encoded 126 embeddings, 0 failures
+2025-11-01 01:04:57,665 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-01 01:04:57,665 - am_embed - INFO - Vectors: 126, Dimension: 384
+2025-11-01 01:04:57,665 - am_embed - INFO - FAISS index built: 126 vectors
+2025-11-01 01:04:57,666 - am_embed - INFO - Saved FAISS index: 2024_final_dora_report.dataset.faiss (189.04 KB)
+2025-11-01 01:04:57,667 - am_embed - INFO - Saved metadata: 2024_final_dora_report.dataset.pkl (197.04 KB)
+2025-11-01 01:04:57,668 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:04:57,669 - quality_tracker - INFO - embed metrics:
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   total_vectors: 126
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-01 01:04:57,669 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-01 01:04:57,669 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 428, in _run_stage
+    return processor.process_chunks(input_path, output_dir=None)
+  File "C:\scripts\1repo\am_embed.py", line 426, in process_chunks
+    self.quality_tracker.track('embed', chunks_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for embed'
+Arguments: ()
+2025-11-01 01:04:57,670 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:04:57,670 - am_embed - INFO - Saved: 2024_final_dora_report.dataset.faiss, 2024_final_dora_report.dataset.pkl
+2025-11-01 01:04:57,670 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,670 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f522' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f522 Completed: EMBED'
+Arguments: ()
+2025-11-01 01:04:57,671 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,671 - __main__ - INFO - Pipeline status: completed
+2025-11-01 01:04:57,671 - __main__ - INFO - Completed: run_single_pipeline (232.29s)
+2025-11-01 01:04:57,671 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,671 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 502, in generate_reports
+    log_section(logger, "\U0001f4ca FINAL REPORTS", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4ca FINAL REPORTS'
+Arguments: ()
+2025-11-01 01:04:57,672 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,672 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,672 - __main__ - INFO -   Performance Summary
+2025-11-01 01:04:57,672 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,672 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-01 01:04:57,672 - __main__ - INFO -   Count: 1
+2025-11-01 01:04:57,672 - __main__ - INFO -   Total: 232.29s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Avg: 232.29s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Min: 232.29s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Max: 232.29s
+2025-11-01 01:04:57,672 - __main__ - INFO - 
+track_quality:
+2025-11-01 01:04:57,672 - __main__ - INFO -   Count: 7
+2025-11-01 01:04:57,672 - __main__ - INFO -   Total: 0.02s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Avg: 0.00s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Min: 0.00s
+2025-11-01 01:04:57,672 - __main__ - INFO -   Max: 0.00s
+2025-11-01 01:04:57,673 - __main__ - INFO - No errors or warnings recorded
+2025-11-01 01:04:57,673 - __main__ - INFO - 
+2025-11-01 01:04:57,673 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-01 01:04:57,674 - quality_tracker - INFO - Quality report saved: C:\scripts\1repo\data\quality\quality_report_20251101_010457.json
+2025-11-01 01:04:57,674 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-01 01:04:57,674 - quality_tracker - INFO - ============================================================
+2025-11-01 01:04:57,674 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ============================================================
+2025-11-01 01:04:57,675 - quality_tracker - INFO - Generated: 2025-10-31T22:04:57Z
+2025-11-01 01:04:57,675 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,675 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,675 - quality_tracker - INFO - 
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,675 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,675 - quality_tracker - INFO - 
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-01 01:04:57,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,675 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,675 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,676 - quality_tracker - INFO - 
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-01 01:04:57,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,676 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,676 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,677 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,677 - quality_tracker - INFO - 
+2025-11-01 01:04:57,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   Stage: EMBED
+2025-11-01 01:04:57,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,677 - quality_tracker - INFO - Summary:
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:04:57,677 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:04:57,677 - quality_tracker - INFO - 
+2025-11-01 01:04:57,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-01 01:04:57,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:04:57,677 - quality_tracker - INFO - track_quality:
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   Count: 7, Avg: 0.00s
+2025-11-01 01:04:57,677 - quality_tracker - INFO - run_single_pipeline:
+2025-11-01 01:04:57,677 - quality_tracker - INFO -   Count: 1, Avg: 232.29s
+2025-11-01 01:04:57,677 - __main__ - INFO - 
+2025-11-01 01:04:57,677 - validate - INFO - ============================================================
+2025-11-01 01:04:57,677 - validate - INFO -   Validation Summary
+2025-11-01 01:04:57,677 - validate - INFO - ============================================================
+2025-11-01 01:04:57,677 - validate - INFO - Overall Results:
+2025-11-01 01:04:57,677 - validate - INFO -   total_datasets: 2
+2025-11-01 01:04:57,677 - validate - INFO -   valid_datasets: 1
+2025-11-01 01:04:57,677 - validate - INFO -   invalid_datasets: 1
+2025-11-01 01:04:57,677 - validate - INFO -   total_errors: 2
+2025-11-01 01:04:57,678 - validate - INFO -   total_warnings: 116
+2025-11-01 01:04:57,678 - validate - INFO -   success_rate: 0.5000
+2025-11-01 01:04:57,678 - validate - INFO -   timestamp: 2025-10-31T22:04:57.677771
+2025-11-01 01:04:57,678 - validate - INFO - 
+Per-dataset results:
+2025-11-01 01:04:57,678 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u2705 VALID - 2024_final_dora_report.dataset.jsonl (errors: 0, warnings: 1)'
+Arguments: ()
+2025-11-01 01:04:57,679 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u274c INVALID - 2024_final_dora_report.dataset.jsonl (errors: 2, warnings: 115)'
+Arguments: ()
+2025-11-01 01:04:57,679 - __main__ - INFO - ============================================================
+2025-11-01 01:04:57,679 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 667, in main
+    log_section(logger, "\u2705 PIPELINE COMPLETED SUCCESSFULLY", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 PIPELINE COMPLETED SUCCESSFULLY'
+Arguments: ()
+2025-11-01 01:04:57,680 - __main__ - INFO - ============================================================

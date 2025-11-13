@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T10:56:08Z",
+  "stage": "summarize",
+  "source": "continuous_discovery_habits_-_teresa_torres.dataset.jsonl",
+  "metrics": {
+    "total_pages": 201,
+    "summarized_pages": 193,
+    "skipped_pages": 8,
+    "summary_coverage": 0.9601990049751243,
+    "avg_l1_length": 222.46113989637306,
+    "avg_l2_length": 518.5647668393782,
+    "avg_compression_ratio": 9.28
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

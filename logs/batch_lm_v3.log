@@ -1,0 +1,170 @@
+================================================================
+  BATCH REPROCESSING WITH LM EXTRACTION
+  Started:  5 ноя 2025 г. 12:57:39
+  Config: config/batch_full.yaml
+  LM Model: qwen2.5:7b (via Ollama)
+================================================================
+
+
+[1] Processing: 2024_final_dora_report.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 1 OK / 0 FAIL / 1 total
+Time: 541s elapsed, ~171min remaining
+
+[2] Processing: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 2 OK / 0 FAIL / 2 total
+Time: 1196s elapsed, ~179min remaining
+
+[3] Processing: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 3 OK / 0 FAIL / 3 total
+Time: 1963s elapsed, ~185min remaining
+
+[4] Processing: Agile-Metrics-in-Action.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 4 OK / 0 FAIL / 4 total
+Time: 3214s elapsed, ~214min remaining
+
+[5] Processing: baza-znanij-safe®-russia.pdf
+----------------------------------------
+[FAIL] ✗ Failed (see logs/batch_lm_v3/baza-znanij-safe®-russia.log)
+Stats: 4 OK / 1 FAIL / 5 total
+Time: 3477s elapsed, ~173min remaining
+
+[6] Processing: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 5 OK / 1 FAIL / 6 total
+Time: 4029s elapsed, ~156min remaining
+
+[7] Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 6 OK / 1 FAIL / 7 total
+Time: 5152s elapsed, ~159min remaining
+
+[8] Processing: Data-Science-for-Business.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 7 OK / 1 FAIL / 8 total
+Time: 6354s elapsed, ~158min remaining
+
+[9] Processing: Escaping_the_build_trap_-_Melissa_Perri.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 8 OK / 1 FAIL / 9 total
+Time: 6907s elapsed, ~140min remaining
+
+[10] Processing: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 9 OK / 1 FAIL / 10 total
+Time: 7756s elapsed, ~129min remaining
+
+[11] Processing: GOOD-STRATEGY-BAD-STRATEGY.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 10 OK / 1 FAIL / 11 total
+Time: 8786s elapsed, ~119min remaining
+
+[12] Processing: Hooked-How-to-Build-Habit-Forming-Products.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 11 OK / 1 FAIL / 12 total
+Time: 9304s elapsed, ~103min remaining
+
+[13] Processing: Lean_Analytics.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 12 OK / 1 FAIL / 13 total
+Time: 10631s elapsed, ~95min remaining
+
+[14] Processing: measure-what-matters-by-john-doerr.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 13 OK / 1 FAIL / 14 total
+Time: 11426s elapsed, ~81min remaining
+
+[15] Processing: naked-statistics-pdf.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 14 OK / 1 FAIL / 15 total
+Time: 12077s elapsed, ~67min remaining
+
+[16] Processing: norton_kaplan_balanced_scorecard.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 15 OK / 1 FAIL / 16 total
+Time: 12777s elapsed, ~53min remaining
+
+[17] Processing: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 16 OK / 1 FAIL / 17 total
+Time: 13373s elapsed, ~39min remaining
+
+[18] Processing: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 17 OK / 1 FAIL / 18 total
+Time: 14281s elapsed, ~26min remaining
+
+[19] Processing: Каган Марти - Вдохновленные - 2020.pdf
+----------------------------------------
+[FAIL] ✗ Failed (see logs/batch_lm_v3/Каган Марти - Вдохновленные - 2020.log)
+Stats: 17 OK / 2 FAIL / 19 total
+Time: 15459s elapsed, ~13min remaining
+[SKIP] Ядро 2025-08-29.pdf (excluded)
+
+================================================================
+  BATCH REPROCESSING COMPLETE
+================================================================
+Total processed: 19
+Successful: 17
+Failed: 2
+Total time: 257 minutes
+Completion time:  5 ноя 2025 г. 17:15:18
+================================================================
+
+Failed files:
+2024_final_dora_report.log
+Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.log
+Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.log
+Agile-Metrics-in-Action.log
+baza-znanij-safe®-russia.log
+Continuous_Discovery_Habits_-_Teresa_Torres.log
+data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.log
+Data-Science-for-Business.log
+Escaping_the_build_trap_-_Melissa_Perri.log
+Forsgren
+N.,
+Humble
+J.,
+Kim
+G.-
+Accelerate.
+The
+Science
+of
+DevOps
+-
+2018.log
+GOOD-STRATEGY-BAD-STRATEGY.log
+Hooked-How-to-Build-Habit-Forming-Products.log
+Lean_Analytics.log
+measure-what-matters-by-john-doerr.log
+naked-statistics-pdf.log
+norton_kaplan_balanced_scorecard.log
+Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.log
+Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.log
+Каган
+Марти
+-
+Вдохновленные
+-
+2020.log

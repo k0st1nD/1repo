@@ -1,0 +1,12 @@
+{
+  "provider": "sentence-transformers",
+  "model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "total_chunks": 550,
+  "total_embeddings": 550,
+  "failed_count": 0,
+  "index_type": "flat",
+  "metric": "cosine",
+  "created_at": "2025-11-05T12:54:50Z",
+  "version": "2.0.0"
+}

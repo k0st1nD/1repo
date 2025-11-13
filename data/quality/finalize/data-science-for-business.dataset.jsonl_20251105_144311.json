@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T11:43:11Z",
+  "stage": "finalize",
+  "source": "data-science-for-business.dataset.jsonl",
+  "metrics": {
+    "total_cards": 409,
+    "validation_errors": 0,
+    "validation_warnings": 58,
+    "avg_completeness": 0.6,
+    "cards_with_structure": 332,
+    "structure_coverage": 0.8117359413202934,
+    "cards_with_summaries": 395,
+    "summary_coverage": 0.9657701711491442
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

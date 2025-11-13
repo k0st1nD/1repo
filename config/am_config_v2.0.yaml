@@ -1,0 +1,537 @@
+# ============================================
+# Archivist Magika MVP v2.0 - Enhanced Configuration
+# ============================================
+# Version: 2.0.0
+# Product: archivist magika v4.3.8
+#
+# Включено в MVP:
+# ✅ Structure Detection (главы/секции)
+# ✅ Table Extraction (извлечение таблиц)
+# ✅ OCR Support (сканированные PDF)
+# ✅ Deduplication (удаление дублей)
+
+project:
+  name: "Archivist Magika"
+  version: "2.0.0"
+  product: "archivist magika v4.3.8"
+  permissions: "public"
+
+# ============================================
+# PATHS CONFIGURATION
+# ============================================
+paths:
+  source_pdfs: "data/source/"
+  
+  datasets:
+    structural: "data/datasets/structural/"    # After am_structural (+ OCR + tables)
+    structured: "data/datasets/structured/"    # ✨ After am_structure_detect (NEW!)
+    summarized: "data/datasets/summarized/"    # After am_summarize
+    extended: "data/datasets/extended/"        # After am_extended (+ dedup)
+    final: "data/datasets/final/"              # After am_finalize
+    chunks: "data/datasets/chunks/"            # After am_chunk
+  
+  indexes:
+    faiss: "data/indexes/faiss/"
+    metadata: "data/indexes/metadata/"
+  
+  # Tables storage
+  tables: "data/tables/"                       # ✨ Extracted tables
+  
+  logs: "logs/"
+  cache: "data/cache/"                         # Cache for OCR, embeddings, etc
+
+# ============================================
+# PIPELINE CONFIGURATION
+# ============================================
+
+# Stage 1: Structural extraction (am_structural.py)
+structural:
+  max_pages: 5000
+  empty_streak_threshold: 3
+  backend: "pdfminer"
+  
+  # ✨ OCR SUPPORT
+  ocr:
+    enabled: true
+    trigger: "auto"                            # "auto" | "always" | "never"
+    threshold_chars: 50                        # If page has <50 chars → OCR
+    
+    engine: "tesseract"                        # "tesseract" | "easyocr"
+    languages: ["eng", "rus"]
+    
+    # Preprocessing
+    preprocess:
+      enabled: true
+      deskew: true                             # Fix skewed scans
+      denoise: true                            # Remove noise
+      binarize: true                           # Black & white
+    
+    # Quality
+    min_confidence: 0.6                        # Minimum OCR confidence
+    dpi: 300                                   # PDF → Image DPI
+    
+    # Performance
+    cache_results: true                        # Cache OCR results
+    parallel: false                            # MVP: sequential processing
+  
+  # ✨ TABLE EXTRACTION
+  tables:
+    enabled: true
+    engine: "pdfplumber"                       # "pdfplumber" | "camelot" | "tabula"
+    
+    # Detection thresholds
+    min_rows: 2
+    min_cols: 2
+    
+    # Extraction settings
+    detect_headers: true
+    merge_cells: true
+    
+    # Output format
+    format: "markdown"                         # "markdown" | "json" | "csv"
+    storage: "inline"                          # "inline" (in segment) | "separate" (file)
+    
+    # Vector table detection (existing)
+    vector_detection:
+      line_threshold: 8
+      rect_threshold: 6
+      total_threshold: 10
+  
+  # PDF Metadata
+  extract_metadata:
+    enabled: true
+    fields: ["title", "author", "subject", "keywords", "creator", "creation_date"]
+    fallback_from_first_page: true
+  
+  toc_mode: "strict_per_page"
+
+# Stage 2: Structure Detection (am_structure_detect.py) ✨ NEW STAGE
+structure_detection:
+  enabled: true
+  
+  # Chapter detection
+  chapters:
+    patterns:
+      # Regex patterns with priority (checked in order)
+      - regex: "^CHAPTER\\s+(\\d+|[IVX]+)[:\\.]?\\s*(.+)"
+        level: 1
+        priority: 1
+      - regex: "^Chapter\\s+(\\d+)[:\\.]?\\s*(.+)"
+        level: 1
+        priority: 2
+      - regex: "^PART\\s+([IVX]+|\\d+)[:\\.]?\\s*(.+)"
+        level: 0
+        priority: 3
+    
+    # Heuristics (if no pattern match)
+    heuristics:
+      enabled: true
+      font_size_change: true                   # Detect large font
+      all_caps: true                           # ALL CAPS text
+      short_line: true                         # Short line at page start
+      followed_by_empty: true                  # Empty line after
+      position_top: true                       # Near page top
+      
+      # Thresholds
+      max_line_length: 100                     # Max chars for title
+      min_font_size_ratio: 1.5                 # vs body text
+  
+  # Section detection
+  sections:
+    patterns:
+      - regex: "^(\\d+\\.\\d+)\\s+(.+)"        # 5.1 Introduction
+        level: 2
+        priority: 1
+      - regex: "^([A-Z][a-z]+(?:\\s+[A-Z][a-z]+){1,5})$"  # Title Case
+        level: 2
+        priority: 2
+    
+    heuristics:
+      enabled: true
+      numbered: true                           # Detect 5.1, 5.2
+      bold_text: false                         # MVP: disabled (need font info)
+  
+  # Output
+  update_cards:
+    add_structure_field: true                  # Add "structure" to each card
+    update_section_path: true                  # Update "section_path"
+  
+  create_toc:
+    enabled: true                              # Generate TOC in __header__
+    format: "nested"                           # "nested" | "flat"
+
+# Stage 3: Summarization (am_summarize.py)
+summarize:
+  engine: "extractive"
+  policy: "minimal"
+  
+  extractive:
+    level1_max_chars: 300
+    level2_max_chars: 900
+    top_sentences: 3
+    preserve_order: true
+  
+  lm:
+    provider: "ollama"
+    model: "llama3.1"
+    temperature: 0.0
+    top_p: 1.0
+    use_cache: true
+  
+  filters:
+    min_length: 50
+    max_length: null
+    pages: null
+    every_n: null
+    regex: null
+  
+  write_policy: "fill_missing"
+
+# Stage 4: Extended pass (am_extended.py)
+extended:
+  # Merge short pages
+  merge_short:
+    enabled: true
+    short_threshold: 30
+    max_merge_span: 3
+  
+  # Continuity validation
+  continuity:
+    enabled: true
+    method: "jaccard"
+    overlap_threshold: 0.7
+    window_size: 50
+  
+  # Visual detection
+  visuals:
+    enabled: true
+    detect_mentions: true
+  
+  # ✨ DEDUPLICATION
+  deduplication:
+    enabled: true
+    
+    methods:
+      - "exact"                                # Exact text match
+      - "fuzzy"                                # High similarity (>threshold)
+    
+    # Thresholds
+    fuzzy_threshold: 0.95                      # 95% similarity = duplicate
+    
+    # What to do with duplicates
+    action: "mark"                             # "mark" | "remove" | "merge"
+    keep_first: true                           # Keep first occurrence
+    
+    # Detection scope
+    compare_within_book: true                  # Check within same book
+    compare_across_books: false                # MVP: don't compare across books
+    
+    # Fields to compare
+    compare_fields: ["segment"]                # Compare segment text
+    ignore_whitespace: true
+    ignore_case: false
+  
+  # Extended fields extraction
+  extended_fields:
+    enabled: true
+    
+    fields:
+      metrics:
+        enabled: true
+        terms: ["deployment frequency", "lead time", "MTTR", "change failure rate", 
+                "cycle time", "throughput", "WIP", "flow efficiency"]
+      
+      frameworks:
+        enabled: true
+        terms: ["DORA", "CALMS", "DevOps", "Lean", "Agile", "Scrum", "Kanban", 
+                "SAFe", "Theory of Constraints", "Little's Law"]
+      
+      methods:
+        enabled: true
+        terms: ["continuous delivery", "continuous integration", "trunk-based development",
+                "feature flags", "blue-green deployment", "canary release", "A/B testing"]
+      
+      tools:
+        enabled: true
+        terms: ["Jenkins", "GitLab", "GitHub Actions", "Kubernetes", "Docker", "Terraform",
+                "Ansible", "Prometheus", "Grafana", "Jira", "Trello"]
+      
+      cases:
+        enabled: true
+        patterns: ["Case Study:", "Example:", "At [A-Z][a-z]+"]
+        extract_company_names: true
+
+# Stage 5: Finalize (am_finalize.py)
+finalize:
+  require_l1: false
+  require_l2: false
+  require_l3: true
+  
+  stop_on:
+    continuity_gap: false
+    missing_visuals: false
+    missing_extended: false
+  
+  report:
+    enabled: true
+    path: "data/datasets/final/report.json"
+    include_issues: true
+
+# Stage 6: Chunking (am_chunk.py)
+chunking:
+  # Token limits
+  target_tokens: 512
+  max_tokens: 600
+  min_tokens: 100
+  overlap_tokens: 50
+  
+  # Context addition (using structure info)
+  add_context: true
+  context_template: "[BOOK: {book}]{chapter_context}{section_context} | pp.{pages}\n\n{text}"
+  context_parts:
+    chapter: " | CHAPTER: {chapter}"
+    section: " | SECTION: {section}"
+  
+  # Preservation rules
+  preserve_boundaries:
+    case_study: true
+    table: true                                # ✨ Keep extracted tables intact
+    code_block: true
+    list: true
+    chapter: true                              # ✨ Don't split chapters
+    section: false                             # Can split sections
+  
+  # Smart chunking
+  respect_paragraph_breaks: true
+  avoid_mid_sentence_split: true
+  merge_short_segments: true
+  
+  # Metadata enrichment
+  extract_metadata:
+    from_extended_fields: true
+    from_summary: true
+    from_structure: true                       # ✨ Use chapter/section info
+    detect_content_type: true
+
+# Stage 7: Embedding (am_embed.py)
+embedding:
+  model: "BAAI/bge-m3"
+  device: "cpu"
+  batch_size: 32
+  
+  dimension: 1024
+  normalize: true
+  
+  faiss:
+    index_type: "Flat"
+    hnsw_m: 32
+    hnsw_ef_construction: 200
+    hnsw_ef_search: 100
+
+# ============================================
+# RAG SEARCH CONFIGURATION
+# ============================================
+rag:
+  search:
+    top_k: 5
+    similarity_threshold: 0.7
+    
+    filters:
+      by_book: true
+      by_chapter: true                         # ✨ Filter by detected chapters
+      by_section: true                         # ✨ Filter by detected sections
+      by_content_type: true
+      by_metrics: true
+      by_frameworks: true
+      by_tools: true
+      by_has_table: true                       # ✨ Filter chunks with tables
+    
+    rerank:
+      enabled: false
+      method: "cross-encoder"
+      model: "ms-marco-MiniLM"
+
+# ============================================
+# LOGGING CONFIGURATION
+# ============================================
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  file:
+    enabled: true
+    path: "logs/pipeline.log"
+    max_bytes: 10485760
+    backup_count: 5
+  
+  console:
+    enabled: true
+    colored: true
+
+# ============================================
+# QUALITY METRICS (✨ NEW in MVP v2.0)
+# ============================================
+quality_metrics:
+  enabled: true                      # Enable lightweight quality tracking
+  output_dir: "data/quality/"        # Where to save JSON reports
+  
+  # Thresholds per stage
+  thresholds:
+    structural:
+      empty_pages: 25                # Max empty pages
+      empty_pages_ratio: 0.1         # Max 10% empty
+      avg_chars_per_page: 500        # Min 500 chars per page
+      ocr_avg_confidence: 0.8        # Min 80% OCR confidence
+      unicode_errors: 50             # Max 50 unicode errors
+    
+    structure_detect:
+      structure_coverage: 0.7        # Min 70% pages with structure
+      chapters_detected: 1           # At least 1 chapter
+    
+    summarize:
+      summary_coverage: 0.9          # Min 90% pages summarized
+      avg_l1_length: 50              # Min 50 chars for L1
+    
+    extended:
+      duplicate_ratio: 0.2           # Max 20% duplicates
+      continuity_gaps_ratio: 0.1     # Max 10% gaps
+    
+    chunk:
+      avg_chunk_tokens: 100          # Min 100 tokens per chunk
+      max_chunk_tokens: 600          # Max 600 tokens
+      context_completeness: 0.95     # Min 95% with context
+    
+    embed:
+      embedding_failures: 0          # Zero failures allowed
+  
+  # Reporting
+  summary_report:
+    enabled: true
+    path: "data/quality/pipeline_summary.json"
+    log_to_console: true             # Print summary to console
+
+# ============================================
+# VALIDATION
+# ============================================
+validation:
+  check_manifest: true
+  check_required_fields: true
+  
+  required_fields:
+    structural:
+      - "segment_id"
+      - "segment"
+      - "summary.level3"
+      - "flags.ocr_used"                       # ✨ NEW
+      - "tables"                               # ✨ NEW (can be empty array)
+    
+    structured:                                # ✨ NEW stage
+      - "segment_id"
+      - "structure"                            # Must have structure info
+      - "section_path"
+    
+    summarized:
+      - "segment_id"
+      - "summary.level1"
+      - "structure"                            # Inherited from structured
+    
+    extended:
+      - "segment_id"
+      - "extended_fields"
+      - "flags.is_duplicate"                   # ✨ NEW dedup flag
+    
+    final:
+      - "segment_id"
+      - "summary.level3"
+      - "__audit__.finalized_at"
+    
+    chunks:
+      - "chunk_id"
+      - "text"
+      - "metadata"
+      - "metadata.chapter"                     # ✨ Must have chapter info
+      - "source_segments"
+
+# ============================================
+# DATASET FORMAT SPECIFICATION
+# ============================================
+dataset_format:
+  version: "v4.3.8"
+  
+  # Card (segment) fields - UPDATED
+  card_required:
+    - "segment_id"
+    - "section_path"
+    - "segment"
+    - "summary"
+    - "structure"                              # ✨ NEW: {part?, chapter?, section?, level}
+  
+  card_optional:
+    - "flags"                                  # ✨ UPDATED: +ocr_used, +is_duplicate
+    - "visuals"
+    - "image_count"
+    - "table_line_count"
+    - "table_rect_count"
+    - "table_score"
+    - "tables"                                 # ✨ NEW: [{table_id, data, ...}]
+    - "extended_fields"
+    - "role"
+    - "ocr_confidence"                         # ✨ NEW: if OCR was used
+    - "duplicate_of"                           # ✨ NEW: if is_duplicate=true
+
+# ============================================
+# PERFORMANCE
+# ============================================
+performance:
+  use_multiprocessing: false
+  num_workers: 4
+  
+  # Caching
+  cache_ocr: true                              # ✨ Cache OCR results
+  cache_tables: true                           # ✨ Cache extracted tables
+  cache_embeddings: false
+  
+  show_progress: true
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+# Additional dependencies for MVP v2.0:
+# - pytesseract           # OCR engine
+# - Pillow                # Image processing
+# - pdf2image             # PDF → Image conversion
+# - pdfplumber>=0.9.0     # Table extraction
+# - python-Levenshtein    # Fuzzy matching for dedup
+# - spacy (optional)      # For better NER in future
+
+# ============================================
+# NOTES
+# ============================================
+# MVP v2.0 Enhanced Pipeline:
+#
+# 1. structural (+ OCR + tables)
+#    - Falls back to OCR for scanned PDFs
+#    - Extracts tables using pdfplumber
+#
+# 2. structure_detect (NEW!)
+#    - Detects chapters/sections
+#    - Creates TOC
+#    - Updates section_path
+#
+# 3. summarize
+#    - L1/L2 summaries
+#
+# 4. extended (+ deduplication)
+#    - Marks duplicate pages
+#    - Extracts extended_fields
+#
+# 5. finalize
+#    - Validates everything
+#
+# 6. chunk
+#    - Uses chapter/section context
+#    - Preserves tables
+#
+# 7. embed + search
+#    - Filter by chapter/section
+#    - Filter by has_table

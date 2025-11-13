@@ -1,0 +1,2689 @@
+[WARN] OCR not available
+2025-11-01 07:47:28,140 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-01 07:47:28,140 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-01 07:47:28,140 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-01 07:47:28,152 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-01 07:47:28,157 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 07:47:28,172 - am_common - INFO - Config loaded successfully
+2025-11-01 07:47:28,172 - quality_tracker - INFO - Quality tracker initialized: C:\scripts\1repo\data\quality
+2025-11-01 07:47:28,173 - __main__ - INFO - ============================================================
+2025-11-01 07:47:28,173 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 605, in main
+    orchestrator = PipelineOrchestrator(
+  File "C:\scripts\1repo\run_mvp.py", line 136, in __init__
+    log_section(logger, f"\U0001f680 {PRODUCT_NAME} {VERSION}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f680 archivist magika 2.0.0'
+Arguments: ()
+2025-11-01 07:47:28,174 - __main__ - INFO - ============================================================
+2025-11-01 07:47:28,174 - __main__ - INFO - Quality check: enabled
+2025-11-01 07:47:28,175 - __main__ - INFO - Validation: enabled
+2025-11-01 07:47:28,175 - __main__ - INFO - Dry run: no
+2025-11-01 07:47:28,175 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-01 07:47:28,175 - __main__ - INFO - Processing: Ядро 2025-08-29.pdf
+2025-11-01 07:47:28,175 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 24: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 196, in run_single
+    logger.info(f"Pipeline: {start_stage} \u2192 {end_stage}")
+Message: 'Pipeline: structural \u2192 embed'
+Arguments: ()
+2025-11-01 07:47:28,175 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 22: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 209, in run_single
+    logger.info(f"Stages: {' \u2192 '.join(stages)}")
+Message: 'Stages: structural \u2192 structure_detect \u2192 summarize \u2192 extended \u2192 finalize \u2192 chunk \u2192 embed'
+Arguments: ()
+2025-11-01 07:47:28,176 - __main__ - INFO - ============================================================
+2025-11-01 07:47:28,176 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Starting: STRUCTURAL'
+Arguments: ()
+2025-11-01 07:47:28,177 - __main__ - INFO - ============================================================
+2025-11-01 07:47:28,177 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 07:47:28,191 - am_common - INFO - Config loaded successfully
+2025-11-01 07:47:28,191 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-01 07:47:28,191 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-01 07:47:28,192 - am_structural_robust - INFO - Processing: Ядро 2025-08-29.pdf
+2025-11-01 07:47:28,969 - am_structural_robust - INFO - PDF: Ядро 2025-08-29
+2025-11-01 07:47:29,408 - am_structural_robust - INFO - Total pages: 1660
+2025-11-01 07:48:20,190 - am_structural_robust - INFO -   Processed 50/1660 pages
+2025-11-01 07:48:33,459 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P135' is an invalid float value
+2025-11-01 07:48:33,460 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P143' is an invalid float value
+2025-11-01 07:48:33,461 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P151' is an invalid float value
+2025-11-01 07:48:34,221 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P135' is an invalid float value
+2025-11-01 07:48:34,223 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P143' is an invalid float value
+2025-11-01 07:48:34,223 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P151' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P163' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P194' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P225' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P256' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P287' is an invalid float value
+2025-11-01 07:48:35,423 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P318' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P349' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P380' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P411' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P442' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P473' is an invalid float value
+2025-11-01 07:48:35,424 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P504' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P163' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P194' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P225' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P256' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P287' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P318' is an invalid float value
+2025-11-01 07:48:36,234 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P349' is an invalid float value
+2025-11-01 07:48:36,235 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P380' is an invalid float value
+2025-11-01 07:48:36,235 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P411' is an invalid float value
+2025-11-01 07:48:36,235 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P442' is an invalid float value
+2025-11-01 07:48:36,235 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P473' is an invalid float value
+2025-11-01 07:48:36,235 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P504' is an invalid float value
+2025-11-01 07:49:12,846 - am_structural_robust - INFO -   Processed 100/1660 pages
+2025-11-01 07:50:05,037 - am_structural_robust - INFO -   Processed 150/1660 pages
+2025-11-01 07:50:54,849 - am_structural_robust - INFO -   Processed 200/1660 pages
+2025-11-01 07:51:06,265 - am_structural_robust - ERROR - [X] Page 210: All extractors failed
+2025-11-01 07:51:15,882 - am_structural_robust - ERROR - [X] Page 219: All extractors failed
+2025-11-01 07:51:18,739 - am_structural_robust - ERROR - [X] Page 221: All extractors failed
+2025-11-01 07:51:20,708 - am_structural_robust - ERROR - [X] Page 222: All extractors failed
+2025-11-01 07:51:36,274 - am_structural_robust - ERROR - [X] Page 237: All extractors failed
+2025-11-01 07:51:39,178 - am_structural_robust - ERROR - [X] Page 239: All extractors failed
+2025-11-01 07:51:42,066 - am_structural_robust - ERROR - [X] Page 241: All extractors failed
+2025-11-01 07:51:50,424 - am_structural_robust - INFO -   Processed 250/1660 pages
+2025-11-01 07:51:57,607 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P63' is an invalid float value
+2025-11-01 07:51:57,608 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P69' is an invalid float value
+2025-11-01 07:51:58,355 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P63' is an invalid float value
+2025-11-01 07:51:58,356 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P69' is an invalid float value
+2025-11-01 07:52:02,463 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P95' is an invalid float value
+2025-11-01 07:52:02,464 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P97' is an invalid float value
+2025-11-01 07:52:02,473 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P101' is an invalid float value
+2025-11-01 07:52:03,408 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P95' is an invalid float value
+2025-11-01 07:52:03,409 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P97' is an invalid float value
+2025-11-01 07:52:03,418 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P101' is an invalid float value
+2025-11-01 07:52:07,825 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P156' is an invalid float value
+2025-11-01 07:52:08,782 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P156' is an invalid float value
+2025-11-01 07:52:15,101 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P218' is an invalid float value
+2025-11-01 07:52:15,101 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P219' is an invalid float value
+2025-11-01 07:52:15,105 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P220' is an invalid float value
+2025-11-01 07:52:16,076 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P218' is an invalid float value
+2025-11-01 07:52:16,076 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P219' is an invalid float value
+2025-11-01 07:52:16,080 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P220' is an invalid float value
+2025-11-01 07:52:29,064 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P341' is an invalid float value
+2025-11-01 07:52:29,068 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P352' is an invalid float value
+2025-11-01 07:52:29,809 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P341' is an invalid float value
+2025-11-01 07:52:29,814 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P352' is an invalid float value
+2025-11-01 07:52:42,430 - am_structural_robust - INFO -   Processed 300/1660 pages
+2025-11-01 07:52:45,375 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P56' is an invalid float value
+2025-11-01 07:52:45,376 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P62' is an invalid float value
+2025-11-01 07:52:46,095 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P56' is an invalid float value
+2025-11-01 07:52:46,096 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P62' is an invalid float value
+2025-11-01 07:52:51,314 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P99' is an invalid float value
+2025-11-01 07:52:51,315 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P101' is an invalid float value
+2025-11-01 07:52:51,322 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P109' is an invalid float value
+2025-11-01 07:52:52,039 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P99' is an invalid float value
+2025-11-01 07:52:52,040 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P101' is an invalid float value
+2025-11-01 07:52:52,048 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P109' is an invalid float value
+2025-11-01 07:52:53,366 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P117' is an invalid float value
+2025-11-01 07:52:54,299 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P117' is an invalid float value
+2025-11-01 07:53:01,365 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P174' is an invalid float value
+2025-11-01 07:53:01,366 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P175' is an invalid float value
+2025-11-01 07:53:01,369 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P176' is an invalid float value
+2025-11-01 07:53:02,303 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P174' is an invalid float value
+2025-11-01 07:53:02,304 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P175' is an invalid float value
+2025-11-01 07:53:02,307 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P176' is an invalid float value
+2025-11-01 07:53:28,864 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 07:53:28,866 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 07:53:29,577 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 07:53:29,580 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 07:53:32,780 - am_structural_robust - INFO -   Processed 350/1660 pages
+2025-11-01 07:54:25,018 - am_structural_robust - INFO -   Processed 400/1660 pages
+2025-11-01 07:55:17,882 - am_structural_robust - INFO -   Processed 450/1660 pages
+2025-11-01 07:55:28,220 - am_structural_robust - ERROR - [X] Page 458: All extractors failed
+2025-11-01 07:55:30,205 - am_structural_robust - ERROR - [X] Page 459: All extractors failed
+2025-11-01 07:55:32,273 - am_structural_robust - ERROR - [X] Page 460: All extractors failed
+2025-11-01 07:55:34,322 - am_structural_robust - ERROR - [X] Page 461: All extractors failed
+2025-11-01 07:56:13,476 - am_structural_robust - INFO -   Processed 500/1660 pages
+2025-11-01 07:57:03,870 - am_structural_robust - INFO -   Processed 550/1660 pages
+2025-11-01 07:57:56,382 - am_structural_robust - INFO -   Processed 600/1660 pages
+2025-11-01 07:58:48,937 - am_structural_robust - INFO -   Processed 650/1660 pages
+2025-11-01 07:59:43,389 - am_structural_robust - INFO -   Processed 700/1660 pages
+2025-11-01 08:00:33,622 - am_structural_robust - ERROR - [X] Page 743: All extractors failed
+2025-11-01 08:00:40,845 - am_structural_robust - INFO -   Processed 750/1660 pages
+2025-11-01 08:01:19,423 - am_structural_robust - ERROR - [X] Page 785: All extractors failed
+2025-11-01 08:01:34,707 - am_structural_robust - INFO -   Processed 800/1660 pages
+2025-11-01 08:02:10,281 - am_structural_robust - ERROR - [X] Page 833: All extractors failed
+2025-11-01 08:02:16,557 - am_structural_robust - ERROR - [X] Page 838: All extractors failed
+2025-11-01 08:02:28,248 - am_structural_robust - INFO -   Processed 850/1660 pages
+2025-11-01 08:03:21,993 - am_structural_robust - INFO -   Processed 900/1660 pages
+2025-11-01 08:03:30,747 - am_structural_robust - ERROR - [X] Page 907: All extractors failed
+2025-11-01 08:03:39,125 - am_structural_robust - ERROR - [X] Page 914: All extractors failed
+2025-11-01 08:04:17,494 - am_structural_robust - INFO -   Processed 950/1660 pages
+2025-11-01 08:04:27,577 - am_structural_robust - ERROR - [X] Page 958: All extractors failed
+2025-11-01 08:04:37,008 - am_structural_robust - ERROR - [X] Page 966: All extractors failed
+2025-11-01 08:05:12,681 - am_structural_robust - INFO -   Processed 1000/1660 pages
+2025-11-01 08:06:05,039 - am_structural_robust - INFO -   Processed 1050/1660 pages
+2025-11-01 08:06:34,242 - am_structural_robust - ERROR - [X] Page 1077: All extractors failed
+2025-11-01 08:06:57,641 - am_structural_robust - INFO -   Processed 1100/1660 pages
+2025-11-01 08:07:52,152 - am_structural_robust - INFO -   Processed 1150/1660 pages
+2025-11-01 08:08:47,701 - am_structural_robust - INFO -   Processed 1200/1660 pages
+2025-11-01 08:08:58,863 - am_structural_robust - ERROR - [X] Page 1209: All extractors failed
+2025-11-01 08:09:11,917 - am_structural_robust - ERROR - [X] Page 1220: All extractors failed
+2025-11-01 08:09:23,545 - am_structural_robust - ERROR - [X] Page 1230: All extractors failed
+2025-11-01 08:09:44,675 - am_structural_robust - INFO -   Processed 1250/1660 pages
+2025-11-01 08:10:01,057 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P70' is an invalid float value
+2025-11-01 08:10:01,058 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 08:10:01,066 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P73' is an invalid float value
+2025-11-01 08:10:01,066 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 08:10:01,092 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P82' is an invalid float value
+2025-11-01 08:10:01,660 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P70' is an invalid float value
+2025-11-01 08:10:01,660 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 08:10:01,669 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P73' is an invalid float value
+2025-11-01 08:10:01,670 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 08:10:01,696 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P82' is an invalid float value
+2025-11-01 08:10:02,347 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P85' is an invalid float value
+2025-11-01 08:10:02,347 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P86' is an invalid float value
+2025-11-01 08:10:02,350 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P87' is an invalid float value
+2025-11-01 08:10:02,359 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P88' is an invalid float value
+2025-11-01 08:10:02,901 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P85' is an invalid float value
+2025-11-01 08:10:02,901 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P86' is an invalid float value
+2025-11-01 08:10:02,903 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P87' is an invalid float value
+2025-11-01 08:10:02,913 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P88' is an invalid float value
+2025-11-01 08:10:39,077 - am_structural_robust - INFO -   Processed 1300/1660 pages
+2025-11-01 08:11:33,206 - am_structural_robust - INFO -   Processed 1350/1660 pages
+2025-11-01 08:11:35,980 - am_structural_robust - ERROR - [X] Page 1351: All extractors failed
+2025-11-01 08:12:28,740 - am_structural_robust - INFO -   Processed 1400/1660 pages
+2025-11-01 08:13:23,139 - am_structural_robust - INFO -   Processed 1450/1660 pages
+2025-11-01 08:14:01,124 - am_structural_robust - ERROR - [X] Page 1483: All extractors failed
+2025-11-01 08:14:14,267 - am_structural_robust - ERROR - [X] Page 1494: All extractors failed
+2025-11-01 08:14:20,173 - am_structural_robust - INFO -   Processed 1500/1660 pages
+2025-11-01 08:14:25,984 - am_structural_robust - ERROR - [X] Page 1504: All extractors failed
+2025-11-01 08:15:03,619 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P70' is an invalid float value
+2025-11-01 08:15:03,620 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 08:15:03,631 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P73' is an invalid float value
+2025-11-01 08:15:03,632 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 08:15:03,659 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P82' is an invalid float value
+2025-11-01 08:15:04,175 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P70' is an invalid float value
+2025-11-01 08:15:04,175 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P72' is an invalid float value
+2025-11-01 08:15:04,184 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P73' is an invalid float value
+2025-11-01 08:15:04,185 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P74' is an invalid float value
+2025-11-01 08:15:04,213 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P82' is an invalid float value
+2025-11-01 08:15:04,934 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P85' is an invalid float value
+2025-11-01 08:15:04,935 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P86' is an invalid float value
+2025-11-01 08:15:04,937 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P87' is an invalid float value
+2025-11-01 08:15:04,945 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P88' is an invalid float value
+2025-11-01 08:15:05,449 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P85' is an invalid float value
+2025-11-01 08:15:05,450 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P86' is an invalid float value
+2025-11-01 08:15:05,452 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P87' is an invalid float value
+2025-11-01 08:15:05,462 - pdfminer.pdfinterp - WARNING - Cannot set gray non-stroke color because /'P88' is an invalid float value
+2025-11-01 08:15:15,346 - am_structural_robust - INFO -   Processed 1550/1660 pages
+2025-11-01 08:16:11,544 - am_structural_robust - INFO -   Processed 1600/1660 pages
+2025-11-01 08:16:14,001 - am_structural_robust - ERROR - [X] Page 1601: All extractors failed
+2025-11-01 08:16:27,774 - am_structural_robust - ERROR - [X] Page 1613: All extractors failed
+2025-11-01 08:17:08,825 - am_structural_robust - ERROR - [X] Page 1649: All extractors failed
+2025-11-01 08:17:09,575 - am_structural_robust - INFO -   Processed 1650/1660 pages
+2025-11-01 08:17:20,611 - am_structural_robust - INFO - Extraction complete: 1660 success, 0 failed
+2025-11-01 08:17:20,611 - am_structural_robust - INFO -   Methods used: {'pdfminer': 1630}
+2025-11-01 08:17:20,611 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-01 08:17:20,611 - am_structural_robust - INFO -   Tables found: 657
+2025-11-01 08:17:20,635 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structural\ядро_2025-08-29.dataset.jsonl (1660 cards)
+2025-11-01 08:17:20,677 - am_common - INFO - Saved: 1660 cards to ядро_2025-08-29.dataset.jsonl (5.13 MB)
+2025-11-01 08:17:20,677 - am_structural_robust - INFO - Dataset saved: 5.13 MB
+2025-11-01 08:17:20,678 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:20,678 - quality_tracker - INFO - structural metrics:
+2025-11-01 08:17:20,678 - quality_tracker - INFO -   total_pages: 1660
+2025-11-01 08:17:20,678 - quality_tracker - INFO -   success_pages: 1660
+2025-11-01 08:17:20,678 - quality_tracker - INFO -   failed_pages: 0
+2025-11-01 08:17:20,678 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-01 08:17:20,678 - quality_tracker - INFO -   empty_pages: 76
+2025-11-01 08:17:20,679 - quality_tracker - INFO -   avg_page_length: 1104.7416
+2025-11-01 08:17:20,679 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 1630}
+2025-11-01 08:17:20,679 - quality_tracker - INFO -   ocr_used: 0
+2025-11-01 08:17:20,679 - quality_tracker - INFO -   tables_found: 657
+2025-11-01 08:17:20,679 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 409, in _run_stage
+    return processor.process_pdf(input_path, output_dir)
+  File "C:\scripts\1repo\am_structural_robust.py", line 569, in process_pdf
+    self.quality_tracker.track('structural', pdf_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structural'
+Arguments: ()
+2025-11-01 08:17:20,680 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:20,680 - am_structural_robust - INFO - [OK] Saved: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,682 - validate - INFO - Validating structural: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,682 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,723 - am_common - WARNING - Failed to parse line 588: {"segment_id": "00587", "page_num": 587, "segment"... Error: Unterminated string starting at: line 1 column 53 (char 52)
+2025-11-01 08:17:20,723 - am_common - WARNING - Failed to parse line 589: в комментариях\n<важно>Задачи типа КСМ в статусе “... Error: Expecting value: line 1 column 1 (char 0)
+2025-11-01 08:17:20,733 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,739 - validate - INFO - [OK] VALID - ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,739 - __main__ - INFO - ============================================================
+2025-11-01 08:17:20,739 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Completed: STRUCTURAL'
+Arguments: ()
+2025-11-01 08:17:20,740 - __main__ - INFO - ============================================================
+2025-11-01 08:17:20,740 - __main__ - INFO - ============================================================
+2025-11-01 08:17:20,740 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Starting: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 08:17:20,741 - __main__ - INFO - ============================================================
+2025-11-01 08:17:20,741 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:20,758 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:20,759 - am_structure_detect - INFO - Processing: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:20,760 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,045 - am_common - WARNING - Failed to parse line 588: {"segment_id": "00587", "page_num": 587, "segment"... Error: Unterminated string starting at: line 1 column 53 (char 52)
+2025-11-01 08:17:21,045 - am_common - WARNING - Failed to parse line 589: в комментариях\n<важно>Задачи типа КСМ в статусе “... Error: Expecting value: line 1 column 1 (char 0)
+2025-11-01 08:17:21,055 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,061 - am_structure_detect - INFO - Detected 0 chapters
+2025-11-01 08:17:21,068 - am_structure_detect - INFO - Detected 59 sections
+2025-11-01 08:17:21,069 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structured\ядро_2025-08-29.dataset.jsonl (1659 cards)
+2025-11-01 08:17:21,114 - am_common - INFO - Saved: 1659 cards to ядро_2025-08-29.dataset.jsonl (5.44 MB)
+2025-11-01 08:17:21,114 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:21,115 - quality_tracker - INFO - structure_detect metrics:
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   total_pages: 1659
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   chapters_detected: 0
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   sections_detected: 59
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   pages_with_structure: 1635
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   structure_coverage: 0.9855
+2025-11-01 08:17:21,115 - quality_tracker - INFO -   avg_chapter_length: 0
+2025-11-01 08:17:21,115 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_structure_detect.py", line 309, in process_dataset
+    self.quality_tracker.track('structure_detect', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structure_detect'
+Arguments: ()
+2025-11-01 08:17:21,116 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:21,116 - am_structure_detect - INFO - Saved: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,119 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-01 08:17:21,120 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 08:17:21,120 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,120 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Completed: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 08:17:21,120 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,120 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,120 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Starting: SUMMARIZE'
+Arguments: ()
+2025-11-01 08:17:21,121 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,121 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:21,136 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:21,136 - am_summarize - INFO - Processing: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,136 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structured\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,191 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,852 - am_summarize - INFO - Summarized 1583 pages, skipped 76
+2025-11-01 08:17:21,853 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\summarized\ядро_2025-08-29.dataset.jsonl (1659 cards)
+2025-11-01 08:17:21,906 - am_common - INFO - Saved: 1659 cards to ядро_2025-08-29.dataset.jsonl (6.99 MB)
+2025-11-01 08:17:21,908 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:21,909 - quality_tracker - INFO - summarize metrics:
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   total_pages: 1659
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   summarized_pages: 1583
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   skipped_pages: 76
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   summary_coverage: 0.9542
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   avg_l1_length: 175.1713
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   avg_l2_length: 386.8072
+2025-11-01 08:17:21,909 - quality_tracker - INFO -   avg_compression_ratio: 7.3400
+2025-11-01 08:17:21,909 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_summarize.py", line 281, in process_dataset
+    self.quality_tracker.track('summarize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for summarize'
+Arguments: ()
+2025-11-01 08:17:21,910 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:21,910 - am_summarize - INFO - Saved: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,912 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-01 08:17:21,912 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 08:17:21,912 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,912 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Completed: SUMMARIZE'
+Arguments: ()
+2025-11-01 08:17:21,913 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,913 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,913 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Starting: EXTENDED'
+Arguments: ()
+2025-11-01 08:17:21,914 - __main__ - INFO - ============================================================
+2025-11-01 08:17:21,914 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:21,929 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:21,955 - am_extended - INFO - Ollama available, using model: llama3.2:3b
+2025-11-01 08:17:21,956 - am_extended - INFO - Processing: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:21,956 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\summarized\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:22,018 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:22,051 - am_extended - INFO - Marked 364 duplicate pages
+2025-11-01 08:17:22,127 - am_extended - INFO - Found 690 continuity gaps
+2025-11-01 08:17:22,127 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-01 08:17:22,156 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,203 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,218 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,249 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,281 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,297 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,312 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,328 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,344 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,344 - am_extended - INFO -   Processed 10/1659 pages
+2025-11-01 08:17:22,375 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,406 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,423 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,453 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,484 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,514 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,546 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,576 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,593 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,593 - am_extended - INFO -   Processed 20/1659 pages
+2025-11-01 08:17:22,623 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,654 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,685 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,717 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,719 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,732 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,748 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,763 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,779 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,779 - am_extended - INFO -   Processed 30/1659 pages
+2025-11-01 08:17:22,795 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,826 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,842 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,857 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,873 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,888 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,920 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,935 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,966 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,997 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:22,997 - am_extended - INFO -   Processed 40/1659 pages
+2025-11-01 08:17:23,028 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,043 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,060 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,122 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,152 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,169 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,200 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,230 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,261 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,293 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,323 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,354 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,402 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,417 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,417 - am_extended - INFO -   Processed 60/1659 pages
+2025-11-01 08:17:23,432 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,464 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,479 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,510 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,526 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,572 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,587 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,587 - am_extended - INFO -   Processed 70/1659 pages
+2025-11-01 08:17:23,618 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,649 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,680 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,696 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,727 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,758 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,773 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,804 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,804 - am_extended - INFO -   Processed 80/1659 pages
+2025-11-01 08:17:23,835 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,866 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,882 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,913 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,944 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,960 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,963 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:23,990 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,007 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,038 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,038 - am_extended - INFO -   Processed 90/1659 pages
+2025-11-01 08:17:24,068 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,084 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,099 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,130 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,161 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,176 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,191 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,222 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,237 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,268 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,268 - am_extended - INFO -   Processed 100/1659 pages
+2025-11-01 08:17:24,284 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,299 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,330 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,361 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,392 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,395 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,423 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,438 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,469 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,500 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,501 - am_extended - INFO -   Processed 110/1659 pages
+2025-11-01 08:17:24,531 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,562 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,592 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,609 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,612 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,624 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,656 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,685 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,702 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,733 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,733 - am_extended - INFO -   Processed 120/1659 pages
+2025-11-01 08:17:24,765 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,796 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,826 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,858 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,889 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,920 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,951 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:24,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,013 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,029 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,029 - am_extended - INFO -   Processed 130/1659 pages
+2025-11-01 08:17:25,043 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,059 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,074 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,104 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,136 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,152 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,182 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,198 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,214 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,245 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,245 - am_extended - INFO -   Processed 140/1659 pages
+2025-11-01 08:17:25,276 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,307 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,338 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,354 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,368 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,385 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,415 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,431 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,462 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,494 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,494 - am_extended - INFO -   Processed 150/1659 pages
+2025-11-01 08:17:25,509 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,541 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,571 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,603 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,634 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,665 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,695 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,726 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,757 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,773 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,773 - am_extended - INFO -   Processed 160/1659 pages
+2025-11-01 08:17:25,789 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,820 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,823 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,836 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,851 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,882 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,914 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,944 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,960 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,991 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:25,992 - am_extended - INFO -   Processed 170/1659 pages
+2025-11-01 08:17:26,023 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,054 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,084 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,099 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,115 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,146 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,178 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,193 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,224 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,255 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,256 - am_extended - INFO -   Processed 180/1659 pages
+2025-11-01 08:17:26,286 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,302 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,332 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,348 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,379 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,410 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,441 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,472 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,488 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,520 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,520 - am_extended - INFO -   Processed 190/1659 pages
+2025-11-01 08:17:26,535 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,550 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,582 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,598 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,629 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,660 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,691 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,721 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,737 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,738 - am_extended - INFO -   Processed 200/1659 pages
+2025-11-01 08:17:26,767 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,799 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,814 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,844 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,861 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,892 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,908 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,910 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,911 - am_extended - INFO -   Processed 210/1659 pages
+2025-11-01 08:17:26,938 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,954 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,970 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:26,985 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,001 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,031 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,062 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,093 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,108 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,124 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,139 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,187 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,189 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,219 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,219 - am_extended - INFO -   Processed 230/1659 pages
+2025-11-01 08:17:27,249 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,281 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,312 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,343 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,359 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,390 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,421 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,452 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,483 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,499 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,529 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,561 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,576 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,607 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,637 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,653 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,684 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,684 - am_extended - INFO -   Processed 250/1659 pages
+2025-11-01 08:17:27,716 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,732 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,763 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,794 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,796 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,809 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,840 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,872 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,888 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,903 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,934 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,965 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:27,996 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,027 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,057 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,088 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,119 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,151 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,151 - am_extended - INFO -   Processed 270/1659 pages
+2025-11-01 08:17:28,166 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,198 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,229 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,245 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,276 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,292 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,322 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,354 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,385 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,417 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,417 - am_extended - INFO -   Processed 280/1659 pages
+2025-11-01 08:17:28,448 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,464 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,479 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,509 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,525 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,528 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,571 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,587 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,618 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,634 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,634 - am_extended - INFO -   Processed 290/1659 pages
+2025-11-01 08:17:28,664 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,701 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,742 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,773 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,790 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,805 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,836 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,866 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,897 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,928 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,960 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:28,975 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,005 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,036 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,051 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,066 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,066 - am_extended - INFO -   Processed 310/1659 pages
+2025-11-01 08:17:29,097 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,113 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,115 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,143 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,174 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,191 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,221 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,237 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,253 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,253 - am_extended - INFO -   Processed 320/1659 pages
+2025-11-01 08:17:29,283 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,299 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,314 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,344 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,361 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,376 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,391 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,423 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,439 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,454 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,454 - am_extended - INFO -   Processed 330/1659 pages
+2025-11-01 08:17:29,485 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,500 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,530 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,561 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,592 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,623 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,654 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,669 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,701 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,716 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,747 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,778 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,809 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,840 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,871 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,888 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,888 - am_extended - INFO -   Processed 350/1659 pages
+2025-11-01 08:17:29,918 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,933 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,936 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,963 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:29,994 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,025 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,040 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,061 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,102 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,133 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,133 - am_extended - INFO -   Processed 360/1659 pages
+2025-11-01 08:17:30,164 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,195 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,225 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,241 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,256 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,287 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,319 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,319 - am_extended - INFO -   Processed 370/1659 pages
+2025-11-01 08:17:30,349 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,365 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,381 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,411 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,427 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,442 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,474 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,505 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,522 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,522 - am_extended - INFO -   Processed 380/1659 pages
+2025-11-01 08:17:30,536 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,567 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,598 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,629 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,645 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,660 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,691 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,722 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,738 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,769 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,769 - am_extended - INFO -   Processed 390/1659 pages
+2025-11-01 08:17:30,785 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,816 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,847 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,877 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,908 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,940 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:30,970 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,002 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,035 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,065 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,066 - am_extended - INFO -   Processed 400/1659 pages
+2025-11-01 08:17:31,096 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,112 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,142 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,159 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,189 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,221 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,236 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,252 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,252 - am_extended - INFO -   Processed 410/1659 pages
+2025-11-01 08:17:31,282 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,298 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,313 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,344 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,359 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,376 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,376 - am_extended - INFO -   Processed 420/1659 pages
+2025-11-01 08:17:31,406 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,436 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,467 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,498 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,528 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,558 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,589 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,620 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,636 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,636 - am_extended - INFO -   Processed 430/1659 pages
+2025-11-01 08:17:31,652 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,667 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,698 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,714 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,729 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,761 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,777 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,792 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,808 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,838 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,838 - am_extended - INFO -   Processed 440/1659 pages
+2025-11-01 08:17:31,869 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,886 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,916 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,947 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,963 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:31,994 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,010 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,041 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,073 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,074 - am_extended - INFO -   Processed 450/1659 pages
+2025-11-01 08:17:32,103 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,134 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,165 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,180 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,196 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,227 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,242 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,273 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,289 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,319 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,350 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,380 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,397 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,428 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,458 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,458 - am_extended - INFO -   Processed 470/1659 pages
+2025-11-01 08:17:32,489 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,505 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,519 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,549 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,580 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,597 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,626 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,657 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,672 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,702 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,703 - am_extended - INFO -   Processed 480/1659 pages
+2025-11-01 08:17:32,718 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,749 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,786 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,828 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,858 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,889 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,920 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,951 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,967 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:32,983 - am_extended - INFO -   Processed 490/1659 pages
+2025-11-01 08:17:33,013 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,044 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,060 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,091 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,123 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,139 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,155 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,185 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,188 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,231 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,231 - am_extended - INFO -   Processed 500/1659 pages
+2025-11-01 08:17:33,263 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,278 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,309 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,340 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,386 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,418 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,449 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,465 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,481 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,481 - am_extended - INFO -   Processed 510/1659 pages
+2025-11-01 08:17:33,512 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,543 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,574 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,577 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,605 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,620 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,637 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,666 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,682 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,698 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,699 - am_extended - INFO -   Processed 520/1659 pages
+2025-11-01 08:17:33,714 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,729 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,745 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,776 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,807 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,837 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,868 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,899 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,929 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,960 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:33,960 - am_extended - INFO -   Processed 530/1659 pages
+2025-11-01 08:17:33,991 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,022 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,053 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,084 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,115 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,131 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,151 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,177 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,208 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,239 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,239 - am_extended - INFO -   Processed 540/1659 pages
+2025-11-01 08:17:34,270 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,286 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,301 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,317 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,333 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,336 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,348 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,379 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,411 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,442 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,442 - am_extended - INFO -   Processed 550/1659 pages
+2025-11-01 08:17:34,473 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,504 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,520 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,550 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,566 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,581 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,612 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,643 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,673 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,702 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,703 - am_extended - INFO -   Processed 560/1659 pages
+2025-11-01 08:17:34,706 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,734 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,751 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,766 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,770 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,797 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,813 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,844 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,875 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,890 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,890 - am_extended - INFO -   Processed 570/1659 pages
+2025-11-01 08:17:34,921 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,952 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:34,999 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,014 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,045 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,061 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,092 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,108 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,139 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,139 - am_extended - INFO -   Processed 580/1659 pages
+2025-11-01 08:17:35,169 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,200 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,231 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,262 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,277 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,308 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,339 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,369 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,400 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,431 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,431 - am_extended - INFO -   Processed 590/1659 pages
+2025-11-01 08:17:35,447 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,477 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,513 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,555 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,586 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,617 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,632 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,663 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,694 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,725 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,725 - am_extended - INFO -   Processed 600/1659 pages
+2025-11-01 08:17:35,740 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,756 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,772 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,803 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,835 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,866 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,896 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,927 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,942 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,973 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,973 - am_extended - INFO -   Processed 610/1659 pages
+2025-11-01 08:17:35,989 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:35,992 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,035 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,065 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,097 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,112 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,127 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,158 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,173 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,203 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,204 - am_extended - INFO -   Processed 620/1659 pages
+2025-11-01 08:17:36,235 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,251 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,266 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,281 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,312 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,327 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,358 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,390 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,421 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,437 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,437 - am_extended - INFO -   Processed 630/1659 pages
+2025-11-01 08:17:36,467 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,498 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,528 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,544 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,559 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,574 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,606 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,636 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,667 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,698 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,698 - am_extended - INFO -   Processed 640/1659 pages
+2025-11-01 08:17:36,714 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,728 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,760 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,775 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,790 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,821 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,852 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,874 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,915 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,932 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,932 - am_extended - INFO -   Processed 650/1659 pages
+2025-11-01 08:17:36,946 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,976 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:36,992 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,007 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,039 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,054 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,085 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,101 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,132 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,163 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,163 - am_extended - INFO -   Processed 660/1659 pages
+2025-11-01 08:17:37,179 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,209 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,225 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,240 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,270 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,287 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,318 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,334 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,364 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,396 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,396 - am_extended - INFO -   Processed 670/1659 pages
+2025-11-01 08:17:37,411 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,442 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,473 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,504 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,536 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,568 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,599 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,615 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,645 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,676 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,676 - am_extended - INFO -   Processed 680/1659 pages
+2025-11-01 08:17:37,706 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,737 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,768 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,784 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,799 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,830 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,861 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,891 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,922 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,938 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,938 - am_extended - INFO -   Processed 690/1659 pages
+2025-11-01 08:17:37,953 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:37,969 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,000 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,031 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,062 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,093 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,125 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,155 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,187 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,202 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,202 - am_extended - INFO -   Processed 700/1659 pages
+2025-11-01 08:17:38,233 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,264 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,280 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,311 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,342 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,358 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,388 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,420 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,451 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,482 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,482 - am_extended - INFO -   Processed 710/1659 pages
+2025-11-01 08:17:38,513 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,517 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,560 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,591 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,622 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,653 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,685 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,701 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,716 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,748 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,748 - am_extended - INFO -   Processed 720/1659 pages
+2025-11-01 08:17:38,764 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,795 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,810 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,826 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,856 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,886 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,903 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,934 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,949 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,964 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:38,964 - am_extended - INFO -   Processed 730/1659 pages
+2025-11-01 08:17:38,996 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,011 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,044 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,090 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,137 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,168 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,184 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,199 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,199 - am_extended - INFO -   Processed 740/1659 pages
+2025-11-01 08:17:39,230 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,261 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,292 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,323 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,338 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,355 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,370 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,402 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,432 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,463 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,494 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,510 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,541 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,556 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,588 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,619 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,650 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,666 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,666 - am_extended - INFO -   Processed 760/1659 pages
+2025-11-01 08:17:39,683 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,713 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,744 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,775 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,790 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,805 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,836 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,852 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,883 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,898 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,899 - am_extended - INFO -   Processed 770/1659 pages
+2025-11-01 08:17:39,929 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,944 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,959 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:39,990 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,020 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,051 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,067 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,099 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,114 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,145 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,161 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,161 - am_extended - INFO -   Processed 790/1659 pages
+2025-11-01 08:17:40,192 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,207 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,239 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,269 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,300 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,303 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,332 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,364 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,394 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,394 - am_extended - INFO -   Processed 800/1659 pages
+2025-11-01 08:17:40,425 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,455 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,487 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,502 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,534 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,550 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,581 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,597 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,627 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,627 - am_extended - INFO -   Processed 810/1659 pages
+2025-11-01 08:17:40,659 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,690 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,720 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,751 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,781 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,798 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,828 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,860 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,891 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,891 - am_extended - INFO -   Processed 820/1659 pages
+2025-11-01 08:17:40,921 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,952 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:40,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,014 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,045 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,092 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,122 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,122 - am_extended - INFO -   Processed 830/1659 pages
+2025-11-01 08:17:41,137 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,168 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,184 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,215 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,246 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,277 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,309 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,340 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,386 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,417 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,433 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,463 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,463 - am_extended - INFO -   Processed 850/1659 pages
+2025-11-01 08:17:41,494 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,526 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,587 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,618 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,649 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,664 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,695 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,711 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,727 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,727 - am_extended - INFO -   Processed 860/1659 pages
+2025-11-01 08:17:41,757 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,788 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,819 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,850 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,881 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,912 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,943 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,959 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:41,959 - am_extended - INFO -   Processed 870/1659 pages
+2025-11-01 08:17:41,989 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,004 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,020 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,050 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,067 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,097 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,129 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,144 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,159 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,159 - am_extended - INFO -   Processed 880/1659 pages
+2025-11-01 08:17:42,190 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,221 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,253 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,269 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,284 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,300 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,330 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,361 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,377 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,392 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,393 - am_extended - INFO -   Processed 890/1659 pages
+2025-11-01 08:17:42,408 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,439 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,455 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,486 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,517 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,548 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,579 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,594 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,610 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,640 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,641 - am_extended - INFO -   Processed 900/1659 pages
+2025-11-01 08:17:42,672 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,703 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,733 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,750 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,781 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,796 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,827 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,831 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,858 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,858 - am_extended - INFO -   Processed 910/1659 pages
+2025-11-01 08:17:42,889 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,919 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,936 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,967 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:42,997 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,012 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,044 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,075 - am_extended - INFO -   Processed 920/1659 pages
+2025-11-01 08:17:43,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,122 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,152 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,184 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,200 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,230 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,261 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,292 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,322 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,353 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,353 - am_extended - INFO -   Processed 930/1659 pages
+2025-11-01 08:17:43,384 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,415 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,445 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,461 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,493 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,525 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,555 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,571 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,602 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,633 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,633 - am_extended - INFO -   Processed 940/1659 pages
+2025-11-01 08:17:43,663 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,700 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,741 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,772 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,803 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,833 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,849 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,879 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,910 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,910 - am_extended - INFO -   Processed 950/1659 pages
+2025-11-01 08:17:43,941 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,957 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:43,988 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,004 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,020 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,050 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,066 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,096 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,097 - am_extended - INFO -   Processed 960/1659 pages
+2025-11-01 08:17:44,112 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,127 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,143 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,175 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,206 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,221 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,253 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,283 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,283 - am_extended - INFO -   Processed 970/1659 pages
+2025-11-01 08:17:44,299 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,314 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,329 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,345 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,375 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,390 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,422 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,438 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,453 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,453 - am_extended - INFO -   Processed 980/1659 pages
+2025-11-01 08:17:44,484 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,499 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,529 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,546 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,577 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,608 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,625 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,655 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,685 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,685 - am_extended - INFO -   Processed 990/1659 pages
+2025-11-01 08:17:44,701 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,732 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,764 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,795 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,812 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,827 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,858 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,889 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,920 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,952 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,952 - am_extended - INFO -   Processed 1000/1659 pages
+2025-11-01 08:17:44,968 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:44,998 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,029 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,045 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,076 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,138 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,141 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,168 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,168 - am_extended - INFO -   Processed 1010/1659 pages
+2025-11-01 08:17:45,183 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,215 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,230 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,262 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,292 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,308 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,339 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,402 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,433 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,433 - am_extended - INFO -   Processed 1020/1659 pages
+2025-11-01 08:17:45,464 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,495 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,527 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,588 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,604 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,620 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,651 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,667 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,698 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,698 - am_extended - INFO -   Processed 1030/1659 pages
+2025-11-01 08:17:45,728 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,760 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,790 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,805 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,835 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,866 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,897 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,929 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,960 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:45,960 - am_extended - INFO -   Processed 1040/1659 pages
+2025-11-01 08:17:45,991 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,022 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,052 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,084 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,116 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,146 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,178 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,209 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,224 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,256 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,256 - am_extended - INFO -   Processed 1050/1659 pages
+2025-11-01 08:17:46,272 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,286 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,303 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,333 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,364 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,396 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,426 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,457 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,488 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,488 - am_extended - INFO -   Processed 1060/1659 pages
+2025-11-01 08:17:46,504 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,519 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,549 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,580 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,596 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,612 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,627 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,658 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,689 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,720 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,720 - am_extended - INFO -   Processed 1070/1659 pages
+2025-11-01 08:17:46,735 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,752 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,767 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,782 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,813 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,829 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,859 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,891 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,921 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,922 - am_extended - INFO -   Processed 1080/1659 pages
+2025-11-01 08:17:46,952 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:46,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,014 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,045 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,060 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,075 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,106 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,122 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,153 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,168 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,169 - am_extended - INFO -   Processed 1090/1659 pages
+2025-11-01 08:17:47,199 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,230 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,261 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,276 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,291 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,306 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,338 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,369 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,399 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,430 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,430 - am_extended - INFO -   Processed 1100/1659 pages
+2025-11-01 08:17:47,461 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,493 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,507 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,538 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,568 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,600 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,617 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,632 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,662 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,678 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,679 - am_extended - INFO -   Processed 1110/1659 pages
+2025-11-01 08:17:47,717 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,756 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,786 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,803 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,833 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,848 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,880 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,895 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,911 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,914 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,914 - am_extended - INFO -   Processed 1120/1659 pages
+2025-11-01 08:17:47,941 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,971 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:47,987 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,017 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,033 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,048 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,077 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,093 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,109 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,140 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,140 - am_extended - INFO -   Processed 1130/1659 pages
+2025-11-01 08:17:48,170 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,186 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,217 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,248 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,278 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,294 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,309 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,339 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,356 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,371 - am_extended - INFO -   Processed 1140/1659 pages
+2025-11-01 08:17:48,401 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,432 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,448 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,478 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,494 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,526 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,589 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,620 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,650 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,651 - am_extended - INFO -   Processed 1150/1659 pages
+2025-11-01 08:17:48,681 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,712 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,728 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,759 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,789 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,805 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,835 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,866 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,882 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,912 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,912 - am_extended - INFO -   Processed 1160/1659 pages
+2025-11-01 08:17:48,943 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,974 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:48,989 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,020 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,051 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,083 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,099 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,114 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,151 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,177 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,177 - am_extended - INFO -   Processed 1170/1659 pages
+2025-11-01 08:17:49,193 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,224 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,255 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,271 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,301 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,316 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,331 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,347 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,364 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,379 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,380 - am_extended - INFO -   Processed 1180/1659 pages
+2025-11-01 08:17:49,410 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,441 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,473 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,503 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,534 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,566 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,581 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,597 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,628 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,659 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,659 - am_extended - INFO -   Processed 1190/1659 pages
+2025-11-01 08:17:49,690 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,706 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,722 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,753 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,784 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,815 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,845 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,876 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,893 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,907 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,907 - am_extended - INFO -   Processed 1200/1659 pages
+2025-11-01 08:17:49,923 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,954 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:49,985 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,016 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,031 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,048 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,062 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,078 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,078 - am_extended - INFO -   Processed 1210/1659 pages
+2025-11-01 08:17:50,108 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,140 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,202 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,234 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,250 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,265 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,295 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,326 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,357 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,373 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,389 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,420 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,452 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,467 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,498 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,516 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,544 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,576 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,607 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,637 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,669 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,702 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,732 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,764 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,780 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,795 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,825 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,826 - am_extended - INFO -   Processed 1240/1659 pages
+2025-11-01 08:17:50,841 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,871 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,902 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,917 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,933 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,963 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,979 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,994 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:50,994 - am_extended - INFO -   Processed 1250/1659 pages
+2025-11-01 08:17:51,024 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,027 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,056 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,087 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,120 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,150 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,181 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,210 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,211 - am_extended - INFO -   Processed 1260/1659 pages
+2025-11-01 08:17:51,227 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,258 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,289 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,304 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,335 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,367 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,398 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,414 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,429 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,429 - am_extended - INFO -   Processed 1270/1659 pages
+2025-11-01 08:17:51,460 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,475 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,506 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,522 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,552 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,583 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,614 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,644 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,660 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,676 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,707 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,707 - am_extended - INFO -   Processed 1550/1659 pages
+2025-11-01 08:17:51,723 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,753 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,785 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,816 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,832 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,847 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,848 - am_extended - INFO -   Processed 1650/1659 pages
+2025-11-01 08:17:51,878 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,909 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,925 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 08:17:51,925 - am_extended - INFO - Extracted extended fields for 1194 pages
+2025-11-01 08:17:51,925 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\extended\ядро_2025-08-29.dataset.jsonl (1659 cards)
+2025-11-01 08:17:51,984 - am_common - INFO - Saved: 1659 cards to ядро_2025-08-29.dataset.jsonl (7.57 MB)
+2025-11-01 08:17:51,985 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:51,986 - quality_tracker - INFO - extended metrics:
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   total_cards: 1659
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   duplicates_found: 364
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   duplicate_ratio: 0.2194
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   continuity_gaps: 690
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   continuity_gap_ratio: 0.4162
+2025-11-01 08:17:51,986 - quality_tracker - INFO -   avg_overlap: 0.1170
+2025-11-01 08:17:51,987 - quality_tracker - INFO -   extended_fields_extracted: 1194
+2025-11-01 08:17:51,987 - quality_tracker - INFO -   extraction_coverage: 0.7197
+2025-11-01 08:17:51,987 - quality_tracker - INFO -   lm_extraction_count: 0
+2025-11-01 08:17:51,987 - quality_tracker - INFO -   lm_extraction_ratio: 0.0000
+2025-11-01 08:17:51,987 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_extended.py", line 612, in process_dataset
+    self.quality_tracker.track('extended', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for extended'
+Arguments: ()
+2025-11-01 08:17:51,988 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:51,988 - am_extended - INFO - Saved: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:51,991 - validate - INFO - Validating extended: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:51,991 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,066 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,073 - validate - WARNING - [X] INVALID - ядро_2025-08-29.dataset.jsonl (2 errors)
+2025-11-01 08:17:52,073 - __main__ - WARNING - Validation issues: 2 errors, 1194 warnings
+2025-11-01 08:17:52,073 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-01 08:17:52,073 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,073 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Completed: EXTENDED'
+Arguments: ()
+2025-11-01 08:17:52,074 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,074 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,074 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Starting: FINALIZE'
+Arguments: ()
+2025-11-01 08:17:52,075 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,075 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:52,090 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:52,090 - am_finalize - INFO - Processing: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,090 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,156 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,164 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\final\ядро_2025-08-29.dataset.jsonl (1659 cards)
+2025-11-01 08:17:52,228 - am_common - INFO - Saved: 1659 cards to ядро_2025-08-29.dataset.jsonl (7.47 MB)
+2025-11-01 08:17:52,231 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:52,232 - quality_tracker - INFO - finalize metrics:
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   total_cards: 1659
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   validation_errors: 0
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   validation_warnings: 214
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   avg_completeness: 0.6190
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   cards_with_structure: 1635
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   structure_coverage: 0.9855
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   cards_with_summaries: 1582
+2025-11-01 08:17:52,232 - quality_tracker - INFO -   summary_coverage: 0.9536
+2025-11-01 08:17:52,232 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_finalize.py", line 278, in process_dataset
+    self.quality_tracker.track('finalize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for finalize'
+Arguments: ()
+2025-11-01 08:17:52,233 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:52,233 - am_finalize - INFO - Saved: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,237 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-01 08:17:52,237 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 08:17:52,237 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,237 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Completed: FINALIZE'
+Arguments: ()
+2025-11-01 08:17:52,238 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,238 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,238 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Starting: CHUNK'
+Arguments: ()
+2025-11-01 08:17:52,238 - __main__ - INFO - ============================================================
+2025-11-01 08:17:52,239 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:52,254 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:52,336 - am_chunk - INFO - Processing: ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,336 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\final\ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:52,406 - am_common - INFO - Loaded: 1659 cards from ядро_2025-08-29.dataset.jsonl
+2025-11-01 08:17:53,162 - am_chunk - INFO - Created 2329 chunks from 1659 pages
+2025-11-01 08:17:53,198 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 08:17:53,199 - quality_tracker - INFO - chunk metrics:
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   total_chunks: 2329
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   chunks_per_page: 1.4039
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   avg_chunk_tokens: 369.9055
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   min_chunk_tokens: 100
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   max_chunk_tokens: 1552
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 750, '300-512': 1463, '512+': 116}
+2025-11-01 08:17:53,199 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-01 08:17:53,199 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_chunk.py", line 309, in process_dataset
+    self.quality_tracker.track('chunk', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for chunk'
+Arguments: ()
+2025-11-01 08:17:53,200 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 08:17:53,200 - am_chunk - INFO - Saved: ядро_2025-08-29.dataset.chunks.jsonl
+2025-11-01 08:17:53,205 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-01 08:17:53,205 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 08:17:53,205 - __main__ - INFO - ============================================================
+2025-11-01 08:17:53,205 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Completed: CHUNK'
+Arguments: ()
+2025-11-01 08:17:53,205 - __main__ - INFO - ============================================================
+2025-11-01 08:17:53,206 - __main__ - INFO - ============================================================
+2025-11-01 08:17:53,206 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f522' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f522 Starting: EMBED'
+Arguments: ()
+2025-11-01 08:17:53,206 - __main__ - INFO - ============================================================
+2025-11-01 08:17:53,207 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 08:17:53,221 - am_common - INFO - Config loaded successfully
+2025-11-01 08:17:53,222 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-01 08:17:53,222 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-01 08:17:53,223 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-01 08:17:57,245 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-01 08:17:57,246 - am_embed - INFO - Processing: ядро_2025-08-29.dataset.chunks.jsonl
+2025-11-01 08:17:57,296 - am_embed - INFO - Loaded 2329 chunks
+2025-11-01 08:17:57,297 - am_embed - INFO - Encoding 2329 chunks in 73 batches
+2025-11-01 08:18:00,472 - am_embed - INFO - Processed batch 10/73
+2025-11-01 08:18:03,643 - am_embed - INFO - Processed batch 20/73
+2025-11-01 08:18:06,828 - am_embed - INFO - Processed batch 30/73
+2025-11-01 08:18:09,933 - am_embed - INFO - Processed batch 40/73
+2025-11-01 08:18:13,066 - am_embed - INFO - Processed batch 50/73
+2025-11-01 08:18:16,151 - am_embed - INFO - Processed batch 60/73
+2025-11-01 08:18:19,287 - am_embed - INFO - Processed batch 70/73
+2025-11-01 08:18:20,153 - am_embed - INFO - Encoded 2329 embeddings, 0 failures
+2025-11-01 08:18:20,153 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-01 08:18:20,153 - am_embed - INFO - Vectors: 2329, Dimension: 384
+2025-11-01 08:18:20,154 - am_embed - INFO - FAISS index built: 2329 vectors
+2025-11-01 08:18:20,156 - __main__ - ERROR - Stage failed: [WinError 2] Не удается найти указанный файл: 'C:\\scripts\\1repo\\data\\indexes\\faiss\\ядро_2025-08-29.dataset.faiss'
+2025-11-01 08:18:20,156 - __main__ - ERROR - Error details:
+Traceback (most recent call last):
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 428, in _run_stage
+    return processor.process_chunks(input_path, output_dir=None)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\scripts\1repo\am_embed.py", line 413, in process_chunks
+    self.index_builder.save_index(index, index_path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\scripts\1repo\am_embed.py", line 331, in save_index
+    index_size = path.stat().st_size
+                 ~~~~~~~~~^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 515, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'C:\\scripts\\1repo\\data\\indexes\\faiss\\ядро_2025-08-29.dataset.faiss'
+2025-11-01 08:18:20,157 - __main__ - WARNING - Non-critical stage failed, attempting to continue
+2025-11-01 08:18:20,160 - __main__ - INFO - Pipeline status: partial
+2025-11-01 08:18:20,160 - __main__ - INFO - Completed: run_single_pipeline (1851.99s)
+2025-11-01 08:18:20,160 - __main__ - INFO - ============================================================
+2025-11-01 08:18:20,160 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 502, in generate_reports
+    log_section(logger, "\U0001f4ca FINAL REPORTS", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4ca FINAL REPORTS'
+Arguments: ()
+2025-11-01 08:18:20,161 - __main__ - INFO - ============================================================
+2025-11-01 08:18:20,161 - __main__ - INFO - ============================================================
+2025-11-01 08:18:20,161 - __main__ - INFO -   Performance Summary
+2025-11-01 08:18:20,161 - __main__ - INFO - ============================================================
+2025-11-01 08:18:20,161 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-01 08:18:20,161 - __main__ - INFO -   Count: 1
+2025-11-01 08:18:20,161 - __main__ - INFO -   Total: 1851.99s
+2025-11-01 08:18:20,161 - __main__ - INFO -   Avg: 1851.99s
+2025-11-01 08:18:20,161 - __main__ - INFO -   Min: 1851.99s
+2025-11-01 08:18:20,162 - __main__ - INFO -   Max: 1851.99s
+2025-11-01 08:18:20,162 - __main__ - INFO - 
+track_quality:
+2025-11-01 08:18:20,162 - __main__ - INFO -   Count: 6
+2025-11-01 08:18:20,162 - __main__ - INFO -   Total: 0.01s
+2025-11-01 08:18:20,162 - __main__ - INFO -   Avg: 0.00s
+2025-11-01 08:18:20,162 - __main__ - INFO -   Min: 0.00s
+2025-11-01 08:18:20,162 - __main__ - INFO -   Max: 0.00s
+2025-11-01 08:18:20,162 - __main__ - INFO - No errors or warnings recorded
+2025-11-01 08:18:20,162 - __main__ - INFO - 
+2025-11-01 08:18:20,162 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-01 08:18:20,163 - quality_tracker - INFO - Quality report saved: C:\scripts\1repo\data\quality\quality_report_20251101_081820.json
+2025-11-01 08:18:20,164 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-01 08:18:20,164 - quality_tracker - INFO - ============================================================
+2025-11-01 08:18:20,164 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-01 08:18:20,164 - quality_tracker - INFO - ============================================================
+2025-11-01 08:18:20,164 - quality_tracker - INFO - Generated: 2025-11-01T05:18:20Z
+2025-11-01 08:18:20,164 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-01 08:18:20,164 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,164 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-01 08:18:20,165 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,165 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,165 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,165 - quality_tracker - INFO - 
+2025-11-01 08:18:20,165 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-01 08:18:20,165 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,165 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,165 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,165 - quality_tracker - INFO - 
+2025-11-01 08:18:20,165 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,165 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-01 08:18:20,165 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,166 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,166 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,166 - quality_tracker - INFO - 
+2025-11-01 08:18:20,166 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-01 08:18:20,166 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,166 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,166 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,166 - quality_tracker - INFO - 
+2025-11-01 08:18:20,166 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-01 08:18:20,166 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,166 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,166 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,167 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,167 - quality_tracker - INFO - 
+2025-11-01 08:18:20,167 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-01 08:18:20,167 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,167 - quality_tracker - INFO - Summary:
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 08:18:20,167 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 08:18:20,167 - quality_tracker - INFO - 
+2025-11-01 08:18:20,167 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-01 08:18:20,167 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 08:18:20,167 - quality_tracker - INFO - track_quality:
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   Count: 6, Avg: 0.00s
+2025-11-01 08:18:20,167 - quality_tracker - INFO - run_single_pipeline:
+2025-11-01 08:18:20,167 - quality_tracker - INFO -   Count: 1, Avg: 1851.99s
+2025-11-01 08:18:20,167 - __main__ - INFO - 
+2025-11-01 08:18:20,168 - validate - INFO - ============================================================
+2025-11-01 08:18:20,168 - validate - INFO -   Validation Summary
+2025-11-01 08:18:20,168 - validate - INFO - ============================================================
+2025-11-01 08:18:20,168 - validate - INFO - Overall Results:
+2025-11-01 08:18:20,168 - validate - INFO -   total_datasets: 2
+2025-11-01 08:18:20,168 - validate - INFO -   valid_datasets: 1
+2025-11-01 08:18:20,168 - validate - INFO -   invalid_datasets: 1
+2025-11-01 08:18:20,168 - validate - INFO -   total_errors: 2
+2025-11-01 08:18:20,168 - validate - INFO -   total_warnings: 1224
+2025-11-01 08:18:20,168 - validate - INFO -   success_rate: 0.5000
+2025-11-01 08:18:20,168 - validate - INFO -   timestamp: 2025-11-01T05:18:20.168007
+2025-11-01 08:18:20,168 - validate - INFO - 
+Per-dataset results:
+2025-11-01 08:18:20,168 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u2705 VALID - ядро_2025-08-29.dataset.jsonl (errors: 0, warnings: 30)'
+Arguments: ()
+2025-11-01 08:18:20,169 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u274c INVALID - ядро_2025-08-29.dataset.jsonl (errors: 2, warnings: 1194)'
+Arguments: ()

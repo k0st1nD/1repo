@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:04:49Z",
+  "stage": "summarize",
+  "source": "2024_final_dora_report.dataset.jsonl",
+  "metrics": {
+    "total_pages": 120,
+    "summarized_pages": 118,
+    "skipped_pages": 2,
+    "summary_coverage": 0.9833333333333333,
+    "avg_l1_length": 217.34745762711864,
+    "avg_l2_length": 534.8305084745763,
+    "avg_compression_ratio": 7.57
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

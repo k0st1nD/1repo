@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:14:25Z",
+  "stage": "chunk",
+  "source": "continuous_discovery_habits_-_teresa_torres.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 229,
+    "chunks_per_page": 1.1393034825870647,
+    "avg_chunk_tokens": 366.56768558951967,
+    "min_chunk_tokens": 115,
+    "max_chunk_tokens": 522,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 72,
+      "300-512": 156,
+      "512+": 1
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

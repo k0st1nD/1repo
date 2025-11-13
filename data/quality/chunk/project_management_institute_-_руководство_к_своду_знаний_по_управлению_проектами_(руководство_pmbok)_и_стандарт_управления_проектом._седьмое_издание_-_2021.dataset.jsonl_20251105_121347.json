@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-05T09:13:47Z",
+  "stage": "chunk",
+  "source": "project_management_institute_-_руководство_к_своду_знаний_по_управлению_проектами_(руководство_pmbok)_и_стандарт_управления_проектом._седьмое_издание_-_2021.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 767,
+    "chunks_per_page": 2.050802139037433,
+    "avg_chunk_tokens": 405.2464146023468,
+    "min_chunk_tokens": 103,
+    "max_chunk_tokens": 1276,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 178,
+      "300-512": 540,
+      "512+": 49
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

@@ -1,0 +1,1713 @@
+[WARN] OCR not available
+2025-11-01 01:14:35,327 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-01 01:14:35,327 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-01 01:14:35,327 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-01 01:14:35,338 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-01 01:14:35,351 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:14:35,365 - am_common - INFO - Config loaded successfully
+2025-11-01 01:14:35,365 - quality_tracker - INFO - Quality tracker initialized: C:\scripts\1repo\data\quality
+2025-11-01 01:14:35,366 - __main__ - INFO - ============================================================
+2025-11-01 01:14:35,366 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 605, in main
+    orchestrator = PipelineOrchestrator(
+  File "C:\scripts\1repo\run_mvp.py", line 136, in __init__
+    log_section(logger, f"\U0001f680 {PRODUCT_NAME} {VERSION}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f680 archivist magika 2.0.0'
+Arguments: ()
+2025-11-01 01:14:35,367 - __main__ - INFO - ============================================================
+2025-11-01 01:14:35,368 - __main__ - INFO - Quality check: enabled
+2025-11-01 01:14:35,368 - __main__ - INFO - Validation: enabled
+2025-11-01 01:14:35,368 - __main__ - INFO - Dry run: no
+2025-11-01 01:14:35,368 - __main__ - INFO - Starting: run_single_pipeline
+2025-11-01 01:14:35,368 - __main__ - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-11-01 01:14:35,368 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 24: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 196, in run_single
+    logger.info(f"Pipeline: {start_stage} \u2192 {end_stage}")
+Message: 'Pipeline: structural \u2192 embed'
+Arguments: ()
+2025-11-01 01:14:35,368 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 22: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 209, in run_single
+    logger.info(f"Stages: {' \u2192 '.join(stages)}")
+Message: 'Stages: structural \u2192 structure_detect \u2192 summarize \u2192 extended \u2192 finalize \u2192 chunk \u2192 embed'
+Arguments: ()
+2025-11-01 01:14:35,369 - __main__ - INFO - ============================================================
+2025-11-01 01:14:35,369 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Starting: STRUCTURAL'
+Arguments: ()
+2025-11-01 01:14:35,370 - __main__ - INFO - ============================================================
+2025-11-01 01:14:35,370 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:14:35,384 - am_common - INFO - Config loaded successfully
+2025-11-01 01:14:35,384 - am_structural_robust - INFO - Text extractor chain: ['pdfminer', 'pdfplumber', 'pypdf2']
+2025-11-01 01:14:35,384 - am_structural_robust - INFO - Table extractor chain: ['pdfplumber']
+2025-11-01 01:14:35,385 - am_structural_robust - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+2025-11-01 01:14:35,528 - am_structural_robust - INFO - PDF: Data-driven Organization Design
+2025-11-01 01:14:35,618 - am_structural_robust - INFO - Total pages: 375
+2025-11-01 01:14:35,807 - am_structural_robust - ERROR - [X] Page 0: All extractors failed
+2025-11-01 01:14:52,185 - am_structural_robust - INFO -   Processed 50/375 pages
+2025-11-01 01:15:09,522 - am_structural_robust - INFO -   Processed 100/375 pages
+2025-11-01 01:15:26,862 - am_structural_robust - INFO -   Processed 150/375 pages
+2025-11-01 01:15:43,384 - am_structural_robust - INFO -   Processed 200/375 pages
+2025-11-01 01:15:59,999 - am_structural_robust - INFO -   Processed 250/375 pages
+2025-11-01 01:16:17,259 - am_structural_robust - INFO -   Processed 300/375 pages
+2025-11-01 01:16:35,287 - am_structural_robust - INFO -   Processed 350/375 pages
+2025-11-01 01:16:43,011 - am_structural_robust - INFO - Extraction complete: 375 success, 0 failed
+2025-11-01 01:16:43,011 - am_structural_robust - INFO -   Methods used: {'pdfminer': 374}
+2025-11-01 01:16:43,011 - am_structural_robust - INFO -   OCR used: 0 pages
+2025-11-01 01:16:43,011 - am_structural_robust - INFO -   Tables found: 0
+2025-11-01 01:16:43,019 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structural\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (375 cards)
+2025-11-01 01:16:43,026 - am_common - INFO - Saved: 375 cards to data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (860.24 KB)
+2025-11-01 01:16:43,026 - am_structural_robust - INFO - Dataset saved: 860.24 KB
+2025-11-01 01:16:43,027 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:43,028 - quality_tracker - INFO - structural metrics:
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   total_pages: 375
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   success_pages: 375
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   failed_pages: 0
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   success_ratio: 1.0000
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   empty_pages: 1
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   avg_page_length: 1961.8347
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   extraction_methods: {'pdfminer': 374}
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   ocr_used: 0
+2025-11-01 01:16:43,028 - quality_tracker - INFO -   tables_found: 0
+2025-11-01 01:16:43,028 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 409, in _run_stage
+    return processor.process_pdf(input_path, output_dir)
+  File "C:\scripts\1repo\am_structural_robust.py", line 569, in process_pdf
+    self.quality_tracker.track('structural', pdf_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structural'
+Arguments: ()
+2025-11-01 01:16:43,029 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:16:43,029 - am_structural_robust - INFO - [OK] Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,030 - validate - INFO - Validating structural: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,030 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,045 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,047 - validate - INFO - [OK] VALID - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,047 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,047 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4c4 Completed: STRUCTURAL'
+Arguments: ()
+2025-11-01 01:16:43,048 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,048 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,048 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Starting: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 01:16:43,049 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,049 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:43,064 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:43,066 - am_structure_detect - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,066 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structural\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,072 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,072 - am_structure_detect - INFO - TOC found: pages 4-4
+2025-11-01 01:16:43,074 - am_structure_detect - INFO - Detected 2 chapters
+2025-11-01 01:16:43,076 - am_structure_detect - INFO - Detected 6 sections
+2025-11-01 01:16:43,076 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\structured\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (375 cards)
+2025-11-01 01:16:43,083 - am_common - INFO - Saved: 375 cards to data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (943.57 KB)
+2025-11-01 01:16:43,083 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:43,084 - quality_tracker - INFO - structure_detect metrics:
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   total_pages: 375
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   chapters_detected: 2
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   sections_detected: 6
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   pages_with_structure: 371
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   structure_coverage: 0.9893
+2025-11-01 01:16:43,084 - quality_tracker - INFO -   avg_chapter_length: 187.5000
+2025-11-01 01:16:43,084 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_structure_detect.py", line 309, in process_dataset
+    self.quality_tracker.track('structure_detect', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for structure_detect'
+Arguments: ()
+2025-11-01 01:16:43,085 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:16:43,085 - am_structure_detect - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,085 - __main__ - ERROR - Validation failed: Unknown stage: structure_detect
+2025-11-01 01:16:43,085 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:16:43,086 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,086 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4d6 Completed: STRUCTURE_DETECT'
+Arguments: ()
+2025-11-01 01:16:43,086 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,086 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,086 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Starting: SUMMARIZE'
+Arguments: ()
+2025-11-01 01:16:43,087 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,087 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:43,104 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:43,104 - am_summarize - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,104 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\structured\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,120 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,371 - am_summarize - INFO - Summarized 374 pages, skipped 1
+2025-11-01 01:16:43,371 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\summarized\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (375 cards)
+2025-11-01 01:16:43,382 - am_common - INFO - Saved: 375 cards to data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (1.20 MB)
+2025-11-01 01:16:43,382 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:43,390 - quality_tracker - INFO - summarize metrics:
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   total_pages: 375
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   summarized_pages: 374
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   skipped_pages: 1
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   summary_coverage: 0.9973
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   avg_l1_length: 220.0722
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   avg_l2_length: 488.7406
+2025-11-01 01:16:43,390 - quality_tracker - INFO -   avg_compression_ratio: 10.1000
+2025-11-01 01:16:43,390 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_summarize.py", line 281, in process_dataset
+    self.quality_tracker.track('summarize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for summarize'
+Arguments: ()
+2025-11-01 01:16:43,391 - quality_tracker - INFO - Completed: track_quality (0.01s)
+2025-11-01 01:16:43,391 - am_summarize - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,392 - __main__ - ERROR - Validation failed: Unknown stage: summarize
+2025-11-01 01:16:43,392 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:16:43,392 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,392 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4dd' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4dd Completed: SUMMARIZE'
+Arguments: ()
+2025-11-01 01:16:43,392 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,393 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,393 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Starting: EXTENDED'
+Arguments: ()
+2025-11-01 01:16:43,393 - __main__ - INFO - ============================================================
+2025-11-01 01:16:43,393 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:43,411 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:43,430 - am_extended - INFO - Ollama available, using model: llama3.2:3b
+2025-11-01 01:16:43,431 - am_extended - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,431 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\summarized\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,448 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:43,458 - am_extended - INFO - Marked 10 duplicate pages
+2025-11-01 01:16:43,502 - am_extended - INFO - Found 3 continuity gaps
+2025-11-01 01:16:43,502 - am_extended - INFO - Extracting extended fields (this may take a while)...
+2025-11-01 01:16:43,522 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,553 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,584 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,615 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,632 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,661 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,691 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,722 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,753 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,753 - am_extended - INFO -   Processed 10/375 pages
+2025-11-01 01:16:43,784 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,815 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,846 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,876 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,908 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,938 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,970 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:43,986 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,015 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,016 - am_extended - INFO -   Processed 20/375 pages
+2025-11-01 01:16:44,046 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,079 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,110 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,142 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,217 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,247 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,278 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,309 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,340 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,340 - am_extended - INFO -   Processed 30/375 pages
+2025-11-01 01:16:44,371 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,402 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,434 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,450 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,465 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,494 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,526 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,556 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,573 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,588 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,589 - am_extended - INFO -   Processed 40/375 pages
+2025-11-01 01:16:44,619 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,650 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,682 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,714 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,744 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,774 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,805 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,820 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,851 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,882 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,882 - am_extended - INFO -   Processed 50/375 pages
+2025-11-01 01:16:44,913 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,944 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:44,975 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,006 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,022 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,053 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,067 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,098 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,128 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,145 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,145 - am_extended - INFO -   Processed 60/375 pages
+2025-11-01 01:16:45,174 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,190 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,221 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,252 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,268 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,300 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,330 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,361 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,392 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,407 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,423 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,454 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,486 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,516 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,549 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,579 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,594 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,594 - am_extended - INFO -   Processed 80/375 pages
+2025-11-01 01:16:45,625 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,640 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,670 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,702 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,733 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,763 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,794 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,825 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,857 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,887 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,887 - am_extended - INFO -   Processed 90/375 pages
+2025-11-01 01:16:45,917 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,948 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,979 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:45,995 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,024 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,040 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,070 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,102 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,117 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,147 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,148 - am_extended - INFO -   Processed 100/375 pages
+2025-11-01 01:16:46,179 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,209 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,240 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,271 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,302 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,333 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,362 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,394 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,425 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,425 - am_extended - INFO -   Processed 110/375 pages
+2025-11-01 01:16:46,455 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,472 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,502 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,532 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,562 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,593 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,625 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,655 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,685 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,715 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,715 - am_extended - INFO -   Processed 120/375 pages
+2025-11-01 01:16:46,746 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,777 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,808 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,823 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,855 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,885 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,916 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,947 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:46,977 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,008 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,008 - am_extended - INFO -   Processed 130/375 pages
+2025-11-01 01:16:47,039 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,054 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,084 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,115 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,130 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,163 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,178 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,208 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,239 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,254 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,254 - am_extended - INFO -   Processed 140/375 pages
+2025-11-01 01:16:47,285 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,302 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,331 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,362 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,393 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,423 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,455 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,470 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,485 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,517 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,517 - am_extended - INFO -   Processed 150/375 pages
+2025-11-01 01:16:47,532 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,563 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,578 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,609 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,639 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,671 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,686 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,703 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,733 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,764 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,764 - am_extended - INFO -   Processed 160/375 pages
+2025-11-01 01:16:47,795 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,826 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,842 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,873 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,904 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,935 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,965 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:47,996 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,027 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,058 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,058 - am_extended - INFO -   Processed 170/375 pages
+2025-11-01 01:16:48,073 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,105 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,135 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,153 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,183 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,212 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,244 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,265 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,290 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,304 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,305 - am_extended - INFO -   Processed 180/375 pages
+2025-11-01 01:16:48,336 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,353 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,383 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,414 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,446 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,476 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,507 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,522 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,538 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,569 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,569 - am_extended - INFO -   Processed 190/375 pages
+2025-11-01 01:16:48,600 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,631 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,660 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,675 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,706 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,737 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,768 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,799 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,830 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,861 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,861 - am_extended - INFO -   Processed 200/375 pages
+2025-11-01 01:16:48,864 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,891 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,922 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,953 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:48,984 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,015 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,047 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,077 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,107 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,139 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,139 - am_extended - INFO -   Processed 210/375 pages
+2025-11-01 01:16:49,154 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,170 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,201 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,231 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,263 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,294 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,326 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,357 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,372 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,388 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,388 - am_extended - INFO -   Processed 220/375 pages
+2025-11-01 01:16:49,419 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,449 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,465 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,480 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,496 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,527 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,557 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,588 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,620 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,650 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,650 - am_extended - INFO -   Processed 230/375 pages
+2025-11-01 01:16:49,680 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,711 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,727 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,757 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,788 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,818 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,834 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,849 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,879 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,895 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,895 - am_extended - INFO -   Processed 240/375 pages
+2025-11-01 01:16:49,911 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,941 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:49,971 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,002 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,033 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,064 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,095 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,111 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,126 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,156 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,156 - am_extended - INFO -   Processed 250/375 pages
+2025-11-01 01:16:50,171 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,203 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,219 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,249 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,280 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,311 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,343 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,374 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,406 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,406 - am_extended - INFO -   Processed 260/375 pages
+2025-11-01 01:16:50,421 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,452 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,484 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,514 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,544 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,574 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,590 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,621 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,652 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,652 - am_extended - INFO -   Processed 270/375 pages
+2025-11-01 01:16:50,683 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,714 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,745 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,761 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,792 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,807 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,823 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,855 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,886 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,917 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,917 - am_extended - INFO -   Processed 280/375 pages
+2025-11-01 01:16:50,948 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:50,985 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,026 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,057 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,088 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,119 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,149 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,165 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,195 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,226 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,226 - am_extended - INFO -   Processed 290/375 pages
+2025-11-01 01:16:51,257 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,289 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,319 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,351 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,382 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,413 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,445 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,476 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,506 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,537 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,537 - am_extended - INFO -   Processed 300/375 pages
+2025-11-01 01:16:51,567 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,583 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,599 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,628 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,659 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,691 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,721 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,752 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,769 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,799 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,799 - am_extended - INFO -   Processed 310/375 pages
+2025-11-01 01:16:51,829 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,845 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,861 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,891 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,907 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,937 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,967 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:51,998 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,029 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,060 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,061 - am_extended - INFO -   Processed 320/375 pages
+2025-11-01 01:16:52,091 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,122 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,152 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,183 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,215 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,246 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,261 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,276 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,306 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,322 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,323 - am_extended - INFO -   Processed 330/375 pages
+2025-11-01 01:16:52,337 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,368 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,398 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,428 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,459 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,490 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,521 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,552 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,567 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,597 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,597 - am_extended - INFO -   Processed 340/375 pages
+2025-11-01 01:16:52,628 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,644 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,658 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,689 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,720 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,750 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,765 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,796 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,828 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,844 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,844 - am_extended - INFO -   Processed 350/375 pages
+2025-11-01 01:16:52,876 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,906 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,936 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,967 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,983 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:52,998 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,029 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,058 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,089 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,121 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,152 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,183 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,214 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,244 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,275 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,305 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,336 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,336 - am_extended - INFO -   Processed 370/375 pages
+2025-11-01 01:16:53,352 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,383 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,399 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,413 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,444 - am_extended - ERROR - Ollama API error: 404
+2025-11-01 01:16:53,444 - am_extended - INFO - Extracted extended fields for 364 pages
+2025-11-01 01:16:53,445 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\extended\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (375 cards)
+2025-11-01 01:16:53,454 - am_common - INFO - Saved: 375 cards to data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (1.32 MB)
+2025-11-01 01:16:53,455 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:53,455 - quality_tracker - INFO - extended metrics:
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   total_cards: 375
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   duplicates_found: 10
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   duplicate_ratio: 0.0267
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   continuity_gaps: 3
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   continuity_gap_ratio: 0.0080
+2025-11-01 01:16:53,455 - quality_tracker - INFO -   avg_overlap: 0.2030
+2025-11-01 01:16:53,456 - quality_tracker - INFO -   extended_fields_extracted: 364
+2025-11-01 01:16:53,456 - quality_tracker - INFO -   extraction_coverage: 0.9707
+2025-11-01 01:16:53,456 - quality_tracker - INFO -   lm_extraction_count: 0
+2025-11-01 01:16:53,456 - quality_tracker - INFO -   lm_extraction_ratio: 0.0000
+2025-11-01 01:16:53,456 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_extended.py", line 612, in process_dataset
+    self.quality_tracker.track('extended', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for extended'
+Arguments: ()
+2025-11-01 01:16:53,457 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:16:53,457 - am_extended - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,457 - validate - INFO - Validating extended: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,457 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,474 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,476 - validate - WARNING - [X] INVALID - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (2 errors)
+2025-11-01 01:16:53,476 - __main__ - WARNING - Validation issues: 2 errors, 364 warnings
+2025-11-01 01:16:53,476 - __main__ - WARNING - Validation issues: 2 errors
+2025-11-01 01:16:53,476 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,476 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f916 Completed: EXTENDED'
+Arguments: ()
+2025-11-01 01:16:53,477 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,477 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,477 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Starting: FINALIZE'
+Arguments: ()
+2025-11-01 01:16:53,478 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,478 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:53,493 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:53,493 - am_finalize - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,493 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\extended\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,503 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,504 - am_common - INFO - Saving dataset: C:\scripts\1repo\data\datasets\final\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (375 cards)
+2025-11-01 01:16:53,513 - am_common - INFO - Saved: 375 cards to data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (1.32 MB)
+2025-11-01 01:16:53,514 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:53,515 - quality_tracker - INFO - finalize metrics:
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   total_cards: 375
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   validation_errors: 0
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   validation_warnings: 6
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   avg_completeness: 0.7500
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   cards_with_structure: 371
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   structure_coverage: 0.9893
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   cards_with_summaries: 374
+2025-11-01 01:16:53,515 - quality_tracker - INFO -   summary_coverage: 0.9973
+2025-11-01 01:16:53,515 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_finalize.py", line 278, in process_dataset
+    self.quality_tracker.track('finalize', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for finalize'
+Arguments: ()
+2025-11-01 01:16:53,516 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:16:53,516 - am_finalize - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,516 - __main__ - ERROR - Validation failed: Unknown stage: finalize
+2025-11-01 01:16:53,516 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:16:53,516 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,516 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 Completed: FINALIZE'
+Arguments: ()
+2025-11-01 01:16:53,517 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,517 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,517 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Starting: CHUNK'
+Arguments: ()
+2025-11-01 01:16:53,518 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,518 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:53,532 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:53,618 - am_chunk - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,618 - am_common - INFO - Loading dataset: C:\scripts\1repo\data\datasets\final\data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,636 - am_common - INFO - Loaded: 375 cards from data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl
+2025-11-01 01:16:53,827 - am_chunk - INFO - Created 532 chunks from 375 pages
+2025-11-01 01:16:53,839 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:16:53,840 - quality_tracker - INFO - chunk metrics:
+2025-11-01 01:16:53,840 - quality_tracker - INFO -   total_chunks: 532
+2025-11-01 01:16:53,840 - quality_tracker - INFO -   chunks_per_page: 1.4187
+2025-11-01 01:16:53,840 - quality_tracker - INFO -   avg_chunk_tokens: 365.9211
+2025-11-01 01:16:53,840 - quality_tracker - INFO -   min_chunk_tokens: 100
+2025-11-01 01:16:53,840 - quality_tracker - INFO -   max_chunk_tokens: 534
+2025-11-01 01:16:53,841 - quality_tracker - INFO -   token_distribution: {'0-100': 0, '100-300': 173, '300-512': 354, '512+': 5}
+2025-11-01 01:16:53,841 - quality_tracker - INFO -   context_completeness: 1.0000
+2025-11-01 01:16:53,841 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 419, in _run_stage
+    return processor.process_dataset(input_path, output_dir)
+  File "C:\scripts\1repo\am_chunk.py", line 309, in process_dataset
+    self.quality_tracker.track('chunk', input_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for chunk'
+Arguments: ()
+2025-11-01 01:16:53,842 - quality_tracker - INFO - Completed: track_quality (0.00s)
+2025-11-01 01:16:53,842 - am_chunk - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.chunks.jsonl
+2025-11-01 01:16:53,843 - __main__ - ERROR - Validation failed: Unknown stage: chunk
+2025-11-01 01:16:53,843 - __main__ - WARNING - Validation issues: 1 errors
+2025-11-01 01:16:53,843 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,843 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9e9' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f9e9 Completed: CHUNK'
+Arguments: ()
+2025-11-01 01:16:53,843 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,843 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,843 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f522' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 222, in run_single
+    log_stage(logger, stage, "Starting")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f522 Starting: EMBED'
+Arguments: ()
+2025-11-01 01:16:53,844 - __main__ - INFO - ============================================================
+2025-11-01 01:16:53,844 - am_common - INFO - Loading config: config\batch_full.yaml
+2025-11-01 01:16:53,859 - am_common - INFO - Config loaded successfully
+2025-11-01 01:16:53,859 - am_embed - INFO - [sentence-transformers] Loading model: all-MiniLM-L6-v2
+2025-11-01 01:16:53,860 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-01 01:16:53,860 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-01 01:16:57,619 - am_embed - INFO - [sentence-transformers] Embedding dimension: 384
+2025-11-01 01:16:57,619 - am_embed - INFO - Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.chunks.jsonl
+2025-11-01 01:16:57,640 - am_embed - INFO - Loaded 532 chunks
+2025-11-01 01:16:57,641 - am_embed - INFO - Encoding 532 chunks in 17 batches
+2025-11-01 01:17:00,676 - am_embed - INFO - Processed batch 10/17
+2025-11-01 01:17:02,652 - am_embed - INFO - Encoded 532 embeddings, 0 failures
+2025-11-01 01:17:02,653 - am_embed - INFO - Building FAISS index: flat, metric=cosine
+2025-11-01 01:17:02,653 - am_embed - INFO - Vectors: 532, Dimension: 384
+2025-11-01 01:17:02,653 - am_embed - INFO - FAISS index built: 532 vectors
+2025-11-01 01:17:02,654 - am_embed - INFO - Saved FAISS index: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.faiss (798.04 KB)
+2025-11-01 01:17:02,658 - am_embed - INFO - Saved metadata: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.pkl (1.17 MB)
+2025-11-01 01:17:02,659 - quality_tracker - INFO - Starting: track_quality
+2025-11-01 01:17:02,666 - quality_tracker - INFO - embed metrics:
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   total_vectors: 532
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   embedding_dim: 384
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   embedding_failures: 0
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   failure_rate: 0.0000
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   avg_norm: 1.0000
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   min_norm: 1.0000
+2025-11-01 01:17:02,667 - quality_tracker - INFO -   max_norm: 1.0000
+2025-11-01 01:17:02,667 - quality_tracker - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 226, in run_single
+    stage_result = self._run_stage(stage, current_input)
+  File "C:\scripts\1repo\run_mvp.py", line 428, in _run_stage
+    return processor.process_chunks(input_path, output_dir=None)
+  File "C:\scripts\1repo\am_embed.py", line 426, in process_chunks
+    self.quality_tracker.track('embed', chunks_path.name, metrics)
+  File "C:\scripts\1repo\quality_tracker.py", line 171, in track
+    logger.info(f"\u2713 Quality thresholds passed for {stage}")
+Message: '\u2713 Quality thresholds passed for embed'
+Arguments: ()
+2025-11-01 01:17:02,668 - quality_tracker - INFO - Completed: track_quality (0.01s)
+2025-11-01 01:17:02,668 - am_embed - INFO - Saved: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.faiss, data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.pkl
+2025-11-01 01:17:02,668 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,668 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f522' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 652, in main
+    results = orchestrator.run_single(
+  File "C:\scripts\1repo\run_mvp.py", line 253, in run_single
+    log_stage(logger, stage, "Completed")
+  File "C:\scripts\1repo\am_logging.py", line 613, in log_stage
+    log_section(logger, f"{emoji} {action}: {stage.upper()}", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f522 Completed: EMBED'
+Arguments: ()
+2025-11-01 01:17:02,669 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,669 - __main__ - INFO - Pipeline status: completed
+2025-11-01 01:17:02,669 - __main__ - INFO - Completed: run_single_pipeline (147.30s)
+2025-11-01 01:17:02,669 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,670 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 502, in generate_reports
+    log_section(logger, "\U0001f4ca FINAL REPORTS", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \U0001f4ca FINAL REPORTS'
+Arguments: ()
+2025-11-01 01:17:02,670 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,670 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,671 - __main__ - INFO -   Performance Summary
+2025-11-01 01:17:02,671 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,671 - __main__ - INFO - 
+run_single_pipeline:
+2025-11-01 01:17:02,671 - __main__ - INFO -   Count: 1
+2025-11-01 01:17:02,671 - __main__ - INFO -   Total: 147.30s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Avg: 147.30s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Min: 147.30s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Max: 147.30s
+2025-11-01 01:17:02,671 - __main__ - INFO - 
+track_quality:
+2025-11-01 01:17:02,671 - __main__ - INFO -   Count: 7
+2025-11-01 01:17:02,671 - __main__ - INFO -   Total: 0.03s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Avg: 0.00s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Min: 0.00s
+2025-11-01 01:17:02,671 - __main__ - INFO -   Max: 0.01s
+2025-11-01 01:17:02,671 - __main__ - INFO - No errors or warnings recorded
+2025-11-01 01:17:02,671 - __main__ - INFO - 
+2025-11-01 01:17:02,671 - quality_tracker - INFO - Starting: generate_quality_report
+2025-11-01 01:17:02,673 - quality_tracker - INFO - Quality report saved: C:\scripts\1repo\data\quality\quality_report_20251101_011702.json
+2025-11-01 01:17:02,674 - quality_tracker - INFO - Completed: generate_quality_report (0.00s)
+2025-11-01 01:17:02,674 - quality_tracker - INFO - ============================================================
+2025-11-01 01:17:02,674 - quality_tracker - INFO -   QUALITY REPORT
+2025-11-01 01:17:02,674 - quality_tracker - INFO - ============================================================
+2025-11-01 01:17:02,674 - quality_tracker - INFO - Generated: 2025-10-31T22:17:02Z
+2025-11-01 01:17:02,674 - quality_tracker - INFO - Version: 2.0.0
+
+2025-11-01 01:17:02,674 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,674 - quality_tracker - INFO -   Stage: STRUCTURAL
+2025-11-01 01:17:02,674 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,674 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,674 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,674 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,674 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,675 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,675 - quality_tracker - INFO - 
+2025-11-01 01:17:02,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   Stage: STRUCTURE_DETECT
+2025-11-01 01:17:02,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,675 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,675 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,675 - quality_tracker - INFO - 
+2025-11-01 01:17:02,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   Stage: SUMMARIZE
+2025-11-01 01:17:02,675 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,675 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,675 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,676 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,676 - quality_tracker - INFO - 
+2025-11-01 01:17:02,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   Stage: EXTENDED
+2025-11-01 01:17:02,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,676 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,676 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,676 - quality_tracker - INFO - 
+2025-11-01 01:17:02,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   Stage: FINALIZE
+2025-11-01 01:17:02,676 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,676 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,676 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,677 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,677 - quality_tracker - INFO - 
+2025-11-01 01:17:02,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   Stage: CHUNK
+2025-11-01 01:17:02,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,677 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,677 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,677 - quality_tracker - INFO - 
+2025-11-01 01:17:02,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   Stage: EMBED
+2025-11-01 01:17:02,677 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,677 - quality_tracker - INFO - Summary:
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   total_runs: 1
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   passed_threshold: 1
+2025-11-01 01:17:02,677 - quality_tracker - INFO -   failed_threshold: 0
+2025-11-01 01:17:02,678 - quality_tracker - INFO -   pass_rate: 100.0%
+2025-11-01 01:17:02,678 - quality_tracker - INFO - 
+Recent trend (last 1 runs):
+2025-11-01 01:17:02,678 - quality_tracker - INFO -   Pass rate: 100.0%
+2025-11-01 01:17:02,678 - quality_tracker - INFO - 
+2025-11-01 01:17:02,678 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,678 - quality_tracker - INFO -   PERFORMANCE SUMMARY
+2025-11-01 01:17:02,678 - quality_tracker - INFO - ------------------------------------------------------------
+2025-11-01 01:17:02,678 - quality_tracker - INFO - track_quality:
+2025-11-01 01:17:02,678 - quality_tracker - INFO -   Count: 7, Avg: 0.00s
+2025-11-01 01:17:02,678 - quality_tracker - INFO - run_single_pipeline:
+2025-11-01 01:17:02,678 - quality_tracker - INFO -   Count: 1, Avg: 147.30s
+2025-11-01 01:17:02,678 - __main__ - INFO - 
+2025-11-01 01:17:02,678 - validate - INFO - ============================================================
+2025-11-01 01:17:02,678 - validate - INFO -   Validation Summary
+2025-11-01 01:17:02,678 - validate - INFO - ============================================================
+2025-11-01 01:17:02,678 - validate - INFO - Overall Results:
+2025-11-01 01:17:02,678 - validate - INFO -   total_datasets: 2
+2025-11-01 01:17:02,678 - validate - INFO -   valid_datasets: 1
+2025-11-01 01:17:02,678 - validate - INFO -   invalid_datasets: 1
+2025-11-01 01:17:02,678 - validate - INFO -   total_errors: 2
+2025-11-01 01:17:02,678 - validate - INFO -   total_warnings: 365
+2025-11-01 01:17:02,678 - validate - INFO -   success_rate: 0.5000
+2025-11-01 01:17:02,678 - validate - INFO -   timestamp: 2025-10-31T22:17:02.678402
+2025-11-01 01:17:02,678 - validate - INFO - 
+Per-dataset results:
+2025-11-01 01:17:02,678 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u2705 VALID - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (errors: 0, warnings: 1)'
+Arguments: ()
+2025-11-01 01:17:02,679 - validate - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 660, in main
+    orchestrator.generate_reports()
+  File "C:\scripts\1repo\run_mvp.py", line 522, in generate_reports
+    self.validator.print_summary()
+  File "C:\scripts\1repo\validate.py", line 784, in print_summary
+    self.report.print_summary()
+  File "C:\scripts\1repo\validate.py", line 644, in print_summary
+    logger.info(f"  {status} - {dataset} (errors: {errors}, warnings: {warnings})")
+Message: '  \u274c INVALID - data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset.jsonl (errors: 2, warnings: 364)'
+Arguments: ()
+2025-11-01 01:17:02,680 - __main__ - INFO - ============================================================
+2025-11-01 01:17:02,680 - __main__ - INFO--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 205, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\site-packages\colorama\ansitowin32.py", line 210, in write_plain_text
+    self.wrapped.write(text[start:end])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dimon\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 5: character maps to <undefined>
+Call stack:
+  File "C:\scripts\1repo\run_mvp.py", line 680, in <module>
+    main()
+  File "C:\scripts\1repo\run_mvp.py", line 667, in main
+    log_section(logger, "\u2705 PIPELINE COMPLETED SUCCESSFULLY", "INFO")
+  File "C:\scripts\1repo\am_logging.py", line 588, in log_section
+    log_func(f"  {title}")
+Message: '  \u2705 PIPELINE COMPLETED SUCCESSFULLY'
+Arguments: ()
+2025-11-01 01:17:02,680 - __main__ - INFO - ============================================================

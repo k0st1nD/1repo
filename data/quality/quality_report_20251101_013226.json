@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-10-31T22:32:26Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 2878.3644859813085,
+          "max": 2878.3644859813085,
+          "avg": 2878.3644859813085,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 10,
+          "max": 10,
+          "avg": 10.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 3,
+          "max": 3,
+          "avg": 3.0,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.pdf",
+          "timestamp": "2025-10-31T22:32:03Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "pages_with_structure": {
+          "min": 202,
+          "max": 202,
+          "avg": 202.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 12,
+          "max": 12,
+          "avg": 12.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9439252336448598,
+          "max": 0.9439252336448598,
+          "avg": 0.9439252336448598,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 17.833333333333332,
+          "max": 17.833333333333332,
+          "avg": 17.833333333333332,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+          "timestamp": "2025-10-31T22:32:03Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_compression_ratio": {
+          "min": 16.35,
+          "max": 16.35,
+          "avg": 16.35,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.985981308411215,
+          "max": 0.985981308411215,
+          "avg": 0.985981308411215,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 224.30243902439025,
+          "max": 224.30243902439025,
+          "avg": 224.30243902439025,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 211,
+          "max": 211,
+          "avg": 211.0,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 3,
+          "max": 3,
+          "avg": 3.0,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 461.4926829268293,
+          "max": 461.4926829268293,
+          "avg": 461.4926829268293,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+          "timestamp": "2025-10-31T22:32:03Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gap_ratio": {
+          "min": 0.8309859154929577,
+          "max": 0.8309859154929577,
+          "avg": 0.8309859154929577,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.9439252336448598,
+          "max": 0.9439252336448598,
+          "avg": 0.9439252336448598,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.052,
+          "max": 0.052,
+          "avg": 0.052,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 202,
+          "max": 202,
+          "avg": 202.0,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 177,
+          "max": 177,
+          "avg": 177.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+          "timestamp": "2025-10-31T22:32:08Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "validation_warnings": {
+          "min": 8,
+          "max": 8,
+          "avg": 8.0,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 202,
+          "max": 202,
+          "avg": 202.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9439252336448598,
+          "max": 0.9439252336448598,
+          "avg": 0.9439252336448598,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.584,
+          "max": 0.584,
+          "avg": 0.584,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9579439252336449,
+          "max": 0.9579439252336449,
+          "avg": 0.9579439252336449,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 205,
+          "max": 205,
+          "avg": 205.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 214,
+          "max": 214,
+          "avg": 214.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+          "timestamp": "2025-10-31T22:32:08Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "min_chunk_tokens": {
+          "min": 100,
+          "max": 100,
+          "avg": 100.0,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "avg_chunk_tokens": {
+          "min": 413.07366226546213,
+          "max": 413.07366226546213,
+          "avg": 413.07366226546213,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 6.724299065420561,
+          "max": 6.724299065420561,
+          "avg": 6.724299065420561,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 1439,
+          "max": 1439,
+          "avg": 1439.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 1382,
+          "max": 1382,
+          "avg": 1382.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+          "timestamp": "2025-10-31T22:32:08Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 1439,
+          "max": 1439,
+          "avg": 1439.0,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "min_norm": {
+          "min": 0.9999998807907104,
+          "max": 0.9999998807907104,
+          "avg": 0.9999998807907104,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "norton_kaplan_balanced_scorecard.dataset.chunks.jsonl",
+          "timestamp": "2025-10-31T22:32:26Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "norton_kaplan_balanced_scorecard.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.02708745002746582,
+      "avg": 0.0038696357182094027,
+      "min": 0.0016367435455322266,
+      "max": 0.009014368057250977
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 73.19454550743103,
+      "avg": 73.19454550743103,
+      "min": 73.19454550743103,
+      "max": 73.19454550743103
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

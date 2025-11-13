@@ -1,0 +1,98 @@
+{
+  "name": "library_unified",
+  "created_at": "2025-11-05T19:19:43.925283",
+  "num_books": 22,
+  "total_chunks": 10690,
+  "dimension": 384,
+  "index_type": "Flat (L2)",
+  "books": [
+    {
+      "name": "2024_final_dora_report.dataset",
+      "chunks": 126
+    },
+    {
+      "name": "actionable_agile_metrics_for_predictability_an_introduction_-_daniel_s_vacanti.dataset",
+      "chunks": 265
+    },
+    {
+      "name": "agile-metrics-in-action.dataset",
+      "chunks": 341
+    },
+    {
+      "name": "agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset",
+      "chunks": 253
+    },
+    {
+      "name": "baza-znanij-safe-russia.dataset",
+      "chunks": 99
+    },
+    {
+      "name": "baza_znanij_safe_russia.dataset",
+      "chunks": 97
+    },
+    {
+      "name": "continuous_discovery_habits_-_teresa_torres.dataset",
+      "chunks": 229
+    },
+    {
+      "name": "data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.dataset",
+      "chunks": 532
+    },
+    {
+      "name": "data-science-for-business.dataset",
+      "chunks": 607
+    },
+    {
+      "name": "escaping_the_build_trap_-_melissa_perri.dataset",
+      "chunks": 237
+    },
+    {
+      "name": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset",
+      "chunks": 271
+    },
+    {
+      "name": "good-strategy-bad-strategy.dataset",
+      "chunks": 352
+    },
+    {
+      "name": "hooked-how-to-build-habit-forming-products.dataset",
+      "chunks": 181
+    },
+    {
+      "name": "kagan_marti_vdohnovlennye_2020.dataset",
+      "chunks": 682
+    },
+    {
+      "name": "lean_analytics.dataset",
+      "chunks": 550
+    },
+    {
+      "name": "measure-what-matters-by-john-doerr.dataset",
+      "chunks": 302
+    },
+    {
+      "name": "naked-statistics-pdf.dataset",
+      "chunks": 372
+    },
+    {
+      "name": "norton_kaplan_balanced_scorecard.dataset",
+      "chunks": 1439
+    },
+    {
+      "name": "playing_to_win__how_strategy_really_works_-_ag_lafley.dataset",
+      "chunks": 356
+    },
+    {
+      "name": "pmbok_7ed_2021.dataset",
+      "chunks": 767
+    },
+    {
+      "name": "team_topologies_organizing_business_and_technology_teams_for_fast_flow_-_matthew_skelton.dataset",
+      "chunks": 301
+    },
+    {
+      "name": "yadro_2025.dataset",
+      "chunks": 2331
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "generated_at": "2025-10-31T09:06:36Z",
+  "version": "2.0.0",
+  "stages": {},
+  "performance": {
+    "run_single_pipeline": {
+      "count": 21,
+      "total": 0.10183882713317871,
+      "avg": 0.004849467958722796,
+      "min": 0.0038576126098632812,
+      "max": 0.017281532287597656
+    },
+    "run_batch_pipeline": {
+      "count": 1,
+      "total": 0.11418962478637695,
+      "avg": 0.11418962478637695,
+      "min": 0.11418962478637695,
+      "max": 0.11418962478637695
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

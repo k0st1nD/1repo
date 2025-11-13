@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:29:37Z",
+  "stage": "summarize",
+  "source": "naked-statistics-pdf.dataset.jsonl",
+  "metrics": {
+    "total_pages": 222,
+    "summarized_pages": 219,
+    "skipped_pages": 3,
+    "summary_coverage": 0.9864864864864865,
+    "avg_l1_length": 245.3881278538813,
+    "avg_l2_length": 648.5981735159818,
+    "avg_compression_ratio": 12.06
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

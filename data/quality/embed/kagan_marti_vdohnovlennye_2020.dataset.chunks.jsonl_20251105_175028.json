@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-05T14:50:28Z",
+  "stage": "embed",
+  "source": "kagan_marti_vdohnovlennye_2020.dataset.chunks.jsonl",
+  "metrics": {
+    "total_vectors": 682,
+    "embedding_dim": 384,
+    "embedding_failures": 0,
+    "failure_rate": 0.0,
+    "avg_norm": 1.0,
+    "min_norm": 0.9999999403953552,
+    "max_norm": 1.0000001192092896
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_embedding_success",
+      "Missing metric: max_embedding_time_per_chunk"
+    ]
+  }
+}

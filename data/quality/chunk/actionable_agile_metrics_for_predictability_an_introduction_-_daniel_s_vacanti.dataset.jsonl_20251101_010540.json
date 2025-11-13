@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:05:40Z",
+  "stage": "chunk",
+  "source": "actionable_agile_metrics_for_predictability_an_introduction_-_daniel_s_vacanti.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 265,
+    "chunks_per_page": 1.1521739130434783,
+    "avg_chunk_tokens": 344.4754716981132,
+    "min_chunk_tokens": 101,
+    "max_chunk_tokens": 516,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 97,
+      "300-512": 167,
+      "512+": 1
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

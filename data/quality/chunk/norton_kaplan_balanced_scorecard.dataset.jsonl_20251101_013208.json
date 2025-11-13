@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:32:08Z",
+  "stage": "chunk",
+  "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 1439,
+    "chunks_per_page": 6.724299065420561,
+    "avg_chunk_tokens": 413.07366226546213,
+    "min_chunk_tokens": 100,
+    "max_chunk_tokens": 1382,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 181,
+      "300-512": 1210,
+      "512+": 48
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

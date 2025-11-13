@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-01T05:17:20Z",
+  "stage": "structural",
+  "source": "Ядро 2025-08-29.pdf",
+  "metrics": {
+    "total_pages": 1660,
+    "success_pages": 1660,
+    "failed_pages": 0,
+    "success_ratio": 1.0,
+    "empty_pages": 76,
+    "avg_page_length": 1104.7415662650603,
+    "extraction_methods": {
+      "pdfminer": 1630
+    },
+    "ocr_used": 0,
+    "tables_found": 657
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_success_ratio",
+      "Missing metric: max_empty_ratio",
+      "Missing metric: min_avg_page_length",
+      "Missing metric: max_error_ratio",
+      "Missing metric: max_ocr_ratio"
+    ]
+  }
+}

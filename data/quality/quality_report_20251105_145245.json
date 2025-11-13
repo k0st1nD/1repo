@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-11-05T11:52:45Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 14,
+          "max": 14,
+          "avg": 14.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1752.5929648241206,
+          "max": 1752.5929648241206,
+          "avg": 1752.5929648241206,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 3,
+          "max": 3,
+          "avg": 3.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Escaping_the_build_trap_-_Melissa_Perri.pdf",
+          "timestamp": "2025-11-05T11:44:19Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Escaping_the_build_trap_-_Melissa_Perri.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_chapter_length": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "pages_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+          "timestamp": "2025-11-05T11:44:19Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "avg_l1_length": {
+          "min": 206.66486486486485,
+          "max": 206.66486486486485,
+          "avg": 206.66486486486485,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9296482412060302,
+          "max": 0.9296482412060302,
+          "avg": 0.9296482412060302,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 14,
+          "max": 14,
+          "avg": 14.0,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 10.08,
+          "max": 10.08,
+          "avg": 10.08,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 481.36756756756756,
+          "max": 481.36756756756756,
+          "avg": 481.36756756756756,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "summarized_pages": {
+          "min": 185,
+          "max": 185,
+          "avg": 185.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+          "timestamp": "2025-11-05T11:44:19Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "continuity_gap_ratio": {
+          "min": 0.18686868686868688,
+          "max": 0.18686868686868688,
+          "avg": 0.18686868686868688,
+          "count": 1
+        },
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 37,
+          "max": 37,
+          "avg": 37.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 183,
+          "max": 183,
+          "avg": 183.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.9195979899497487,
+          "max": 0.9195979899497487,
+          "avg": 0.9195979899497487,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 183,
+          "max": 183,
+          "avg": 183.0,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.133,
+          "max": 0.133,
+          "avg": 0.133,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+          "timestamp": "2025-11-05T11:52:28Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "cards_with_summaries": {
+          "min": 185,
+          "max": 185,
+          "avg": 185.0,
+          "count": 1
+        },
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9296482412060302,
+          "max": 0.9296482412060302,
+          "avg": 0.9296482412060302,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 58,
+          "max": 58,
+          "avg": 58.0,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.386,
+          "max": 0.386,
+          "avg": 0.386,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 199,
+          "max": 199,
+          "avg": 199.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+          "timestamp": "2025-11-05T11:52:28Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_chunks": {
+          "min": 237,
+          "max": 237,
+          "avg": 237.0,
+          "count": 1
+        },
+        "avg_chunk_tokens": {
+          "min": 346.8523206751055,
+          "max": 346.8523206751055,
+          "avg": 346.8523206751055,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 700,
+          "max": 700,
+          "avg": 700.0,
+          "count": 1
+        },
+        "chunks_per_page": {
+          "min": 1.1909547738693467,
+          "max": 1.1909547738693467,
+          "avg": 1.1909547738693467,
+          "count": 1
+        },
+        "min_chunk_tokens": {
+          "min": 101,
+          "max": 101,
+          "avg": 101.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+          "timestamp": "2025-11-05T11:52:28Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "min_norm": {
+          "min": 0.9999999403953552,
+          "max": 0.9999999403953552,
+          "avg": 0.9999999403953552,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 237,
+          "max": 237,
+          "avg": 237.0,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "escaping_the_build_trap_-_melissa_perri.dataset.chunks.jsonl",
+          "timestamp": "2025-11-05T11:52:45Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "escaping_the_build_trap_-_melissa_perri.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.006379127502441406,
+      "avg": 0.0009113039289202009,
+      "min": 0.0008327960968017578,
+      "max": 0.0010039806365966797
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 548.4015140533447,
+      "avg": 548.4015140533447,
+      "min": 548.4015140533447,
+      "max": 548.4015140533447
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

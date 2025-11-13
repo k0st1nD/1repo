@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-05T09:13:37Z",
+  "stage": "structural",
+  "source": "Project Management Institute - Руководство к своду знаний по управлению проектами (Руководство PMBOK) и Стандарт управления проектом. Седьмое издание - 2021.pdf",
+  "metrics": {
+    "total_pages": 374,
+    "success_pages": 374,
+    "failed_pages": 0,
+    "success_ratio": 1.0,
+    "empty_pages": 14,
+    "avg_page_length": 1734.197860962567,
+    "extraction_methods": {
+      "pdfminer": 361
+    },
+    "ocr_used": 0,
+    "tables_found": 32
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_success_ratio",
+      "Missing metric: max_empty_ratio",
+      "Missing metric: min_avg_page_length",
+      "Missing metric: max_error_ratio",
+      "Missing metric: max_ocr_ratio"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-01T05:17:52Z",
+  "stage": "finalize",
+  "source": "ядро_2025-08-29.dataset.jsonl",
+  "metrics": {
+    "total_cards": 1659,
+    "validation_errors": 0,
+    "validation_warnings": 214,
+    "avg_completeness": 0.619,
+    "cards_with_structure": 1635,
+    "structure_coverage": 0.9855334538878843,
+    "cards_with_summaries": 1582,
+    "summary_coverage": 0.9535864978902954
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

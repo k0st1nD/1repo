@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-05T09:46:46Z",
+  "stage": "chunk",
+  "source": "2024_final_dora_report.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 126,
+    "chunks_per_page": 1.05,
+    "avg_chunk_tokens": 308.42063492063494,
+    "min_chunk_tokens": 106,
+    "max_chunk_tokens": 520,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 65,
+      "300-512": 60,
+      "512+": 1
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

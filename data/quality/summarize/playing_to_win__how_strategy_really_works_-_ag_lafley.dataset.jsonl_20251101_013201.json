@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:32:01Z",
+  "stage": "summarize",
+  "source": "playing_to_win__how_strategy_really_works_-_ag_lafley.dataset.jsonl",
+  "metrics": {
+    "total_pages": 259,
+    "summarized_pages": 258,
+    "skipped_pages": 1,
+    "summary_coverage": 0.9961389961389961,
+    "avg_l1_length": 231.7015503875969,
+    "avg_l2_length": 570.0426356589147,
+    "avg_compression_ratio": 9.88
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:13:12Z",
+  "stage": "structure_detect",
+  "source": "agile-metrics-in-action.dataset.jsonl",
+  "metrics": {
+    "total_pages": 270,
+    "chapters_detected": 53,
+    "sections_detected": 14,
+    "pages_with_structure": 262,
+    "structure_coverage": 0.9703703703703703,
+    "avg_chapter_length": 5.09433962264151
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

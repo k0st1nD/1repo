@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-31T22:06:49Z",
+  "stage": "structural",
+  "source": "Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf",
+  "metrics": {
+    "total_pages": 266,
+    "success_pages": 266,
+    "failed_pages": 0,
+    "success_ratio": 1.0,
+    "empty_pages": 9,
+    "avg_page_length": 1509.4473684210527,
+    "extraction_methods": {
+      "pdfminer": 257
+    },
+    "ocr_used": 0,
+    "tables_found": 10
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_success_ratio",
+      "Missing metric: max_empty_ratio",
+      "Missing metric: min_avg_page_length",
+      "Missing metric: max_error_ratio",
+      "Missing metric: max_ocr_ratio"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "generated_at": "2025-10-31T11:15:44Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "total_pages": {
+          "min": 230,
+          "max": 230,
+          "avg": 230.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 2,
+          "max": 2,
+          "avg": 2.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 230,
+          "max": 230,
+          "avg": 230.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 1688.804347826087,
+          "max": 1688.804347826087,
+          "avg": 1688.804347826087,
+          "count": 1
+        },
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf",
+          "timestamp": "2025-10-31T11:15:43Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 1,
+      "total": 0.0006413459777832031,
+      "avg": 0.0006413459777832031,
+      "min": 0.0006413459777832031,
+      "max": 0.0006413459777832031
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 30.65692448616028,
+      "avg": 30.65692448616028,
+      "min": 30.65692448616028,
+      "max": 30.65692448616028
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

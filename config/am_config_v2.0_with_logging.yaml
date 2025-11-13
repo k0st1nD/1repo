@@ -1,0 +1,310 @@
+# am_config_v2.0_with_logging.yaml - Enhanced configuration with logging v2.0
+# ============================================================================
+
+project:
+  name: "archivist magika"
+  version: "2.0.0"
+  description: "RAG system for semantic search across books"
+
+# ============================================
+# LOGGING CONFIGURATION (v2.0 - ENHANCED)
+# ============================================
+
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: INFO
+  
+  # Use detailed format (includes filename:lineno)
+  detailed: false
+  
+  # Custom format (optional)
+  # format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # Console output
+  console:
+    enabled: true
+    colored: true  # Use colors (requires colorama)
+  
+  # File logging (rotating)
+  file:
+    enabled: true
+    path: logs/pipeline.log
+    max_bytes: 10485760  # 10MB per file
+    backup_count: 5      # Keep 5 backup files
+  
+  # Structured JSON logging (for analysis)
+  structured:
+    enabled: true
+    path: logs/pipeline.json
+    max_bytes: 10485760
+    backup_count: 5
+  
+  # Progress bar integration
+  use_tqdm_handler: true  # Use tqdm-compatible logging
+
+# ============================================
+# PIPELINE CONFIGURATION
+# ============================================
+
+pipeline:
+  
+  # Stage 1: Structural Extraction
+  structural:
+    ocr:
+      enabled: true
+      language: "eng"
+      confidence_threshold: 0.7
+      dpi: 300
+    
+    tables:
+      enabled: true
+      extract_method: "pdfplumber"
+    
+    retry:
+      max_attempts: 3
+      backoff_factor: 2
+    
+    # Performance tracking
+    track_performance: true  # NEW in v2.0
+  
+  # Stage 2: Structure Detection
+  structure_detect:
+    chapters:
+      enabled: true
+      patterns:
+        - "^Chapter\\s+\\d+"
+        - "^CHAPTER\\s+\\d+"
+    
+    sections:
+      enabled: true
+      detect_numbered: true
+      detect_title_case: true
+    
+    toc:
+      generate: true
+      max_depth: 3
+  
+  # Stage 3: Summarization
+  summarize:
+    l1:
+      enabled: true
+      max_chars: 300
+      method: "extractive"
+    
+    l2:
+      enabled: false  # Optional longer summary
+      max_chars: 900
+      method: "extractive"
+  
+  # Stage 4: Extended Fields (LM-powered)
+  extended:
+    enabled: true
+    
+    use_lm: true
+    ollama_base_url: "http://localhost:11434"
+    model: "qwen2.5:7b"
+    timeout: 30
+    max_text_length: 4000
+    
+    deduplication:
+      enabled: true
+      similarity_threshold: 0.95
+      min_tokens: 10
+    
+    continuity:
+      enabled: true
+      overlap_threshold: 0.1
+    
+    # Error tracking
+    aggregate_errors: true  # NEW in v2.0
+  
+  # Stage 5: Finalize
+  finalize:
+    validation:
+      strict: true
+      check_extended_fields: true
+    
+    policies:
+      min_text_length: 10
+      max_text_length: 100000
+  
+  # Stage 6: Chunking
+  chunk:
+    chunk_size: 512     # tokens
+    chunk_overlap: 128  # tokens
+    min_chunk_size: 100 # tokens
+    
+    include_context: true
+    context_max_tokens: 200
+    
+    token_model: "cl100k_base"
+  
+  # Stage 7: Embedding
+  embed:
+    model: "BAAI/bge-m3"
+    batch_size: 32
+    normalize: true
+    
+    faiss:
+      index_type: "Flat"  # or "IVF" for large datasets
+      metric: "cosine"
+    
+    cache:
+      enabled: true
+      path: "data/cache/embeddings"
+
+# ============================================
+# RAG SEARCH CONFIGURATION
+# ============================================
+
+search:
+  semantic:
+    model: "BAAI/bge-m3"
+    top_k: 10
+  
+  hybrid:
+    enabled: false  # Enable keyword + semantic
+    semantic_weight: 0.7
+    keyword_weight: 0.3
+  
+  query_expansion:
+    enabled: false
+    max_expansions: 3
+  
+  reranking:
+    enabled: false
+    model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  
+  context_expansion:
+    enabled: true
+    window_size: 1  # chunks before/after
+
+# ============================================
+# QUALITY TRACKING
+# ============================================
+
+quality:
+  enabled: true
+  output_dir: "data/quality"
+  
+  track_stages:
+    - structural
+    - structure_detect
+    - summarize
+    - extended
+    - finalize
+    - chunk
+    - embed
+  
+  metrics:
+    # What to track
+    - total_items
+    - success_rate
+    - avg_processing_time
+    - error_count
+    - warning_count
+  
+  thresholds:
+    # Quality gates
+    min_success_rate: 0.95
+    max_avg_time: 1.0  # seconds per item
+    max_error_rate: 0.05
+  
+  alerts:
+    enabled: false  # Enable alerts for threshold violations
+    # email: "admin@example.com"
+
+# ============================================
+# PATHS
+# ============================================
+
+paths:
+  data: "data"
+  sources: "data/sources"
+  datasets: "data/datasets"
+  indexes: "data/indexes"
+  tables: "data/tables"
+  cache: "data/cache"
+  quality: "data/quality"
+  logs: "logs"
+
+# ============================================
+# PERFORMANCE SETTINGS
+# ============================================
+
+performance:
+  # Worker threads/processes
+  max_workers: 4
+  
+  # Memory limits
+  max_memory_mb: 8192
+  
+  # Batch processing
+  batch_size: 10
+  
+  # Progress bars
+  show_progress: true
+
+# ============================================
+# DEVELOPMENT / DEBUG
+# ============================================
+
+development:
+  debug_mode: false
+  
+  # Save intermediate results
+  save_intermediate: false
+  intermediate_dir: "data/debug"
+  
+  # Profiling
+  enable_profiling: false
+  profile_output: "logs/profile.stats"
+
+# ============================================
+# EXAMPLE LOGGING SCENARIOS
+# ============================================
+
+# Scenario 1: Production (minimal logs)
+# logging:
+#   level: WARNING
+#   console:
+#     enabled: true
+#     colored: false
+#   file:
+#     enabled: true
+#   structured:
+#     enabled: true
+
+# Scenario 2: Development (verbose)
+# logging:
+#   level: DEBUG
+#   detailed: true
+#   console:
+#     enabled: true
+#     colored: true
+#   file:
+#     enabled: true
+#   structured:
+#     enabled: false
+
+# Scenario 3: Testing (console only)
+# logging:
+#   level: INFO
+#   console:
+#     enabled: true
+#     colored: true
+#   file:
+#     enabled: false
+#   structured:
+#     enabled: false
+
+# Scenario 4: Batch processing (file + structured only)
+# logging:
+#   level: INFO
+#   console:
+#     enabled: false
+#   file:
+#     enabled: true
+#   structured:
+#     enabled: true
+#   use_tqdm_handler: false  # Disable for batch

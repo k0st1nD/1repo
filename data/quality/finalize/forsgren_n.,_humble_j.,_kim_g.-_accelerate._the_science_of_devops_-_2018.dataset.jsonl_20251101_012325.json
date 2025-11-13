@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:23:25Z",
+  "stage": "finalize",
+  "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+  "metrics": {
+    "total_cards": 293,
+    "validation_errors": 0,
+    "validation_warnings": 48,
+    "avg_completeness": 0.78,
+    "cards_with_structure": 285,
+    "structure_coverage": 0.9726962457337884,
+    "cards_with_summaries": 280,
+    "summary_coverage": 0.9556313993174061
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

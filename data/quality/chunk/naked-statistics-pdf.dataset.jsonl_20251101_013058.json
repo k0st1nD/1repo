@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:30:58Z",
+  "stage": "chunk",
+  "source": "naked-statistics-pdf.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 372,
+    "chunks_per_page": 1.6756756756756757,
+    "avg_chunk_tokens": 402.9166666666667,
+    "min_chunk_tokens": 115,
+    "max_chunk_tokens": 525,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 65,
+      "300-512": 303,
+      "512+": 4
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

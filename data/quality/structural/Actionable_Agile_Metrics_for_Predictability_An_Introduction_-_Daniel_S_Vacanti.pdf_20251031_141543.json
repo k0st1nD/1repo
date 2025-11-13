@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-31T11:15:43Z",
+  "stage": "structural",
+  "source": "Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf",
+  "metrics": {
+    "total_pages": 230,
+    "success_pages": 230,
+    "failed_pages": 0,
+    "success_ratio": 1.0,
+    "empty_pages": 2,
+    "avg_page_length": 1688.804347826087,
+    "extraction_methods": {
+      "pdfminer": 229
+    },
+    "ocr_used": 0,
+    "tables_found": 0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_success_ratio",
+      "Missing metric: max_empty_ratio",
+      "Missing metric: min_avg_page_length",
+      "Missing metric: max_error_ratio",
+      "Missing metric: max_ocr_ratio"
+    ]
+  }
+}

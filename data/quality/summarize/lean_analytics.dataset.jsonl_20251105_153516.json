@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T12:35:16Z",
+  "stage": "summarize",
+  "source": "lean_analytics.dataset.jsonl",
+  "metrics": {
+    "total_pages": 439,
+    "summarized_pages": 412,
+    "skipped_pages": 27,
+    "summary_coverage": 0.9384965831435079,
+    "avg_l1_length": 202.09466019417476,
+    "avg_l2_length": 483.6092233009709,
+    "avg_compression_ratio": 10.48
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

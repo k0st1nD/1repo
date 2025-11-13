@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:32:08Z",
+  "stage": "finalize",
+  "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+  "metrics": {
+    "total_cards": 214,
+    "validation_errors": 0,
+    "validation_warnings": 8,
+    "avg_completeness": 0.584,
+    "cards_with_structure": 202,
+    "structure_coverage": 0.9439252336448598,
+    "cards_with_summaries": 205,
+    "summary_coverage": 0.9579439252336449
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

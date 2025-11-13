@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:30:46Z",
+  "stage": "structure_detect",
+  "source": "norton_kaplan_balanced_scorecard.dataset.jsonl",
+  "metrics": {
+    "total_pages": 214,
+    "chapters_detected": 12,
+    "sections_detected": 0,
+    "pages_with_structure": 202,
+    "structure_coverage": 0.9439252336448598,
+    "avg_chapter_length": 17.833333333333332
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

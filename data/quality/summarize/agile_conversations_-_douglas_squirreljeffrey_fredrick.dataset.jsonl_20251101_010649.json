@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:06:49Z",
+  "stage": "summarize",
+  "source": "agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset.jsonl",
+  "metrics": {
+    "total_pages": 266,
+    "summarized_pages": 257,
+    "skipped_pages": 9,
+    "summary_coverage": 0.9661654135338346,
+    "avg_l1_length": 208.95719844357976,
+    "avg_l2_length": 532.0155642023346,
+    "avg_compression_ratio": 8.89
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

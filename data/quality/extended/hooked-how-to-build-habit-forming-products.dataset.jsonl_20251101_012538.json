@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-31T22:25:38Z",
+  "stage": "extended",
+  "source": "hooked-how-to-build-habit-forming-products.dataset.jsonl",
+  "metrics": {
+    "total_cards": 180,
+    "duplicates_found": 0,
+    "duplicate_ratio": 0.0,
+    "continuity_gaps": 95,
+    "continuity_gap_ratio": 0.5307262569832403,
+    "avg_overlap": 0.088,
+    "extended_fields_extracted": 170,
+    "extraction_coverage": 0.9444444444444444,
+    "lm_extraction_count": 0,
+    "lm_extraction_ratio": 0.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: max_duplicates_ratio",
+      "Missing metric: min_extended_fields_ratio",
+      "Missing metric: min_topics_per_page",
+      "Missing metric: min_lm_extraction_ratio",
+      "Missing metric: max_continuity_gaps"
+    ]
+  }
+}

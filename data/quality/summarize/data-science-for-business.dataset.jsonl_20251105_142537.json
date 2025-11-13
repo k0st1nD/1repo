@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T11:25:37Z",
+  "stage": "summarize",
+  "source": "data-science-for-business.dataset.jsonl",
+  "metrics": {
+    "total_pages": 409,
+    "summarized_pages": 395,
+    "skipped_pages": 14,
+    "summary_coverage": 0.9657701711491442,
+    "avg_l1_length": 231.15696202531646,
+    "avg_l2_length": 577.2025316455696,
+    "avg_compression_ratio": 10.83
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

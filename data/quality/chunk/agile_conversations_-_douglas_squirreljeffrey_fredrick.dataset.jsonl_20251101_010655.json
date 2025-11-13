@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:06:55Z",
+  "stage": "chunk",
+  "source": "agile_conversations_-_douglas_squirreljeffrey_fredrick.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 253,
+    "chunks_per_page": 0.9511278195488722,
+    "avg_chunk_tokens": 365.4901185770751,
+    "min_chunk_tokens": 118,
+    "max_chunk_tokens": 519,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 54,
+      "300-512": 198,
+      "512+": 1
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

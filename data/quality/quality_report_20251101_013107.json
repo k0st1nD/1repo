@@ -1,0 +1,534 @@
+{
+  "generated_at": "2025-10-31T22:31:07Z",
+  "version": "2.0.0",
+  "stages": {
+    "structural": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "ocr_used": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "success_pages": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "success_ratio": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "empty_pages": {
+          "min": 3,
+          "max": 3,
+          "avg": 3.0,
+          "count": 1
+        },
+        "tables_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "failed_pages": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "avg_page_length": {
+          "min": 2697.054054054054,
+          "max": 2697.054054054054,
+          "avg": 2697.054054054054,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.pdf",
+          "timestamp": "2025-10-31T22:30:51Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_success_ratio": 0.95,
+        "max_empty_ratio": 0.1,
+        "min_avg_page_length": 500,
+        "max_error_ratio": 0.05,
+        "max_ocr_ratio": 0.2
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.pdf"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "structure_detect": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "pages_with_structure": {
+          "min": 207,
+          "max": 207,
+          "avg": 207.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "sections_detected": {
+          "min": 1,
+          "max": 1,
+          "avg": 1.0,
+          "count": 1
+        },
+        "avg_chapter_length": {
+          "min": 111.0,
+          "max": 111.0,
+          "avg": 111.0,
+          "count": 1
+        },
+        "chapters_detected": {
+          "min": 2,
+          "max": 2,
+          "avg": 2.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9324324324324325,
+          "max": 0.9324324324324325,
+          "avg": 0.9324324324324325,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.jsonl",
+          "timestamp": "2025-10-31T22:30:51Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chapters_detected": 1,
+        "min_toc_coverage": 0.8,
+        "max_orphan_pages": 0.15
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "summarize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "summarized_pages": {
+          "min": 219,
+          "max": 219,
+          "avg": 219.0,
+          "count": 1
+        },
+        "total_pages": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "avg_l1_length": {
+          "min": 245.3881278538813,
+          "max": 245.3881278538813,
+          "avg": 245.3881278538813,
+          "count": 1
+        },
+        "skipped_pages": {
+          "min": 3,
+          "max": 3,
+          "avg": 3.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9864864864864865,
+          "max": 0.9864864864864865,
+          "avg": 0.9864864864864865,
+          "count": 1
+        },
+        "avg_l2_length": {
+          "min": 648.5981735159818,
+          "max": 648.5981735159818,
+          "avg": 648.5981735159818,
+          "count": 1
+        },
+        "avg_compression_ratio": {
+          "min": 12.06,
+          "max": 12.06,
+          "avg": 12.06,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.jsonl",
+          "timestamp": "2025-10-31T22:30:51Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_summary_ratio": 0.9,
+        "min_summary_length": 100,
+        "max_summary_length": 400
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "extended": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "continuity_gap_ratio": {
+          "min": 0.2895927601809955,
+          "max": 0.2895927601809955,
+          "avg": 0.2895927601809955,
+          "count": 1
+        },
+        "duplicate_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "extended_fields_extracted": {
+          "min": 218,
+          "max": 218,
+          "avg": 218.0,
+          "count": 1
+        },
+        "continuity_gaps": {
+          "min": 64,
+          "max": 64,
+          "avg": 64.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "duplicates_found": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "avg_overlap": {
+          "min": 0.131,
+          "max": 0.131,
+          "avg": 0.131,
+          "count": 1
+        },
+        "lm_extraction_count": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "lm_extraction_ratio": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "extraction_coverage": {
+          "min": 0.9819819819819819,
+          "max": 0.9819819819819819,
+          "avg": 0.9819819819819819,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.jsonl",
+          "timestamp": "2025-10-31T22:30:57Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "max_duplicates_ratio": 0.05,
+        "min_extended_fields_ratio": 0.7,
+        "min_topics_per_page": 1,
+        "min_lm_extraction_ratio": 0.8,
+        "max_continuity_gaps": 0.1
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "finalize": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "validation_errors": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "cards_with_summaries": {
+          "min": 219,
+          "max": 219,
+          "avg": 219.0,
+          "count": 1
+        },
+        "avg_completeness": {
+          "min": 0.615,
+          "max": 0.615,
+          "avg": 0.615,
+          "count": 1
+        },
+        "cards_with_structure": {
+          "min": 207,
+          "max": 207,
+          "avg": 207.0,
+          "count": 1
+        },
+        "total_cards": {
+          "min": 222,
+          "max": 222,
+          "avg": 222.0,
+          "count": 1
+        },
+        "summary_coverage": {
+          "min": 0.9864864864864865,
+          "max": 0.9864864864864865,
+          "avg": 0.9864864864864865,
+          "count": 1
+        },
+        "validation_warnings": {
+          "min": 10,
+          "max": 10,
+          "avg": 10.0,
+          "count": 1
+        },
+        "structure_coverage": {
+          "min": 0.9324324324324325,
+          "max": 0.9324324324324325,
+          "avg": 0.9324324324324325,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.jsonl",
+          "timestamp": "2025-10-31T22:30:57Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_validation_pass_rate": 0.99,
+        "max_policy_violations": 0.01
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "chunk": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "chunks_per_page": {
+          "min": 1.6756756756756757,
+          "max": 1.6756756756756757,
+          "avg": 1.6756756756756757,
+          "count": 1
+        },
+        "avg_chunk_tokens": {
+          "min": 402.9166666666667,
+          "max": 402.9166666666667,
+          "avg": 402.9166666666667,
+          "count": 1
+        },
+        "min_chunk_tokens": {
+          "min": 115,
+          "max": 115,
+          "avg": 115.0,
+          "count": 1
+        },
+        "max_chunk_tokens": {
+          "min": 525,
+          "max": 525,
+          "avg": 525.0,
+          "count": 1
+        },
+        "context_completeness": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        },
+        "total_chunks": {
+          "min": 372,
+          "max": 372,
+          "avg": 372.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.jsonl",
+          "timestamp": "2025-10-31T22:30:58Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_chunks_per_page": 1,
+        "max_chunks_per_page": 20,
+        "min_chunk_length": 100,
+        "max_chunk_length": 2000,
+        "min_avg_tokens": 50,
+        "max_avg_tokens": 600
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    },
+    "embed": {
+      "total_runs": 1,
+      "passed_threshold": 1,
+      "failed_threshold": 0,
+      "pass_rate": 1.0,
+      "statistics": {
+        "max_norm": {
+          "min": 1.0000001192092896,
+          "max": 1.0000001192092896,
+          "avg": 1.0000001192092896,
+          "count": 1
+        },
+        "failure_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "embedding_dim": {
+          "min": 384,
+          "max": 384,
+          "avg": 384.0,
+          "count": 1
+        },
+        "embedding_failures": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0,
+          "count": 1
+        },
+        "min_norm": {
+          "min": 0.9999999403953552,
+          "max": 0.9999999403953552,
+          "avg": 0.9999999403953552,
+          "count": 1
+        },
+        "total_vectors": {
+          "min": 372,
+          "max": 372,
+          "avg": 372.0,
+          "count": 1
+        },
+        "avg_norm": {
+          "min": 1.0,
+          "max": 1.0,
+          "avg": 1.0,
+          "count": 1
+        }
+      },
+      "threshold_checks": [
+        {
+          "source": "naked-statistics-pdf.dataset.chunks.jsonl",
+          "timestamp": "2025-10-31T22:31:07Z",
+          "passed": true,
+          "violations": []
+        }
+      ],
+      "thresholds": {
+        "min_embedding_success": 0.99,
+        "max_embedding_time_per_chunk": 0.5
+      },
+      "trend": {
+        "recent_sources": [
+          "naked-statistics-pdf.dataset.chunks.jsonl"
+        ],
+        "recent_pass_rate": 1.0
+      }
+    }
+  },
+  "performance": {
+    "track_quality": {
+      "count": 7,
+      "total": 0.018043041229248047,
+      "avg": 0.0025775773184640066,
+      "min": 0.0017762184143066406,
+      "max": 0.00442051887512207
+    },
+    "run_single_pipeline": {
+      "count": 1,
+      "total": 69.58690071105957,
+      "avg": 69.58690071105957,
+      "min": 69.58690071105957,
+      "max": 69.58690071105957
+    }
+  },
+  "errors": {
+    "total_errors": 0,
+    "total_warnings": 0,
+    "errors_by_stage": {},
+    "warnings_by_stage": {}
+  }
+}

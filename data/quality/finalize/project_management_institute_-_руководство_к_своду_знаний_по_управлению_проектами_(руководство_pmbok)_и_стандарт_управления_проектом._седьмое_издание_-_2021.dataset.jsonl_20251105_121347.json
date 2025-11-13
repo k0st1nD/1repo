@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T09:13:47Z",
+  "stage": "finalize",
+  "source": "project_management_institute_-_руководство_к_своду_знаний_по_управлению_проектами_(руководство_pmbok)_и_стандарт_управления_проектом._седьмое_издание_-_2021.dataset.jsonl",
+  "metrics": {
+    "total_cards": 374,
+    "validation_errors": 0,
+    "validation_warnings": 56,
+    "avg_completeness": 0.592,
+    "cards_with_structure": 359,
+    "structure_coverage": 0.9598930481283422,
+    "cards_with_summaries": 360,
+    "summary_coverage": 0.9625668449197861
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

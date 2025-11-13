@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:14:57Z",
+  "stage": "finalize",
+  "source": "agile-metrics-in-action.dataset.jsonl",
+  "metrics": {
+    "total_cards": 270,
+    "validation_errors": 0,
+    "validation_warnings": 4,
+    "avg_completeness": 0.789,
+    "cards_with_structure": 262,
+    "structure_coverage": 0.9703703703703703,
+    "cards_with_summaries": 269,
+    "summary_coverage": 0.9962962962962963
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

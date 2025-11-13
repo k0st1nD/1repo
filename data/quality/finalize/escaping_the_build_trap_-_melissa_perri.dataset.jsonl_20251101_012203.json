@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:22:03Z",
+  "stage": "finalize",
+  "source": "escaping_the_build_trap_-_melissa_perri.dataset.jsonl",
+  "metrics": {
+    "total_cards": 199,
+    "validation_errors": 0,
+    "validation_warnings": 58,
+    "avg_completeness": 0.386,
+    "cards_with_structure": 0,
+    "structure_coverage": 0.0,
+    "cards_with_summaries": 185,
+    "summary_coverage": 0.9296482412060302
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

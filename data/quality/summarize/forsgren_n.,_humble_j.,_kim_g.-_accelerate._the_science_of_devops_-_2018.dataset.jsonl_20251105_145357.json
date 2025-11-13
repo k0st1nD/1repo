@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T11:53:57Z",
+  "stage": "summarize",
+  "source": "forsgren_n.,_humble_j.,_kim_g.-_accelerate._the_science_of_devops_-_2018.dataset.jsonl",
+  "metrics": {
+    "total_pages": 293,
+    "summarized_pages": 280,
+    "skipped_pages": 13,
+    "summary_coverage": 0.9556313993174061,
+    "avg_l1_length": 152.0857142857143,
+    "avg_l2_length": 324.8357142857143,
+    "avg_compression_ratio": 9.46
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

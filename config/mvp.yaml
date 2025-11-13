@@ -1,0 +1,396 @@
+# Archivist Magika MVP v2.0 Configuration
+# ========================================
+# Simplified configuration for quick start
+
+version: "2.0.0"
+product: "archivist magika"
+
+# Paths configuration
+paths:
+  base_dir: "."  # Project root
+  data_dir: "data"
+  config_dir: "config"
+  cache_dir: "data/cache"
+
+# Pipeline stages configuration
+pipeline:
+  
+  # Stage 1: Structural extraction (PDF → text + tables)
+  structural:
+    # OCR settings (for scanned PDFs)
+    ocr:
+      enabled: true
+      languages: ['eng']  # Tesseract languages: eng, rus, deu, fra, etc.
+      dpi: 300  # Image resolution for OCR
+      confidence_threshold: 60  # Min confidence % to accept OCR result
+    
+    # Table extraction
+    tables:
+      enabled: true
+      min_rows: 2
+      min_cols: 2
+    
+    # Text extraction chain (order matters - will try in sequence)
+    extractors:
+      - pdfminer    # Primary: fast, good for digital PDFs
+      - pdfplumber  # Fallback: more robust
+      - pypdf2      # Fallback: simple extraction
+      - ocr         # Last resort: for scanned pages
+    
+    # Retry logic
+    retry:
+      max_attempts: 3
+      initial_delay: 1.0  # seconds
+      backoff_factor: 2.0
+      max_delay: 10.0
+    
+    # Blank page detection
+    blank_detection:
+      min_chars_ocr: 50  # Min chars to consider OCR
+      min_chars_valid: 10  # Min chars to be non-blank
+      skip_front_matter: true  # Skip OCR on pages 1-5 if < 20 chars
+  
+  # Stage 2: Structure detection (chapters, sections)
+  structure_detect:
+    # Chapter detection
+    chapter:
+      enabled: true
+      patterns:
+        - "^Chapter\\s+\\d+"
+        - "^\\d+\\.\\s+[A-Z]"
+        - "^CHAPTER\\s+[IVXLCDM]+"  # Roman numerals
+      min_confidence: 0.7
+    
+    # Section detection
+    section:
+      enabled: true
+      detect_numbered: true  # e.g., "1.1", "2.3.4"
+      detect_title_case: true  # e.g., "Introduction to DevOps"
+      min_title_words: 3
+      max_title_words: 15
+    
+    # TOC generation
+    toc:
+      enabled: true
+      include_page_numbers: true
+  
+  # Stage 3: Summarization
+  summarize:
+    enabled: true
+    engine: "extractive"  # extractive | abstractive
+    
+    # Summary levels
+    l1_summary:
+      enabled: true
+      target_length: 300  # characters
+    
+    l2_summary:
+      enabled: false  # Disable L2 for MVP
+      target_length: 900
+    
+    # Extractive summarization settings
+    extractive:
+      method: "textrank"  # textrank | lexrank
+      ratio: 0.3  # Keep top 30% of sentences
+  
+  # Stage 4: Extended fields (LM-enhanced metadata)
+  extended:
+    # Deduplication
+    dedup:
+      enabled: true
+      exact_match: true  # Exact duplicate detection
+      fuzzy_match: true  # Fuzzy duplicate detection
+      fuzzy_threshold: 0.85  # Similarity threshold (0-1)
+    
+    # Continuity audit
+    continuity:
+      enabled: true
+      check_page_sequence: true
+      check_chapter_sequence: true
+    
+    # LM-enhanced fields
+    lm_extraction:
+      enabled: true
+      
+      # Ollama settings
+      ollama:
+        base_url: "http://localhost:11434"
+        model: "qwen2.5:7b"  # Best balance: quality + speed, 4.7GB
+        timeout: 90  # seconds (7B needs more time than 3B)
+        max_retries: 3
+      
+      # Fields to extract
+      fields:
+        # Content classification
+        content_type: true  # theory, practice, case_study, etc.
+        domain: true  # devops, architecture, security, etc.
+        complexity: true  # beginner, intermediate, advanced
+        
+        # Entities
+        entities:
+          companies: true
+          people: true
+          products: true
+          technologies: true
+          frameworks: true
+          methodologies: true
+        
+        # Technical analysis
+        technical:
+          has_code: true
+          has_formulas: true
+          has_diagram: true
+          programming_languages: true
+        
+        # Actionable content
+        actionable:
+          has_best_practices: true
+          has_antipatterns: true
+          has_instructions: true
+        
+        # Business insights
+        business:
+          has_metrics: true
+          metrics: true
+          has_case_study: true
+          case_study_company: true
+        
+        # Content analysis
+        content_analysis:
+          topics: true
+          key_concepts: true
+          problem_statement: true
+          solution_approach: true
+        
+        # Tools
+        tools_mentioned: true
+      
+      # Fallback to heuristics if LM fails
+      use_heuristics_fallback: true
+      heuristics_only: false  # Set to true to disable LM entirely
+  
+  # Stage 5: Finalization (validation)
+  finalize:
+    # Validation settings
+    validation:
+      strict_mode: false  # true = fail on any error, false = warn only
+      check_required_fields: true
+      check_extended_fields: true
+      check_manifest: true
+    
+    # Policy enforcement
+    policies:
+      min_page_content_length: 50  # Min chars per page
+      max_empty_pages_ratio: 0.10  # Max 10% empty pages
+      require_title: true
+      require_total_cards: true
+  
+  # Stage 6: Chunking
+  chunk:
+    # Chunking strategy
+    strategy: "sliding_window"  # sliding_window | semantic | hybrid
+    
+    # Size settings
+    chunk_size: 512  # characters
+    overlap: 50  # characters (10% of chunk_size)
+    
+    # Context enrichment
+    add_structure_context: true  # Add [BOOK | CHAPTER | SECTION]
+    preserve_tables: true  # Keep tables as single chunks
+    
+    # Chunk boundaries
+    respect_sentence_boundaries: true
+    respect_paragraph_boundaries: false  # More flexible chunking
+    
+    # Metadata
+    include_metadata: true
+    include_extended_fields: true
+  
+  # Stage 7: Embedding
+  embed:
+    # Model settings
+    model: "BAAI/bge-m3"  # Best multilingual model
+    embedding_dim: 1024  # BGE-M3 dimension
+    normalize: true  # Normalize embeddings for cosine similarity
+    
+    # Processing
+    batch_size: 32  # Adjust based on GPU memory
+    device: "cpu"  # cpu | cuda | mps
+    show_progress: true
+    
+    # FAISS index
+    faiss:
+      index_type: "Flat"  # Flat | IVF | HNSW
+      metric: "cosine"  # cosine | l2 | ip
+      
+      # For IVF index (if index_type: "IVF")
+      nlist: 100  # Number of clusters
+      nprobe: 10  # Number of clusters to search
+    
+    # Cache
+    cache:
+      enabled: true
+      cache_dir: "data/cache/embeddings"
+      use_hash: true  # Cache by content hash
+
+# Search configuration
+search:
+  # Semantic search
+  semantic:
+    enabled: true
+    model: "BAAI/bge-m3"  # Must match embed model
+    top_k: 10  # Default number of results
+  
+  # Keyword search (BM25)
+  keyword:
+    enabled: true  # Enable for hybrid search
+    k1: 1.5  # BM25 parameter
+    b: 0.75  # BM25 parameter
+  
+  # Hybrid search
+  hybrid:
+    enabled: false  # Set to true to enable by default
+    semantic_weight: 0.7  # 70% semantic, 30% keyword
+    keyword_weight: 0.3
+  
+  # Query expansion
+  query_expansion:
+    enabled: false  # Set to true to enable by default
+    max_expansions: 3  # Max synonyms per term
+  
+  # Result filtering
+  filters:
+    default_min_score: 0.5  # Min similarity score (0-1)
+    enable_chapter_filter: true
+    enable_section_filter: true
+    enable_page_range_filter: true
+    enable_content_type_filter: true
+    enable_topic_filter: true
+  
+  # Context expansion
+  context_expansion:
+    enabled: false  # Set to true to enable by default
+    default_context_size: 2  # N chunks before/after
+  
+  # Reranking (optional quality boost)
+  reranking:
+    enabled: false  # Set to true to enable by default
+    model: "qllama/bge-reranker-v2-m3"  # Cross-encoder reranker
+    rerank_top_k: 50  # Rerank top 50 results
+    return_top_k: 10  # Return final top 10
+    device: "cpu"  # cpu | cuda
+    batch_size: 8  # Reranking batch size
+
+# Quality tracking
+quality:
+  enabled: true
+  output_dir: "data/quality"
+  
+  # Thresholds (see quality_tracker.py for defaults)
+  thresholds:
+    structural:
+      min_success_ratio: 0.95
+      max_empty_ratio: 0.10
+      min_avg_page_length: 500
+    
+    extended:
+      max_duplicates_ratio: 0.05
+      min_extended_fields_ratio: 0.70
+    
+    chunk:
+      min_chunk_length: 100
+      max_chunk_length: 2000
+    
+    embed:
+      min_embedding_success: 0.99
+  
+  # Reporting
+  reports:
+    auto_generate: true  # Generate after each run
+    include_trends: true
+    include_comparisons: true
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG | INFO | WARNING | ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # File logging
+  file:
+    enabled: true
+    path: "logs/mvp.log"
+    max_bytes: 10485760  # 10MB
+    backup_count: 5
+  
+  # Console logging
+  console:
+    enabled: true
+    colorize: true
+
+# Performance
+performance:
+  # Multiprocessing
+  workers: 4  # Number of parallel workers (0 = auto)
+  
+  # Memory management
+  max_memory_mb: 8192  # Max memory usage (8GB)
+  cleanup_temp_files: true
+  
+  # Caching
+  enable_cache: true
+  cache_ttl: 86400  # 24 hours in seconds
+
+# Development settings
+development:
+  debug_mode: false
+  save_intermediate_results: false
+  dry_run: false
+  verbose: false
+
+# Production settings
+production:
+  strict_validation: true
+  enable_monitoring: true
+  enable_alerts: false
+  alert_on_quality_issues: false
+
+# Feature flags
+features:
+  ocr: true
+  tables: true
+  structure_detection: true
+  summarization: true
+  extended_fields: true
+  deduplication: true
+  quality_tracking: true
+  hybrid_search: false  # Enable when needed
+  query_expansion: false
+
+# Model variants (uncomment to use)
+model_variants:
+  # LM for extended fields extraction
+  lm_models:
+    fast: "qwen2.5:7b"           # ✅ Default: 4.7GB, 3-5 sec/page, good quality
+    quality: "qwen2.5:14b"        # 9.0GB, 6-10 sec/page, best quality
+    code: "qwen2.5-coder:7b"      # 4.7GB, best for programming books
+    code_quality: "qwen2.5-coder:14b"  # 9.0GB, best code understanding
+  
+  # Embedding model (do not change)
+  embedding: "BAAI/bge-m3"        # ✅ State-of-the-art, 1024 dim
+  
+  # Reranker (optional)
+  reranker: "qllama/bge-reranker-v2-m3"  # 635MB, +10-15% search quality  # Enable when needed
+
+# Experimental features (use with caution)
+experimental:
+  # Advanced chunking
+  semantic_chunking: false
+  hierarchical_chunking: false
+  
+  # Advanced search
+  reranking: false
+  query_reformulation: false
+  
+  # Multi-modal
+  image_extraction: false
+  diagram_ocr: false

@@ -1,0 +1,111 @@
+================================================================
+  BATCH PROCESSING START -  1 ноя 2025 г.  0:45:57
+  Config: config/batch_full.yaml
+================================================================
+
+
+[1] Processing: 2024_final_dora_report.pdf
+----------------------------------------
+[FAIL] ✗ Failed (see logs/batch/2024_final_dora_report.log)
+Stats: 0 OK / 1 FAIL / 1 total
+
+[2] Processing: Actionable_Agile_Metrics_for_Predictability_An_Introduction_-_Daniel_S_Vacanti.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 1 OK / 1 FAIL / 2 total
+
+[3] Processing: Agile_Conversations_-_Douglas_SquirrelJeffrey_Fredrick.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 2 OK / 1 FAIL / 3 total
+
+[4] Processing: Agile-Metrics-in-Action.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 3 OK / 1 FAIL / 4 total
+
+[5] Processing: baza-znanij-safe®-russia.pdf
+----------------------------------------
+[FAIL] ✗ Failed (see logs/batch/baza-znanij-safe®-russia.log)
+Stats: 3 OK / 2 FAIL / 5 total
+
+[6] Processing: Continuous_Discovery_Habits_-_Teresa_Torres.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 4 OK / 2 FAIL / 6 total
+
+[7] Processing: data-driven-organization-design-sustaining-the-competitive-edge-through-organizational-analytics.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 5 OK / 2 FAIL / 7 total
+
+[8] Processing: Data-Science-for-Business.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 6 OK / 2 FAIL / 8 total
+
+[9] Processing: Escaping_the_build_trap_-_Melissa_Perri.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 7 OK / 2 FAIL / 9 total
+
+[10] Processing: Forsgren N., Humble J., Kim G.- Accelerate. The Science of DevOps - 2018.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 8 OK / 2 FAIL / 10 total
+
+[11] Processing: GOOD-STRATEGY-BAD-STRATEGY.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 9 OK / 2 FAIL / 11 total
+
+[12] Processing: Hooked-How-to-Build-Habit-Forming-Products.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 10 OK / 2 FAIL / 12 total
+
+[13] Processing: Lean_Analytics.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 11 OK / 2 FAIL / 13 total
+
+[14] Processing: measure-what-matters-by-john-doerr.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 12 OK / 2 FAIL / 14 total
+
+[15] Processing: naked-statistics-pdf.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 13 OK / 2 FAIL / 15 total
+
+[16] Processing: norton_kaplan_balanced_scorecard.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 14 OK / 2 FAIL / 16 total
+
+[17] Processing: Playing_to_Win__How_Strategy_Really_Works_-_AG_Lafley.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 15 OK / 2 FAIL / 17 total
+
+[18] Processing: Team_Topologies_Organizing_Business_and_Technology_Teams_for_Fast_Flow_-_Matthew_Skelton.pdf
+----------------------------------------
+[OK] ✓ Success
+Stats: 16 OK / 2 FAIL / 18 total
+
+[19] Processing: Каган Марти - Вдохновленные - 2020.pdf
+----------------------------------------
+[FAIL] ✗ Failed (see logs/batch/Каган Марти - Вдохновленные - 2020.log)
+Stats: 16 OK / 3 FAIL / 19 total
+[SKIP] Ядро 2025-08-29.pdf (excluded)
+./batch_simple.sh: line 55: e: command not found
+
+================================================================
+  BATCH PROCESSING COMPLETE
+================================================================
+Total processed: 19
+Successful: 16
+Failed: 3
+Completion time:  1 ноя 2025 г.  1:35:10
+================================================================

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:32:06Z",
+  "stage": "finalize",
+  "source": "playing_to_win__how_strategy_really_works_-_ag_lafley.dataset.jsonl",
+  "metrics": {
+    "total_cards": 259,
+    "validation_errors": 0,
+    "validation_warnings": 6,
+    "avg_completeness": 0.399,
+    "cards_with_structure": 0,
+    "structure_coverage": 0.0,
+    "cards_with_summaries": 258,
+    "summary_coverage": 0.9961389961389961
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

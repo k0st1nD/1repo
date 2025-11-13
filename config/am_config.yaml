@@ -1,0 +1,204 @@
+# ============================================
+# Archivist Magika MVP - Configuration
+# ============================================
+# Version: 1.0.0
+# Product: archivist magika v4.3.8
+
+project:
+  name: "Archivist Magika"
+  version: "1.0.0"
+  product: "archivist magika v4.3.8"
+  permissions: "public"
+
+# ============================================
+# PATHS CONFIGURATION
+# ============================================
+paths:
+  # Input
+  source_pdfs: "data/source/"
+  
+  # Processing stages
+  datasets:
+    structural: "data/datasets/structural/"    # After am_structural
+    extended: "data/datasets/extended/"        # After am_extended
+    final: "data/datasets/final/"              # After am_finalize
+    chunks: "data/datasets/chunks/"            # After am_chunk
+  
+  # Vector indexes
+  indexes:
+    faiss: "data/indexes/faiss/"               # FAISS index files
+    metadata: "data/indexes/metadata/"         # Chunk metadata
+  
+  # Logs
+  logs: "logs/"
+
+# ============================================
+# PIPELINE CONFIGURATION
+# ============================================
+
+# Stage 1: Structural extraction (am_structural.py)
+structural:
+  max_pages: 5000
+  empty_streak_threshold: 3
+  
+  # Table detection thresholds
+  table_detection:
+    line_threshold: 8        # LTLine count for vector table flag
+    rect_threshold: 6        # LTRect count for vector table flag
+    total_threshold: 10      # Combined threshold
+  
+  # Output format
+  toc_mode: "strict_per_page"  # 1 page = 1 segment
+
+# Stage 2: Extended pass (am_extended.py)
+extended:
+  # Merge short pages
+  merge_short:
+    enabled: true
+    short_threshold: 30      # Chars threshold
+    max_merge_span: 3        # Max pages to look back
+  
+  # Continuity validation
+  continuity:
+    enabled: true
+    overlap_threshold: 0.7   # Jaccard overlap threshold
+  
+  # Visual detection
+  visuals:
+    enabled: true            # Detect Figure/Table mentions
+  
+  # Extended fields extraction
+  extended_fields:
+    enabled: false           # MVP: disable for simplicity
+
+# Stage 3: Finalize (am_finalize.py)
+finalize:
+  # Policy requirements
+  require_l1: false          # L1 summary optional
+  require_l2: false          # L2 summary optional
+  require_l3: true           # L3 summary required (pp.X-X)
+  
+  # Stop conditions
+  stop_on:
+    continuity_gap: false    # Don't block on gaps
+    missing_visuals: false   # Don't block on visuals
+    missing_extended: false  # Don't block on extended
+
+# Stage 4: Chunking (am_chunk.py)
+chunking:
+  # Token limits
+  target_tokens: 512         # Target chunk size
+  max_tokens: 600           # Hard limit
+  min_tokens: 100           # Minimum chunk size
+  overlap_tokens: 50        # Overlap between chunks
+  
+  # Context addition
+  add_context: true          # Add [BOOK: X | CHAPTER: Y]
+  context_template: "[BOOK: {book} | CHAPTER: {chapter} | pp.{pages}]\n\n{text}"
+  
+  # Preservation rules
+  preserve_boundaries:
+    - "case_study"
+    - "table"
+    - "code_block"
+  
+  # Smart chunking
+  respect_paragraph_breaks: true
+  avoid_mid_sentence_split: true
+
+# Stage 5: Embedding (am_embed.py)
+embedding:
+  # Model configuration
+  model: "BAAI/bge-m3"       # Sentence transformer model
+  device: "cpu"              # "cpu" or "cuda"
+  batch_size: 32             # Batch size for encoding
+  
+  # Vector dimension
+  dimension: 1024            # bge-m3 dimension
+  normalize: true            # L2 normalize vectors
+  
+  # FAISS index
+  faiss:
+    index_type: "Flat"       # "Flat" | "HNSW" | "IVF"
+    # HNSW params (if using HNSW)
+    hnsw_m: 32
+    hnsw_ef_construction: 200
+    hnsw_ef_search: 100
+
+# ============================================
+# RAG SEARCH CONFIGURATION
+# ============================================
+rag:
+  search:
+    top_k: 5                 # Return top K results
+    similarity_threshold: 0.7  # Minimum similarity score
+    rerank: false            # MVP: no reranking
+  
+  # Filters
+  filters:
+    by_book: true            # Allow filtering by book
+    by_chapter: true         # Allow filtering by chapter
+    by_content_type: false   # MVP: disable
+
+# ============================================
+# LOGGING CONFIGURATION
+# ============================================
+logging:
+  level: "INFO"              # DEBUG | INFO | WARNING | ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # File logging
+  file:
+    enabled: true
+    path: "logs/pipeline.log"
+    max_bytes: 10485760      # 10MB
+    backup_count: 5
+  
+  # Console logging
+  console:
+    enabled: true
+    colored: true            # Use colors in terminal
+
+# ============================================
+# VALIDATION
+# ============================================
+validation:
+  # Dataset validation
+  check_manifest: true       # Verify manifest_sha256
+  check_required_fields: true
+  
+  # Required fields per stage
+  required_fields:
+    structural:
+      - "segment_id"
+      - "segment"
+      - "summary"
+    chunks:
+      - "chunk_id"
+      - "text"
+      - "metadata"
+
+# ============================================
+# PERFORMANCE
+# ============================================
+performance:
+  # Multiprocessing
+  use_multiprocessing: false  # MVP: single process
+  num_workers: 4
+  
+  # Caching
+  cache_embeddings: false     # MVP: no caching
+  
+  # Progress bars
+  show_progress: true
+
+# ============================================
+# NOTES
+# ============================================
+# This is the MVP configuration.
+# For production, consider:
+# - Enabling extended_fields
+# - Using HNSW index for faster search
+# - Enabling reranking
+# - Multiprocessing for large datasets
+# - Caching for embeddings

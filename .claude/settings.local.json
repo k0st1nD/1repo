@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(tee:*)",
+      "Bash($null)",
+      "Bash(dir:*)",
+      "Bash(ls:*)",
+      "Bash(taskkill:*)",
+      "Bash(nul)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(tesseract:*)",
+      "Bash(wmic logicaldisk:*)",
+      "Bash(powershell \"Get-PSDrive C | Select-Object Used,Free\")",
+      "Bash(pkill:*)",
+      "Bash(xargs:*)",
+      "Bash(while read f)",
+      "Bash(do basename \"$f\" .log)",
+      "Bash(done)",
+      "Bash(find:*)",
+      "Bash(data/library_all_chunks.jsonl)",
+      "Bash(findstr:*)",
+      "Bash(powershell \"Get-ChildItem ''data/sources'' -Filter ''*Project*.pdf'' | Select-Object Name, Length, Exists\")",
+      "Bash(powershell \"Get-ChildItem ''data/sources'' -Filter ''*Project*.pdf'' | Select-Object -ExpandProperty FullName\")",
+      "Bash(powershell \"Get-ChildItem ''data/sources'' -Filter ''*Project*.pdf'' | Select-Object Name, @{Name=''Size_MB'';Expression={[math]::Round($_Length/1MB, 2)}}\")",
+      "Bash(powershell:*)",
+      "Bash(wc:*)",
+      "Bash(chmod:*)",
+      "Bash(./batch_reprocess_lm.sh:*)",
+      "Bash(wmic cpu get NumberOfCores,NumberOfLogicalProcessors /format:list)",
+      "Bash(systeminfo:*)",
+      "Bash(awk:*)",
+      "Bash(./fix_two_books_faiss.sh)",
+      "Bash(for log in *.log)",
+      "Bash(do echo \"=== $log ===\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

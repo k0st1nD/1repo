@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:28:23Z",
+  "stage": "finalize",
+  "source": "lean_analytics.dataset.jsonl",
+  "metrics": {
+    "total_cards": 439,
+    "validation_errors": 0,
+    "validation_warnings": 110,
+    "avg_completeness": 0.545,
+    "cards_with_structure": 326,
+    "structure_coverage": 0.7425968109339408,
+    "cards_with_summaries": 412,
+    "summary_coverage": 0.9384965831435079
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

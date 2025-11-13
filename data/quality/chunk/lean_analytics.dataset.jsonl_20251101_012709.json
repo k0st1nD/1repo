@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T22:27:09Z",
+  "stage": "chunk",
+  "source": "lean_analytics.dataset.jsonl",
+  "metrics": {
+    "total_chunks": 549,
+    "chunks_per_page": 1.2505694760820045,
+    "avg_chunk_tokens": 365.0856102003643,
+    "min_chunk_tokens": 107,
+    "max_chunk_tokens": 833,
+    "token_distribution": {
+      "0-100": 0,
+      "100-300": 191,
+      "300-512": 343,
+      "512+": 15
+    },
+    "context_completeness": 1.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chunks_per_page",
+      "Missing metric: max_chunks_per_page",
+      "Missing metric: min_chunk_length",
+      "Missing metric: max_chunk_length",
+      "Missing metric: min_avg_tokens",
+      "Missing metric: max_avg_tokens"
+    ]
+  }
+}

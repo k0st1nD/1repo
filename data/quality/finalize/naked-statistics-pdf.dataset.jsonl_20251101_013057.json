@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-10-31T22:30:57Z",
+  "stage": "finalize",
+  "source": "naked-statistics-pdf.dataset.jsonl",
+  "metrics": {
+    "total_cards": 222,
+    "validation_errors": 0,
+    "validation_warnings": 10,
+    "avg_completeness": 0.615,
+    "cards_with_structure": 207,
+    "structure_coverage": 0.9324324324324325,
+    "cards_with_summaries": 219,
+    "summary_coverage": 0.9864864864864865
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_validation_pass_rate",
+      "Missing metric: max_policy_violations"
+    ]
+  }
+}

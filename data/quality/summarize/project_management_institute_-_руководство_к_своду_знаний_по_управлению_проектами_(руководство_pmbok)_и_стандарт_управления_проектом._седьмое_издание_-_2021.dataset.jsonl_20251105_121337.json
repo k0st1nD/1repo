@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-05T09:13:37Z",
+  "stage": "summarize",
+  "source": "project_management_institute_-_руководство_к_своду_знаний_по_управлению_проектами_(руководство_pmbok)_и_стандарт_управления_проектом._седьмое_издание_-_2021.dataset.jsonl",
+  "metrics": {
+    "total_pages": 374,
+    "summarized_pages": 360,
+    "skipped_pages": 14,
+    "summary_coverage": 0.9625668449197861,
+    "avg_l1_length": 195.97222222222223,
+    "avg_l2_length": 464.9916666666667,
+    "avg_compression_ratio": 10.72
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_summary_ratio",
+      "Missing metric: min_summary_length",
+      "Missing metric: max_summary_length"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-05T10:01:12Z",
+  "stage": "structure_detect",
+  "source": "2024_final_dora_report.dataset.jsonl",
+  "metrics": {
+    "total_pages": 120,
+    "chapters_detected": 0,
+    "sections_detected": 0,
+    "pages_with_structure": 0,
+    "structure_coverage": 0.0,
+    "avg_chapter_length": 0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

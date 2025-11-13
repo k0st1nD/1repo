@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-31T22:14:19Z",
+  "stage": "structure_detect",
+  "source": "continuous_discovery_habits_-_teresa_torres.dataset.jsonl",
+  "metrics": {
+    "total_pages": 201,
+    "chapters_detected": 1,
+    "sections_detected": 0,
+    "pages_with_structure": 30,
+    "structure_coverage": 0.14925373134328357,
+    "avg_chapter_length": 201.0
+  },
+  "threshold_check": {
+    "passed": true,
+    "violations": [],
+    "warnings": [
+      "Missing metric: min_chapters_detected",
+      "Missing metric: min_toc_coverage",
+      "Missing metric: max_orphan_pages"
+    ]
+  }
+}

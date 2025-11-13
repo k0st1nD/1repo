@@ -1,0 +1,440 @@
+# Archivist Magika MVP v2.0 - FAST Configuration
+# =================================================
+# Optimized for speed: minimal features, fast processing
+# Use case: Native PDFs, quick processing, low RAM
+
+version: "2.0.0"
+product: "archivist magika"
+profile: "fast"
+
+# ============================================
+# PROJECT METADATA
+# ============================================
+
+project:
+  name: "archivist magika"
+  description: "RAG system - FAST mode"
+
+# ============================================
+# PATHS
+# ============================================
+
+paths:
+  base_dir: "."
+  data_dir: "data"
+  config_dir: "config"
+  sources: "data/sources"
+  datasets: "data/datasets"
+  indexes: "data/indexes"
+  tables: "data/tables"
+  cache: "data/cache"
+  quality: "data/quality"
+  logs: "logs"
+
+# ============================================
+# LOGGING (minimal for speed)
+# ============================================
+
+logging:
+  level: WARNING  # ⚡ Minimal logging
+  detailed: false
+  
+  console:
+    enabled: true
+    colored: false  # ⚡ Faster without colors
+  
+  file:
+    enabled: false  # ⚡ No file logging
+  
+  structured:
+    enabled: false  # ⚡ No JSON logs
+  
+  use_tqdm_handler: true
+
+# ============================================
+# PIPELINE CONFIGURATION
+# ============================================
+
+pipeline:
+  
+  # ==========================================
+  # Stage 1: Structural (FAST)
+  # ==========================================
+  structural:
+    ocr:
+      enabled: false  # ⚡ Skip OCR entirely
+      languages: ['eng']
+      dpi: 150
+      confidence_threshold: 60
+    
+    tables:
+      enabled: true
+      extract_method: "pdfplumber"
+      min_rows: 2
+      min_cols: 2
+      save_to_separate_files: false  # ⚡ Skip saving
+    
+    extractors:
+      - pdfminer      # Fast only
+      - pdfplumber    # Fallback only
+      # Skip pypdf2 and OCR
+    
+    retry:
+      max_attempts: 1  # ⚡ No retries
+      initial_delay: 0.5
+      backoff_factor: 1.0
+      max_delay: 2.0
+    
+    blank_detection:
+      min_chars_ocr: 200
+      min_chars_valid: 50
+      skip_front_matter: true
+    
+    track_performance: false  # ⚡ No tracking
+  
+  # ==========================================
+  # Stage 2: Structure Detection (FAST)
+  # ==========================================
+  structure_detect:
+    chapter:
+      enabled: true
+      patterns:
+        - "^Chapter\\s+\\d+"
+        - "^\\d+\\.\\s+[A-Z]"
+      min_confidence: 0.5  # ⚡ Lower threshold
+      max_distance_from_start: 0.3
+    
+    section:
+      enabled: true
+      detect_numbered: true
+      detect_title_case: false  # ⚡ Skip (slower)
+      min_title_words: 2
+      max_title_words: 10
+    
+    toc:
+      enabled: true
+      include_page_numbers: true
+      max_depth: 2  # ⚡ Shallow TOC
+  
+  # ==========================================
+  # Stage 3: Summarization (DISABLED)
+  # ==========================================
+  summarize:
+    enabled: false  # ⚡ Skip entirely
+    engine: "extractive"
+    
+    l1_summary:
+      enabled: false
+      target_length: 300
+    
+    l2_summary:
+      enabled: false
+      target_length: 900
+    
+    extractive:
+      method: "textrank"
+      ratio: 0.3
+  
+  # ==========================================
+  # Stage 4: Extended Fields (MINIMAL)
+  # ==========================================
+  extended:
+    dedup:
+      enabled: true
+      exact_match: true
+      fuzzy_match: false  # ⚡ Skip fuzzy (slow)
+      fuzzy_threshold: 0.95
+      min_tokens: 20
+    
+    continuity:
+      enabled: false  # ⚡ Skip
+      check_page_sequence: false
+      check_chapter_sequence: false
+    
+    lm_extraction:
+      enabled: false  # ⚡ Skip LM entirely
+      
+      ollama:
+        base_url: "http://localhost:11434"
+        model: "qwen2.5:7b"
+        timeout: 30
+        max_retries: 1
+      
+      max_text_length: 2000
+      truncate_strategy: "head"
+      
+      fields:
+        content_type: false
+        domain: false
+        complexity: false
+        entities: {}
+        technical: {}
+        actionable: {}
+        business: {}
+        content_analysis: {}
+        tools_mentioned: false
+      
+      use_heuristics_fallback: true
+      heuristics_only: true  # ⚡ Heuristics only
+    
+    aggregate_errors: false
+  
+  # ==========================================
+  # Stage 5: Finalization (MINIMAL)
+  # ==========================================
+  finalize:
+    validation:
+      strict_mode: false
+      check_required_fields: true
+      check_extended_fields: false  # ⚡ Skip
+      check_manifest: true
+    
+    policies:
+      min_page_content_length: 20
+      max_page_content_length: 100000
+      max_empty_pages_ratio: 0.20  # ⚡ More lenient
+      require_title: true
+      require_total_cards: true
+    
+    cleanup:
+      remove_duplicates: true
+      remove_blank_pages: true
+      normalize_whitespace: false  # ⚡ Skip
+  
+  # ==========================================
+  # Stage 6: Chunking (FAST)
+  # ==========================================
+  chunk:
+    strategy: "sliding_window"
+    
+    chunk_size: 512
+    chunk_overlap: 50  # ⚡ Less overlap
+    min_chunk_size: 100
+    max_chunk_size: 2000
+    
+    token_model: "cl100k_base"
+    
+    add_structure_context: true
+    preserve_tables: true
+    respect_sentence_boundaries: false  # ⚡ Faster
+    respect_paragraph_boundaries: false
+    
+    include_metadata: true
+    include_extended_fields: false  # ⚡ No extended fields
+    context_max_tokens: 100  # ⚡ Less context
+  
+  # ==========================================
+  # Stage 7: Embedding (FAST)
+  # ==========================================
+  embed:
+    # Provider: "ollama" or "sentence-transformers"
+    provider: "ollama"
+
+    # Model name (for both providers)
+    model: "bge-m3"  # Ollama: bge-m3, sentence-transformers: BAAI/bge-m3
+    embedding_dim: 1024
+    normalize: true
+
+    # Batch size (16 for Ollama, 64 for sentence-transformers)
+    batch_size: 16
+
+    # Ollama-specific settings
+    ollama:
+      base_url: "http://localhost:11434"
+      timeout: 60
+      max_retries: 3
+      retry_delay: 1.0
+
+    # sentence-transformers settings (not used with Ollama)
+    device: "cpu"
+    num_workers: 4
+    show_progress: true
+
+    # FAISS index configuration
+    faiss:
+      index_type: "flat"
+      metric: "cosine"
+
+    # Cache settings
+    cache:
+      enabled: true
+      cache_dir: "data/cache/embeddings"
+      use_hash: true
+      ttl: 86400
+
+# ============================================
+# SEARCH (BASIC)
+# ============================================
+
+search:
+  semantic:
+    enabled: true
+    model: "BAAI/bge-m3"
+    top_k: 10
+    min_score: 0.4  # ⚡ Lower threshold
+  
+  keyword:
+    enabled: false  # ⚡ Skip
+  
+  hybrid:
+    enabled: false  # ⚡ Skip
+  
+  query_expansion:
+    enabled: false  # ⚡ Skip
+  
+  filters:
+    default_min_score: 0.4
+    enable_chapter_filter: true
+    enable_section_filter: true
+    enable_page_range_filter: true
+    enable_content_type_filter: false
+    enable_topic_filter: false
+  
+  context_expansion:
+    enabled: false
+  
+  reranking:
+    enabled: false  # ⚡ Skip
+
+# ============================================
+# QUALITY (DISABLED)
+# ============================================
+
+quality:
+  enabled: false  # ⚡ No quality tracking
+  output_dir: "data/quality"
+  
+  track_stages: []
+  
+  metrics: []
+  
+  thresholds: {}
+  
+  reports:
+    auto_generate: false
+    include_trends: false
+    include_comparisons: false
+
+# ============================================
+# VALIDATION (DISABLED)
+# ============================================
+
+validation:
+  enabled: false  # ⚡ No validation
+  auto_validate: false
+  strict_mode: false
+  save_reports: false
+
+# ============================================
+# PERFORMANCE (OPTIMIZED FOR SPEED)
+# ============================================
+
+performance:
+  max_workers: 0  # Auto (all CPUs)
+  max_memory_mb: 4096  # ⚡ Less memory
+  batch_size: 20
+  show_progress: true
+  progress_bar_style: "tqdm"
+  enable_cache: true
+  cache_ttl: 86400
+  cleanup_temp_files: true
+
+# ============================================
+# DEVELOPMENT
+# ============================================
+
+development:
+  debug_mode: false
+  verbose: false
+  save_intermediate: false
+  enable_profiling: false
+  dry_run: false
+
+# ============================================
+# PRODUCTION
+# ============================================
+
+production:
+  strict_validation: false
+  enable_monitoring: false
+  enable_alerts: false
+  continue_on_error: true
+  max_consecutive_errors: 5
+
+# ============================================
+# FEATURE FLAGS
+# ============================================
+
+features:
+  ocr: false
+  tables: true
+  structure_detection: true
+  summarization: false
+  extended_fields: false
+  deduplication: true
+  quality_tracking: false
+  validation: false
+  performance_tracking: false
+  error_aggregation: false
+  semantic_search: true
+  keyword_search: false
+  hybrid_search: false
+  query_expansion: false
+  reranking: false
+
+# ============================================
+# MODELS
+# ============================================
+
+models:
+  embedding:
+    name: "BAAI/bge-m3"
+    size: "1024"
+  
+  lm:
+    name: null  # Not used in fast mode
+    provider: null
+  
+  reranker:
+    name: null  # Not used
+
+# ============================================
+# EXPERIMENTAL
+# ============================================
+
+experimental:
+  semantic_chunking: false
+  hierarchical_chunking: false
+  query_reformulation: false
+  multi_query: false
+  image_extraction: false
+  diagram_ocr: false
+  table_understanding: false
+  incremental_indexing: false
+  distributed_processing: false
+
+# ============================================
+# NOTES
+# ============================================
+
+# Fast mode for MVP v2.0
+# 
+# Use when:
+# - Processing native (not scanned) PDFs
+# - Speed is critical
+# - Low RAM (2-4 GB)
+# - Basic search sufficient
+# 
+# Features disabled:
+# ❌ OCR
+# ❌ LM extraction
+# ❌ Summarization
+# ❌ Quality tracking
+# ❌ Validation
+# ❌ Hybrid search
+# ❌ Reranking
+# 
+# Expected performance:
+# ⚡ ~30 seconds per 100 pages
+# ⚡ ~2-4 GB RAM
+# ⚡ Quality: ★★☆☆☆
